@@ -1,0 +1,36 @@
+Extract structured information from this job description and return as JSON.
+
+**JOB DESCRIPTION TEXT:**
+---
+{{jd_text}}
+---
+
+Extract the following information EXACTLY as specified:
+
+{
+  "jobTitle": "Job title or role name (e.g., Software Engineer, Data Analyst, Frontend Developer)",
+  "company": "Company name",
+  "location": "Location",
+  "jobType": "Full-Time/Part-Time/Contract/etc.",
+  "experience": "Experience with number and unit (e.g., '0-5 years' or '3-5 years' or '35 years' or '15+ years')",
+  "educationRequired": "Education requirement (e.g., 'B.Com', 'BSc', 'M.Com', 'Bachelor of Commerce', 'Master of Science')",
+  "salary": "Salary with currency and unit (e.g., '₹15-40 Lakhs per' or 'INR 50000-60000 per month')",
+  "requiredSkills": ["JavaScript", "React", "Python", "Communication Skills"],
+  "jobDomains": ["primary_domain", "secondary_domain", "tertiary_domain"],
+  "fullJobDescription": "Complete original text",
+  "fileUrl": ""
+}
+
+CRITICAL RULES:
+
+1. **jobTitle**: Extract the job title or role name as stated in the JD. Use "" only if not mentioned.
+2. **company, location**: Extract EXACTLY as written
+3. **experience**: Include number AND "years" - Examples: "0-5 years", "3-5 years", "15+ years"
+4. **salary**: Include currency, number/range, and unit
+5. **educationRequired**: Extract education degree/qualification requirements. If not mentioned, use ""
+6. **requiredSkills**: Extract ONLY individual skill names as separate array items. DO NOT include education in requiredSkills.
+7. **fullJobDescription**: Include the complete original text
+8. **jobDomains**: Classify into top 3 domains from: software_engineering, data_analytics, data_science, ai_ml, technical_infrastructure, traditional_engineering, business_strategic, sales_business, marketing, hr, finance, legal, management, healthcare, ui_ux_design, creative_design, manufacturing, supply_chain, operations, customer_support, customer_success, admin, education, science, construction, consulting, hospitality, retail, trades, real_estate, fitness, beauty, aviation, transportation, military, nonprofit, public_sector, arts, sports, environmental, security, cleaning_janitorial, personal_care, childcare, other
+9. Use empty strings "" for missing text fields, empty arrays [] for missing lists
+
+Return ONLY valid JSON. No markdown, no explanations.

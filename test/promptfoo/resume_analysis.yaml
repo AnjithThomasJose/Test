@@ -1,0 +1,18 @@
+# Resume analysis agent
+description: "Resume analysis - career fit"
+prompts:
+  - file://prompts/resume_analysis.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_summary: "Senior developer with Python, AWS. 5 years experience."
+      chat_history: ""
+      assessment_context: ""
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return !!(p.RoleFit && p.resumeScore);
+          } catch (e) { return false; }

@@ -1,0 +1,93 @@
+version: v1
+taxonomy:
+  FINANCE_FPA: {display: "Finance - FP&A"}
+  FINANCE_TREASURY: {display: "Finance - Treasury"}
+  FINANCE_ACCOUNTING: {display: "Finance - Accounting"}
+  TECHNICAL_CODING: {display: "Engineering - Software"}
+  TECHNICAL_DATA: {display: "Data / Analytics"}
+  BUSINESS_STRATEGIC: {display: "Business / Strategy"}
+  SALES_BUSINESS: {display: "Sales / Business Development"}
+  MARKETING: {display: "Marketing"}
+  PRODUCT_MANAGEMENT: {display: "Product Management"}
+  DESIGN_UX: {display: "Design / UX"}
+  HR_PEOPLE: {display: "HR / People"}
+  CUSTOMER_SUCCESS: {display: "Customer Success"}
+  DEVOPS_INFRA: {display: "DevOps / Infrastructure"}
+  SECURITY: {display: "Security"}
+  HEALTHCARE_OPERATIONS: {display: "Healthcare Operations"}
+  LEGAL_COMPLIANCE: {display: "Legal / Compliance"}
+  MANUFACTURING_OPERATIONS: {display: "Manufacturing Operations"}
+
+rules:
+  FINANCE_FPA:
+    title_keywords: ["fp&a", "financial planning", "planning & analysis", "finance lead", "finance manager", "financial analyst", "fpna", "head of fp&a", "director fp&a"]
+    skill_keywords: ["budget", "forecast", "variance", "financial model", "power bi", "excel", "p&l", "kpi", "driver-based", "scenario", "long-range plan", "operating plan", "close", "opex", "capex", "cash flow", "board deck", "kpis"]
+    company_keywords: ["fintech", "nbfc", "bank", "lending", "payments", "insurance", "brokerage"]
+    weight: 1.0
+  FINANCE_TREASURY:
+    title_keywords: ["treasury", "cash management", "liquidity", "cash ops", "treasurer", "treasury analyst"]
+    skill_keywords: ["hedge", "forex", "fx", "cashflow", "working capital", "letter of credit", "lc", "funding", "cp", "bond", "interest rate", "derivative"]
+    weight: 0.8
+  FINANCE_ACCOUNTING:
+    title_keywords: ["accountant", "accounts", "controller", "audit", "accounting manager", "gl", "financial controller"]
+    skill_keywords: ["ind as", "gaap", "gst", "ledger", "recon", "closing", "month end", "year end", "ap", "ar", "fixed assets", "revenue recognition", "sox"]
+    weight: 0.7
+  TECHNICAL_CODING:
+    title_keywords: ["software", "developer", "engineer", "fullstack", "backend", "frontend", "ios", "android", "mobile", "sdet"]
+    skill_keywords: ["python", "java", "react", "node", "microservices", "go", "rust", "c#", "c++", "typescript", "graphql", "rest", "kafka", "redis", "postgres", "docker", "kubernetes"]
+    weight: 0.6
+  TECHNICAL_DATA:
+    title_keywords: ["data analyst", "data scientist", "analytics", "ml", "ai", "ml engineer", "bi analyst", "analytics engineer"]
+    skill_keywords: ["sql", "pandas", "statistics", "power bi", "tableau", "dbt", "snowflake", "redshift", "bigquery", "airflow", "numpy", "sklearn", "nlp", "timeseries", "ab test"]
+    weight: 0.6
+  SALES_BUSINESS:
+    title_keywords: ["account executive", "sales", "business development", "bdm", "inside sales", "sales manager", "ae", "bdr", "sdr"]
+    skill_keywords: ["pipeline", "quota", "crm", "prospect", "closing", "negotiation", "demo", "discovery", "meddic", "forecast", "territory", "account plan"]
+    weight: 0.7
+  MARKETING:
+    title_keywords: ["marketing", "growth", "brand", "digital marketing", "performance marketing", "content", "product marketing"]
+    skill_keywords: ["seo", "sem", "campaign", "content", "brand", "cpc", "cac", "lifecycle", "crm", "email", "paid", "creative", "copy", "positioning"]
+    weight: 0.7
+  PRODUCT_MANAGEMENT:
+    title_keywords: ["product manager", "pm", "product owner", "group pm", "principal pm"]
+    skill_keywords: ["roadmap", "backlog", "discovery", "user story", "kpi", "experimentation", "okrs", "mvp", "prt", "spec", "persona", "go to market"]
+    weight: 0.8
+  DESIGN_UX:
+    title_keywords: ["designer", "ux", "ui", "product designer", "ux researcher", "visual designer"]
+    skill_keywords: ["wireframe", "prototype", "usability", "figma", "research", "heuristic", "persona", "journey map", "a/b test", "accessibility"]
+    weight: 0.7
+  HR_PEOPLE:
+    title_keywords: ["hr", "talent", "recruiter", "people ops", "human resources", "hrbp"]
+    skill_keywords: ["hiring", "onboarding", "policy", "employee relations", "compensation", "performance", "l&d", "engagement", "payroll"]
+    weight: 0.6
+  CUSTOMER_SUCCESS:
+    title_keywords: ["customer success", "cs", "account manager", "support", "csm", "customer experience"]
+    skill_keywords: ["retention", "renewal", "nps", "health score", "adoption", "playbook", "qbr", "expansion", "churn"]
+    weight: 0.6
+  DEVOPS_INFRA:
+    title_keywords: ["devops", "sre", "site reliability", "platform", "infrastructure", "platform engineer"]
+    skill_keywords: ["kubernetes", "terraform", "ci/cd", "aws", "gcp", "monitoring", "observability", "prometheus", "grafana", "helm", "ansible"]
+    weight: 0.7
+  SECURITY:
+    title_keywords: ["security", "infosec", "application security", "soc", "security engineer", "grc"]
+    skill_keywords: ["vulnerability", "threat", "risk", "iso", "nist", "owasp", "siem", "soar", "mitre", "detection", "incident"]
+    weight: 0.7
+  HEALTHCARE_OPERATIONS:
+    title_keywords: ["healthcare", "clinical operations", "hospital", "care coordinator", "clinic manager", "pharmacist", "pharmacy", "clinical pharmacist", "pharmacy operations"]
+    skill_keywords: ["emr", "ehr", "hipaa", "patient", "compliance", "claims", "revenue cycle", "utilization", "acuity", "prescription", "dispensing", "pharmacovigilance", "drug safety", "clinical pharmacy", "pharmacy operations"]
+    weight: 0.6
+  LEGAL_COMPLIANCE:
+    title_keywords: ["legal", "compliance", "counsel", "paralegal", "legal ops"]
+    skill_keywords: ["contract", "regulatory", "policy", "gdpr", "risk", "privacy", "dpa", "sox", "litigation"]
+    weight: 0.6
+  MANUFACTURING_OPERATIONS:
+    title_keywords: ["manufacturing", "plant", "operations manager", "production", "plant manager", "industrial"]
+    skill_keywords: ["lean", "six sigma", "quality", "throughput", "oee", "kaizen", "5s", "yield", "downtime", "ppm"]
+    weight: 0.6
+
+blending:
+  rule_min_score_for_lock: 0.7
+  rule_confidence_when_locked: 0.9
+  llm_weight_when_unlocked: 0.4
+  rule_weight_when_unlocked: 0.6
+

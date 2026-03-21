@@ -1,0 +1,108 @@
+name: Agent Build & Deploy to GCP VM - QA.
+
+on:
+  push:
+    branches:
+      - release
+
+  # Run workflow manually
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Agent Build & Deploy to GCP VM - QA Job.
+    runs-on: ubuntu-latest
+    environment:
+      name: qa
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" # change to your required version
+
+      - name: Debug - List directory contents
+        run: |
+          echo "📁 Current working directory:"
+          pwd
+
+      #- name: Create virtual environment for githun ubuntu
+      #  run: |
+      #    python -m venv qa_agent_venv
+      #    source qa_agent_venv/bin/activate
+       #   python -m pip install --upgrade pip
+
+     # - name: Install dependencies
+     #   run: |
+      #    source qa_agent_venv/bin/activate
+       #   pip install -r requirements.txt
+        #  pip list
+
+      - name: Debug - List directory contents
+        run: |
+          echo "📁 Current working directory:"
+          pwd
+          echo "📁 Root directory contents:"
+          ls -la
+          echo "📁 Looking for agents directory:"
+          ls -la agents/ || echo "❌ agents directory not found"
+          echo "📁 All directories in workspace:"
+          find . -type d -name "*" | head -20
+
+     # - name: Temporarily move qa_agent_venv
+     #   run: |
+     #     mv qa_agent_venv /tmp/qa_agent_venv || echo "qa_agent_venv not present"
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.QA_AGENT_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.QA_AGENT_VM_IP }} >> ~/.ssh/known_hosts
+
+      - name: Ensure target directory exists on qa-agent VM
+        run: |
+          ssh -i ~/.ssh/id_rsa ${{ secrets.QA_AGENT_VM_USERNAME }}@${{ secrets.QA_AGENT_VM_IP }} "mkdir -p ${{ secrets.QA_AGENT_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents"
+
+      - name: Upload code to qa-agent VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.QA_AGENT_VM_IP }}
+          username: ${{ secrets.QA_AGENT_VM_USERNAME }}
+          key: ${{ secrets.QA_AGENT_SSH_PRIVATE_KEY }}
+          source: "."
+          target: ${{ secrets.QA_AGENT_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents
+
+     # - name: Restore qa_agent_venv (if needed later)
+     #   run: |
+      #    mv /tmp/qa_agent_venv ./ || echo "No qa_agent_venv to restore"
+
+      - name: Debug working directory
+        run: |
+          echo "WORKING DIR: $PWD"
+          ls -la
+
+      # - name: Install rsync
+      #   run: sudo apt-get update && sudo apt-get install -y rsync
+
+      # - name: Install rsync on remote VM
+      #   run: |
+      #     ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.GCP_VM_USERNAME }}@${{ secrets.GCP_VM_IP }} "sudo apt-get update && sudo apt-get install -y rsync"
+
+      # - name: Upload using rsync (with exclude)
+      #   run: |
+      #     rsync -avz --exclude 'qa_agent_venv' -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa" ./ ${{ secrets.GCP_VM_USERNAME }}@${{ secrets.GCP_VM_IP }}:${{ secrets.GCP_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents
+
+      - name: Deploy on qa-agent VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.QA_AGENT_VM_IP }}
+          username: ${{ secrets.QA_AGENT_VM_USERNAME }}
+          key: ${{ secrets.QA_AGENT_SSH_PRIVATE_KEY }}
+          script: |
+            rm -rf ${{ secrets.QA_AGENT_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents/qa_agent_venv
+            cd ${{ secrets.QA_AGENT_DEPLOY_DIR }}
+            ./qa-agent.run.sh ${{ github.run_number }}

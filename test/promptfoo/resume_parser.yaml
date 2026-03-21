@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+# Resume parser eval - groq_resume_parser
+# Run from agents/: npx promptfoo eval -c promptfoo/resume_parser.yaml
+
+description: "Resume parsing - groq_resume_parser"
+
+prompts:
+  - "{{resume_text}}"
+
+providers:
+  - file://providers/resume_provider.py
+
+tests:
+  - vars:
+      resume_text: |
+        John Doe
+        Software Engineer
+        john.doe@email.com | (555) 123-4567
+
+        Experience:
+        Senior Developer at Google (2020-2023)
+        - Led team of 5 engineers
+        - Built scalable microservices
+
+        Education:
+        BS Computer Science, MIT, 2018
+
+        Skills: Python, Java, AWS, Docker
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return !!(p.name && p.skills && Array.isArray(p.skills) && (p.total_experience_years !== undefined || p.totalExperienceYears !== undefined));
+          } catch (e) {
+            return false;
+          }
+      - type: icontains
+        value: "John"
+      - type: not-contains
+        value: "```"

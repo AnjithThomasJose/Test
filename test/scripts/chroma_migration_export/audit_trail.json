@@ -1,0 +1,827 @@
+[
+{
+"id": "audit_1761270196_dc959c2a",
+"document": "{\"event_id\": \"audit_1761270196_dc959c2a\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-10-24T07:13:16.523440\", \"user_id\": \"1hyBbMje27SuQvSX6IgywBGFpdp1\", \"session_id\": \"1hyBbMje27SuQvSX6IgywBGFpdp1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"1hyBbMje27SuQvSX6IgywBGFpdp1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"user_id": "1hyBbMje27SuQvSX6IgywBGFpdp1",
+"session_id": "1hyBbMje27SuQvSX6IgywBGFpdp1",
+"timestamp": "2025-10-24T07:13:16.523440",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1762413795_9ce576fb",
+"document": "{\"event_id\": \"audit_1762413795_9ce576fb\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T07:23:15.036661\", \"user_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"session_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"event_type": "session_created",
+"session_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"user_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"timestamp": "2025-11-06T07:23:15.036661"
+}
+},
+{
+"id": "audit_1762414011_05ab3402",
+"document": "{\"event_id\": \"audit_1762414011_05ab3402\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T07:26:51.873904\", \"user_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"session_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-11-06T07:26:50.423563\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"user_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"event_type": "session_completed",
+"timestamp": "2025-11-06T07:26:51.873904"
+}
+},
+{
+"id": "audit_1762414230_b10a36d1",
+"document": "{\"event_id\": \"audit_1762414230_b10a36d1\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T07:30:30.923784\", \"user_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"session_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"58nd1wd1QOMnpeWOIQ3OGszLeL22\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-11-06T07:30:29.470441\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"timestamp": "2025-11-06T07:30:30.923784",
+"session_id": "58nd1wd1QOMnpeWOIQ3OGszLeL22",
+"event_type": "session_completed"
+}
+},
+{
+"id": "audit_1762414426_7441698b",
+"document": "{\"event_id\": \"audit_1762414426_7441698b\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T07:33:46.899379\", \"user_id\": \"6ABk7NUzNmc2zEPmyzwhB7JumA43\", \"session_id\": \"6ABk7NUzNmc2zEPmyzwhB7JumA43\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"6ABk7NUzNmc2zEPmyzwhB7JumA43\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "6ABk7NUzNmc2zEPmyzwhB7JumA43",
+"event_type": "session_created",
+"timestamp": "2025-11-06T07:33:46.899379",
+"severity": "medium",
+"user_id": "6ABk7NUzNmc2zEPmyzwhB7JumA43"
+}
+},
+{
+"id": "audit_1762414806_3fdb0a9f",
+"document": "{\"event_id\": \"audit_1762414806_3fdb0a9f\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T07:40:06.962311\", \"user_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"session_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"user_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"severity": "medium",
+"event_type": "session_created",
+"timestamp": "2025-11-06T07:40:06.962311"
+}
+},
+{
+"id": "audit_1762426274_b4c0663f",
+"document": "{\"event_id\": \"audit_1762426274_b4c0663f\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T10:51:14.976572\", \"user_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"session_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-11-06T10:51:13.583573\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"session_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"timestamp": "2025-11-06T10:51:14.976572",
+"event_type": "session_completed"
+}
+},
+{
+"id": "audit_1762426404_bf57ef71",
+"document": "{\"event_id\": \"audit_1762426404_bf57ef71\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-11-06T10:53:24.474479\", \"user_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"session_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"JyXIRZxLwoUL7NvQEGJAlWjXm2o2\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-11-06T10:53:22.974395\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"event_type": "session_completed",
+"session_id": "JyXIRZxLwoUL7NvQEGJAlWjXm2o2",
+"severity": "medium",
+"timestamp": "2025-11-06T10:53:24.474479"
+}
+},
+{
+"id": "audit_1763358545_709dd0e0",
+"document": "{\"event_id\": \"audit_1763358545_709dd0e0\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T05:49:05.421677\", \"user_id\": \"SYVDrt8HiHV47Mp5vHABRHZ7s2x1\", \"session_id\": \"SYVDrt8HiHV47Mp5vHABRHZ7s2x1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"SYVDrt8HiHV47Mp5vHABRHZ7s2x1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "SYVDrt8HiHV47Mp5vHABRHZ7s2x1",
+"timestamp": "2025-11-17T05:49:05.421677",
+"event_type": "session_created",
+"session_id": "SYVDrt8HiHV47Mp5vHABRHZ7s2x1"
+}
+},
+{
+"id": "audit_1763358554_e8509aa2",
+"document": "{\"event_id\": \"audit_1763358554_e8509aa2\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T05:49:14.184931\", \"user_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"session_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "2JlpGudlxoeUCCW74f23lwAS9Ap2",
+"severity": "medium",
+"timestamp": "2025-11-17T05:49:14.184931",
+"event_type": "session_created",
+"user_id": "2JlpGudlxoeUCCW74f23lwAS9Ap2"
+}
+},
+{
+"id": "audit_1763359920_e457d34f",
+"document": "{\"event_id\": \"audit_1763359920_e457d34f\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T06:12:00.863920\", \"user_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"session_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"2JlpGudlxoeUCCW74f23lwAS9Ap2\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-11-17T06:11:59.378025\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_completed",
+"session_id": "2JlpGudlxoeUCCW74f23lwAS9Ap2",
+"user_id": "2JlpGudlxoeUCCW74f23lwAS9Ap2",
+"timestamp": "2025-11-17T06:12:00.863920",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1763379226_a3b91a17",
+"document": "{\"event_id\": \"audit_1763379226_a3b91a17\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T11:33:46.992548\", \"user_id\": \"Mm9UXGpGNfZS4w6J5T6Z6b6jIbl2\", \"session_id\": \"Mm9UXGpGNfZS4w6J5T6Z6b6jIbl2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"Mm9UXGpGNfZS4w6J5T6Z6b6jIbl2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "Mm9UXGpGNfZS4w6J5T6Z6b6jIbl2",
+"event_type": "session_created",
+"timestamp": "2025-11-17T11:33:46.992548",
+"user_id": "Mm9UXGpGNfZS4w6J5T6Z6b6jIbl2"
+}
+},
+{
+"id": "audit_1763384233_4a948bf9",
+"document": "{\"event_id\": \"audit_1763384233_4a948bf9\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T12:57:13.538436\", \"user_id\": \"jN7FNs6sObWrJv2rJNjEpRTTmXb2\", \"session_id\": \"jN7FNs6sObWrJv2rJNjEpRTTmXb2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"jN7FNs6sObWrJv2rJNjEpRTTmXb2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-11-17T12:57:13.538436",
+"severity": "medium",
+"event_type": "session_created",
+"user_id": "jN7FNs6sObWrJv2rJNjEpRTTmXb2",
+"session_id": "jN7FNs6sObWrJv2rJNjEpRTTmXb2"
+}
+},
+{
+"id": "audit_1763387050_8057e804",
+"document": "{\"event_id\": \"audit_1763387050_8057e804\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-11-17T13:44:10.789029\", \"user_id\": \"5EZ9xhFTkvdiiLXqGa6WDqBF0fn2\", \"session_id\": \"5EZ9xhFTkvdiiLXqGa6WDqBF0fn2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"5EZ9xhFTkvdiiLXqGa6WDqBF0fn2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"timestamp": "2025-11-17T13:44:10.789029",
+"session_id": "5EZ9xhFTkvdiiLXqGa6WDqBF0fn2",
+"severity": "medium",
+"user_id": "5EZ9xhFTkvdiiLXqGa6WDqBF0fn2"
+}
+},
+{
+"id": "audit_1765217658_08452ac2",
+"document": "{\"event_id\": \"audit_1765217658_08452ac2\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-08T18:14:18.894706\", \"user_id\": \"fmI7PBWJSqbN9BUkru5uImof1Hq1\", \"session_id\": \"fmI7PBWJSqbN9BUkru5uImof1Hq1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"fmI7PBWJSqbN9BUkru5uImof1Hq1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "fmI7PBWJSqbN9BUkru5uImof1Hq1",
+"event_type": "session_created",
+"session_id": "fmI7PBWJSqbN9BUkru5uImof1Hq1",
+"timestamp": "2025-12-08T18:14:18.894706",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1765254108_51150cb6",
+"document": "{\"event_id\": \"audit_1765254108_51150cb6\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T04:21:48.745021\", \"user_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"session_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"event_type": "session_created",
+"user_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"timestamp": "2025-12-09T04:21:48.745021"
+}
+},
+{
+"id": "audit_1765254763_39b96b56",
+"document": "{\"event_id\": \"audit_1765254763_39b96b56\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T04:32:43.996491\", \"user_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"session_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"timestamp": "2025-12-09T04:32:43.996491",
+"user_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"session_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1765256394_d3b3ed1c",
+"document": "{\"event_id\": \"audit_1765256394_d3b3ed1c\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T04:59:54.999778\", \"user_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"session_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"severity": "medium",
+"session_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"user_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"timestamp": "2025-12-09T04:59:54.999778"
+}
+},
+{
+"id": "audit_1765256517_56fcfd31",
+"document": "{\"event_id\": \"audit_1765256517_56fcfd31\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T05:01:57.903283\", \"user_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"session_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-09T05:01:57.903283",
+"event_type": "session_created",
+"severity": "medium",
+"session_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"user_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12"
+}
+},
+{
+"id": "audit_1765256555_08484e99",
+"document": "{\"event_id\": \"audit_1765256555_08484e99\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T05:02:35.275519\", \"user_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"session_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"D3h3xu6kDfMxnLtTHFvVlE1eCH12\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12",
+"timestamp": "2025-12-09T05:02:35.275519",
+"event_type": "session_created",
+"severity": "medium",
+"user_id": "D3h3xu6kDfMxnLtTHFvVlE1eCH12"
+}
+},
+{
+"id": "audit_1765257934_da7eb067",
+"document": "{\"event_id\": \"audit_1765257934_da7eb067\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T05:25:34.396761\", \"user_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"session_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"timestamp": "2025-12-09T05:25:34.396761",
+"session_id": "zrYooe3ThhXlfgVGFuo3KNTP55V2",
+"severity": "medium",
+"user_id": "zrYooe3ThhXlfgVGFuo3KNTP55V2"
+}
+},
+{
+"id": "audit_1765260458_005baeec",
+"document": "{\"event_id\": \"audit_1765260458_005baeec\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T06:07:38.163997\", \"user_id\": \"9nUsVHxxzjYIZjnuCbW5PZJU1cV2\", \"session_id\": \"9nUsVHxxzjYIZjnuCbW5PZJU1cV2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"9nUsVHxxzjYIZjnuCbW5PZJU1cV2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-09T06:07:38.163997",
+"event_type": "session_created",
+"user_id": "9nUsVHxxzjYIZjnuCbW5PZJU1cV2",
+"severity": "medium",
+"session_id": "9nUsVHxxzjYIZjnuCbW5PZJU1cV2"
+}
+},
+{
+"id": "audit_1765260759_85a95d0d",
+"document": "{\"event_id\": \"audit_1765260759_85a95d0d\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T06:12:39.906218\", \"user_id\": \"2VrRiHQT5nXQQE26Z8uaBCMk2vt2\", \"session_id\": \"2VrRiHQT5nXQQE26Z8uaBCMk2vt2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"2VrRiHQT5nXQQE26Z8uaBCMk2vt2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "2VrRiHQT5nXQQE26Z8uaBCMk2vt2",
+"event_type": "session_created",
+"timestamp": "2025-12-09T06:12:39.906218",
+"severity": "medium",
+"user_id": "2VrRiHQT5nXQQE26Z8uaBCMk2vt2"
+}
+},
+{
+"id": "audit_1765261072_aab22271",
+"document": "{\"event_id\": \"audit_1765261072_aab22271\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T06:17:52.137401\", \"user_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"session_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "kSoAl5xpc5dwV2m4kUoZq8Nfp9G3",
+"timestamp": "2025-12-09T06:17:52.137401",
+"severity": "medium",
+"session_id": "kSoAl5xpc5dwV2m4kUoZq8Nfp9G3",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1765261155_95327578",
+"document": "{\"event_id\": \"audit_1765261155_95327578\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T06:19:15.724656\", \"user_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"session_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"kSoAl5xpc5dwV2m4kUoZq8Nfp9G3\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"resume_assembler\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "kSoAl5xpc5dwV2m4kUoZq8Nfp9G3",
+"timestamp": "2025-12-09T06:19:15.724656",
+"session_id": "kSoAl5xpc5dwV2m4kUoZq8Nfp9G3",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1765279430_4c76261d",
+"document": "{\"event_id\": \"audit_1765279430_4c76261d\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T11:23:50.830644\", \"user_id\": \"Yv8pfzVibbYwGzBXZOcZvyuMZWG2\", \"session_id\": \"Yv8pfzVibbYwGzBXZOcZvyuMZWG2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"Yv8pfzVibbYwGzBXZOcZvyuMZWG2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "Yv8pfzVibbYwGzBXZOcZvyuMZWG2",
+"event_type": "session_created",
+"user_id": "Yv8pfzVibbYwGzBXZOcZvyuMZWG2",
+"severity": "medium",
+"timestamp": "2025-12-09T11:23:50.830644"
+}
+},
+{
+"id": "audit_1765290699_d1f80716",
+"document": "{\"event_id\": \"audit_1765290699_d1f80716\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T14:31:39.891110\", \"user_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"session_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-09T14:31:39.891110",
+"user_id": "OzMx7vf58DVzsM0eFYPq4VWbi9k2",
+"severity": "medium",
+"event_type": "session_created",
+"session_id": "OzMx7vf58DVzsM0eFYPq4VWbi9k2"
+}
+},
+{
+"id": "audit_1765290904_058f20fd",
+"document": "{\"event_id\": \"audit_1765290904_058f20fd\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T14:35:04.485918\", \"user_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"session_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"OzMx7vf58DVzsM0eFYPq4VWbi9k2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"session_id": "OzMx7vf58DVzsM0eFYPq4VWbi9k2",
+"user_id": "OzMx7vf58DVzsM0eFYPq4VWbi9k2",
+"timestamp": "2025-12-09T14:35:04.485918",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1765291297_2e5e37d8",
+"document": "{\"event_id\": \"audit_1765291297_2e5e37d8\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-09T14:41:37.468747\", \"user_id\": \"jjYUXEC765VKhx0yahSJ7SfAZfC3\", \"session_id\": \"jjYUXEC765VKhx0yahSJ7SfAZfC3\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"jjYUXEC765VKhx0yahSJ7SfAZfC3\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "jjYUXEC765VKhx0yahSJ7SfAZfC3",
+"event_type": "session_created",
+"severity": "medium",
+"user_id": "jjYUXEC765VKhx0yahSJ7SfAZfC3",
+"timestamp": "2025-12-09T14:41:37.468747"
+}
+},
+{
+"id": "audit_1765339940_b7588e3e",
+"document": "{\"event_id\": \"audit_1765339940_b7588e3e\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-10T04:12:20.146690\", \"user_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"session_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"severity": "medium",
+"timestamp": "2025-12-10T04:12:20.146690",
+"user_id": "ZYYE4tPasiWcp2tgnPQ5oiDPS5f1",
+"session_id": "ZYYE4tPasiWcp2tgnPQ5oiDPS5f1"
+}
+},
+{
+"id": "audit_1765342226_3cf4b758",
+"document": "{\"event_id\": \"audit_1765342226_3cf4b758\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-10T04:50:26.235875\", \"user_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"session_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"ZYYE4tPasiWcp2tgnPQ5oiDPS5f1\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-10T04:50:24.581152\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-10T04:50:26.235875",
+"user_id": "ZYYE4tPasiWcp2tgnPQ5oiDPS5f1",
+"event_type": "session_completed",
+"session_id": "ZYYE4tPasiWcp2tgnPQ5oiDPS5f1",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1765351961_24c339fc",
+"document": "{\"event_id\": \"audit_1765351961_24c339fc\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-10T07:32:41.681198\", \"user_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"session_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"zrYooe3ThhXlfgVGFuo3KNTP55V2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "zrYooe3ThhXlfgVGFuo3KNTP55V2",
+"event_type": "session_created",
+"session_id": "zrYooe3ThhXlfgVGFuo3KNTP55V2",
+"severity": "medium",
+"timestamp": "2025-12-10T07:32:41.681198"
+}
+},
+{
+"id": "audit_1765378532_e67acadc",
+"document": "{\"event_id\": \"audit_1765378532_e67acadc\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-10T14:55:32.718742\", \"user_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"session_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "2CqBTLNPR6YXGzuouCHQrejkpjf1",
+"timestamp": "2025-12-10T14:55:32.718742",
+"event_type": "session_created",
+"severity": "medium",
+"user_id": "2CqBTLNPR6YXGzuouCHQrejkpjf1"
+}
+},
+{
+"id": "audit_1765378907_7aa97458",
+"document": "{\"event_id\": \"audit_1765378907_7aa97458\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-10T15:01:47.933326\", \"user_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"session_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"2CqBTLNPR6YXGzuouCHQrejkpjf1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "2CqBTLNPR6YXGzuouCHQrejkpjf1",
+"severity": "medium",
+"session_id": "2CqBTLNPR6YXGzuouCHQrejkpjf1",
+"timestamp": "2025-12-10T15:01:47.933326",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1765429282_6cea22e3",
+"document": "{\"event_id\": \"audit_1765429282_6cea22e3\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T05:01:22.066126\", \"user_id\": \"rd5T1FfD49Wnyvw3q9vgcfGHdpV2\", \"session_id\": \"rd5T1FfD49Wnyvw3q9vgcfGHdpV2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"rd5T1FfD49Wnyvw3q9vgcfGHdpV2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-11T05:01:22.066126",
+"session_id": "rd5T1FfD49Wnyvw3q9vgcfGHdpV2",
+"event_type": "session_created",
+"severity": "medium",
+"user_id": "rd5T1FfD49Wnyvw3q9vgcfGHdpV2"
+}
+},
+{
+"id": "audit_1765429447_ccd8b042",
+"document": "{\"event_id\": \"audit_1765429447_ccd8b042\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T05:04:07.281459\", \"user_id\": \"tsc3xSQszwM5ZH4BkgydPaGpJBG3\", \"session_id\": \"tsc3xSQszwM5ZH4BkgydPaGpJBG3\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"tsc3xSQszwM5ZH4BkgydPaGpJBG3\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-11T05:04:07.281459",
+"event_type": "session_created",
+"session_id": "tsc3xSQszwM5ZH4BkgydPaGpJBG3",
+"severity": "medium",
+"user_id": "tsc3xSQszwM5ZH4BkgydPaGpJBG3"
+}
+},
+{
+"id": "audit_1765429742_9e7ddc32",
+"document": "{\"event_id\": \"audit_1765429742_9e7ddc32\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T05:09:02.722383\", \"user_id\": \"TNG5FpPlE4Q0WLRPxj2yc2n4OLW2\", \"session_id\": \"TNG5FpPlE4Q0WLRPxj2yc2n4OLW2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"TNG5FpPlE4Q0WLRPxj2yc2n4OLW2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-11T05:09:02.722383",
+"user_id": "TNG5FpPlE4Q0WLRPxj2yc2n4OLW2",
+"severity": "medium",
+"event_type": "session_created",
+"session_id": "TNG5FpPlE4Q0WLRPxj2yc2n4OLW2"
+}
+},
+{
+"id": "audit_1765443086_a362ee80",
+"document": "{\"event_id\": \"audit_1765443086_a362ee80\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T08:51:26.151853\", \"user_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"session_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"timestamp": "2025-12-11T08:51:26.151853",
+"severity": "medium",
+"session_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"user_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92"
+}
+},
+{
+"id": "audit_1765443194_8b15fbae",
+"document": "{\"event_id\": \"audit_1765443194_8b15fbae\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T08:53:14.506585\", \"user_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"session_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-11T08:53:12.826266\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"event_type": "session_completed",
+"timestamp": "2025-12-11T08:53:14.506585",
+"severity": "medium",
+"user_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92"
+}
+},
+{
+"id": "audit_1765443342_30bceaf3",
+"document": "{\"event_id\": \"audit_1765443342_30bceaf3\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T08:55:42.924145\", \"user_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"session_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-11T08:55:41.298772\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"timestamp": "2025-12-11T08:55:42.924145",
+"event_type": "session_completed",
+"session_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"user_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92"
+}
+},
+{
+"id": "audit_1765446561_98d7434c",
+"document": "{\"event_id\": \"audit_1765446561_98d7434c\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T09:49:21.600659\", \"user_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"session_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-11T09:49:20.121755\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"timestamp": "2025-12-11T09:49:21.600659",
+"session_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"user_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"event_type": "session_completed"
+}
+},
+{
+"id": "audit_1765446752_f2b44e15",
+"document": "{\"event_id\": \"audit_1765446752_f2b44e15\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T09:52:32.083705\", \"user_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"session_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8Tav4bk2WsNPfiM2nwRrqHGfGC92\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-11T09:52:30.466928\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_completed",
+"user_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"timestamp": "2025-12-11T09:52:32.083705",
+"session_id": "8Tav4bk2WsNPfiM2nwRrqHGfGC92",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1765450544_8c8d1fb4",
+"document": "{\"event_id\": \"audit_1765450544_8c8d1fb4\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T10:55:44.974056\", \"user_id\": \"bEhjqW1XxfbeNdW4ZqN2ut1tvC32\", \"session_id\": \"bEhjqW1XxfbeNdW4ZqN2ut1tvC32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"bEhjqW1XxfbeNdW4ZqN2ut1tvC32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "bEhjqW1XxfbeNdW4ZqN2ut1tvC32",
+"timestamp": "2025-12-11T10:55:44.974056",
+"event_type": "session_created",
+"user_id": "bEhjqW1XxfbeNdW4ZqN2ut1tvC32"
+}
+},
+{
+"id": "audit_1765457809_c503a68d",
+"document": "{\"event_id\": \"audit_1765457809_c503a68d\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-11T12:56:49.881993\", \"user_id\": \"3DcQIFKRMVUFvqYw0o5dUB19czk2\", \"session_id\": \"3DcQIFKRMVUFvqYw0o5dUB19czk2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3DcQIFKRMVUFvqYw0o5dUB19czk2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-11T12:56:49.881993",
+"severity": "medium",
+"event_type": "session_created",
+"session_id": "3DcQIFKRMVUFvqYw0o5dUB19czk2",
+"user_id": "3DcQIFKRMVUFvqYw0o5dUB19czk2"
+}
+},
+{
+"id": "audit_1765877920_4fc36e90",
+"document": "{\"event_id\": \"audit_1765877920_4fc36e90\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T09:38:40.195947\", \"user_id\": \"coQtvqX0DdPqqctn1B71IPTzv6k1\", \"session_id\": \"coQtvqX0DdPqqctn1B71IPTzv6k1\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"coQtvqX0DdPqqctn1B71IPTzv6k1\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "coQtvqX0DdPqqctn1B71IPTzv6k1",
+"severity": "medium",
+"user_id": "coQtvqX0DdPqqctn1B71IPTzv6k1",
+"event_type": "session_created",
+"timestamp": "2025-12-16T09:38:40.195947"
+}
+},
+{
+"id": "audit_1765879654_b374d845",
+"document": "{\"event_id\": \"audit_1765879654_b374d845\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T10:07:34.429604\", \"user_id\": \"8d8dsqSreLWcWSyZrhYUKGCeW6b2\", \"session_id\": \"8d8dsqSreLWcWSyZrhYUKGCeW6b2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"8d8dsqSreLWcWSyZrhYUKGCeW6b2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"severity": "medium",
+"session_id": "8d8dsqSreLWcWSyZrhYUKGCeW6b2",
+"user_id": "8d8dsqSreLWcWSyZrhYUKGCeW6b2",
+"timestamp": "2025-12-16T10:07:34.429604"
+}
+},
+{
+"id": "audit_1765881623_d5e0597d",
+"document": "{\"event_id\": \"audit_1765881623_d5e0597d\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T10:40:23.345553\", \"user_id\": \"mMjGkH5Rc1Yp7CnQHLqFEQYwePf2\", \"session_id\": \"mMjGkH5Rc1Yp7CnQHLqFEQYwePf2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"mMjGkH5Rc1Yp7CnQHLqFEQYwePf2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "mMjGkH5Rc1Yp7CnQHLqFEQYwePf2",
+"user_id": "mMjGkH5Rc1Yp7CnQHLqFEQYwePf2",
+"timestamp": "2025-12-16T10:40:23.345553",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1765882154_f82b3936",
+"document": "{\"event_id\": \"audit_1765882154_f82b3936\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T10:49:14.370370\", \"user_id\": \"35bop2pBQBX3iIQSUuvYCYyoHm83\", \"session_id\": \"35bop2pBQBX3iIQSUuvYCYyoHm83\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"35bop2pBQBX3iIQSUuvYCYyoHm83\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "35bop2pBQBX3iIQSUuvYCYyoHm83",
+"event_type": "session_created",
+"severity": "medium",
+"timestamp": "2025-12-16T10:49:14.370370",
+"session_id": "35bop2pBQBX3iIQSUuvYCYyoHm83"
+}
+},
+{
+"id": "audit_1765882515_e3bdb7f5",
+"document": "{\"event_id\": \"audit_1765882515_e3bdb7f5\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T10:55:15.081636\", \"user_id\": \"X5jJoV9YuaOPtpm3ofuNyKBiREj2\", \"session_id\": \"X5jJoV9YuaOPtpm3ofuNyKBiREj2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"X5jJoV9YuaOPtpm3ofuNyKBiREj2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "X5jJoV9YuaOPtpm3ofuNyKBiREj2",
+"event_type": "session_created",
+"timestamp": "2025-12-16T10:55:15.081636",
+"user_id": "X5jJoV9YuaOPtpm3ofuNyKBiREj2"
+}
+},
+{
+"id": "audit_1765882950_5f0482ec",
+"document": "{\"event_id\": \"audit_1765882950_5f0482ec\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T11:02:30.923684\", \"user_id\": \"Qtuu9GcqtjVLhaCkNhrS9r9B0lq2\", \"session_id\": \"Qtuu9GcqtjVLhaCkNhrS9r9B0lq2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"Qtuu9GcqtjVLhaCkNhrS9r9B0lq2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-16T11:02:30.923684",
+"severity": "medium",
+"session_id": "Qtuu9GcqtjVLhaCkNhrS9r9B0lq2",
+"event_type": "session_created",
+"user_id": "Qtuu9GcqtjVLhaCkNhrS9r9B0lq2"
+}
+},
+{
+"id": "audit_1765883280_c6f4fe74",
+"document": "{\"event_id\": \"audit_1765883280_c6f4fe74\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T11:08:00.618087\", \"user_id\": \"U15P9xD6SrdcXXkMpCmxOCbu9tH2\", \"session_id\": \"U15P9xD6SrdcXXkMpCmxOCbu9tH2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"U15P9xD6SrdcXXkMpCmxOCbu9tH2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"timestamp": "2025-12-16T11:08:00.618087",
+"event_type": "session_created",
+"user_id": "U15P9xD6SrdcXXkMpCmxOCbu9tH2",
+"session_id": "U15P9xD6SrdcXXkMpCmxOCbu9tH2"
+}
+},
+{
+"id": "audit_1765883556_568330b9",
+"document": "{\"event_id\": \"audit_1765883556_568330b9\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T11:12:36.826972\", \"user_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"session_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "H98QEGbUHdfG4dvBY4jdKtQZ9rW2",
+"severity": "medium",
+"event_type": "session_created",
+"user_id": "H98QEGbUHdfG4dvBY4jdKtQZ9rW2",
+"timestamp": "2025-12-16T11:12:36.826972"
+}
+},
+{
+"id": "audit_1765889512_b9443eb2",
+"document": "{\"event_id\": \"audit_1765889512_b9443eb2\", \"event_type\": \"session_completed\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T12:51:52.098038\", \"user_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"session_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"H98QEGbUHdfG4dvBY4jdKtQZ9rW2\", \"action\": \"session_completed\", \"description\": \"Session completed successfully\", \"details\": {\"final_ttl_minutes\": 15, \"completion_time\": \"2025-12-16T12:51:50.437575\"}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2025-12-16T12:51:52.098038",
+"session_id": "H98QEGbUHdfG4dvBY4jdKtQZ9rW2",
+"event_type": "session_completed",
+"severity": "medium",
+"user_id": "H98QEGbUHdfG4dvBY4jdKtQZ9rW2"
+}
+},
+{
+"id": "audit_1765895552_ddd763c4",
+"document": "{\"event_id\": \"audit_1765895552_ddd763c4\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-16T14:32:32.290056\", \"user_id\": \"sVldtLTexKRPeB6bCsuSTkQoxOc2\", \"session_id\": \"sVldtLTexKRPeB6bCsuSTkQoxOc2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"sVldtLTexKRPeB6bCsuSTkQoxOc2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "sVldtLTexKRPeB6bCsuSTkQoxOc2",
+"timestamp": "2025-12-16T14:32:32.290056",
+"event_type": "session_created",
+"user_id": "sVldtLTexKRPeB6bCsuSTkQoxOc2",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1767170469_84d7c08c",
+"document": "{\"event_id\": \"audit_1767170469_84d7c08c\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-31T08:41:09.212880\", \"user_id\": \"9dUObN9QSjhJft86EQsypsU8nx43\", \"session_id\": \"9dUObN9QSjhJft86EQsypsU8nx43\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"9dUObN9QSjhJft86EQsypsU8nx43\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"user_id": "9dUObN9QSjhJft86EQsypsU8nx43",
+"timestamp": "2025-12-31T08:41:09.212880",
+"session_id": "9dUObN9QSjhJft86EQsypsU8nx43",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1767170604_fc708153",
+"document": "{\"event_id\": \"audit_1767170604_fc708153\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2025-12-31T08:43:24.576356\", \"user_id\": \"MVYoMEpknHfPxB2vRUJ0Zh78Qvb2\", \"session_id\": \"MVYoMEpknHfPxB2vRUJ0Zh78Qvb2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"MVYoMEpknHfPxB2vRUJ0Zh78Qvb2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "MVYoMEpknHfPxB2vRUJ0Zh78Qvb2",
+"timestamp": "2025-12-31T08:43:24.576356",
+"session_id": "MVYoMEpknHfPxB2vRUJ0Zh78Qvb2",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1767347493_514403c8",
+"document": "{\"event_id\": \"audit_1767347493_514403c8\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T09:51:33.293903\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"timestamp": "2026-01-02T09:51:33.293903",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1767348116_60bde7c6",
+"document": "{\"event_id\": \"audit_1767348116_60bde7c6\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T10:01:56.834812\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"timestamp": "2026-01-02T10:01:56.834812",
+"event_type": "session_created",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32"
+}
+},
+{
+"id": "audit_1767348501_4c25e978",
+"document": "{\"event_id\": \"audit_1767348501_4c25e978\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T10:08:21.327917\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"timestamp": "2026-01-02T10:08:21.327917",
+"severity": "medium",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32"
+}
+},
+{
+"id": "audit_1767348667_ad5dfb39",
+"document": "{\"event_id\": \"audit_1767348667_ad5dfb39\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T10:11:07.520771\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-01-02T10:11:07.520771",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"event_type": "session_created",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1767348848_0c4849a1",
+"document": "{\"event_id\": \"audit_1767348848_0c4849a1\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T10:14:08.985457\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-01-02T10:14:08.985457",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"severity": "medium",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1767348899_9a142e67",
+"document": "{\"event_id\": \"audit_1767348899_9a142e67\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-02T10:14:59.333323\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"report_generator\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"timestamp": "2026-01-02T10:14:59.333323",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1767417647_4f049d2d",
+"document": "{\"event_id\": \"audit_1767417647_4f049d2d\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-03T05:20:47.360035\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-01-03T05:20:47.360035",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"severity": "medium",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1767504130_1daa2de8",
+"document": "{\"event_id\": \"audit_1767504130_1daa2de8\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-04T05:22:10.456617\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"severity": "medium",
+"event_type": "session_created",
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"timestamp": "2026-01-04T05:22:10.456617",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32"
+}
+},
+{
+"id": "audit_1768104740_2808d005",
+"document": "{\"event_id\": \"audit_1768104740_2808d005\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-11T04:12:20.612619\", \"user_id\": \"xVvJIAW9cbdOdJgsUgc4qwfXXyw2\", \"session_id\": \"xVvJIAW9cbdOdJgsUgc4qwfXXyw2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"xVvJIAW9cbdOdJgsUgc4qwfXXyw2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"user_id": "xVvJIAW9cbdOdJgsUgc4qwfXXyw2",
+"session_id": "xVvJIAW9cbdOdJgsUgc4qwfXXyw2",
+"severity": "medium",
+"timestamp": "2026-01-11T04:12:20.612619"
+}
+},
+{
+"id": "audit_1768104902_597e39d3",
+"document": "{\"event_id\": \"audit_1768104902_597e39d3\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-11T04:15:02.042933\", \"user_id\": \"3r8e6LasrQgfjIZmGof9lBHCTAy2\", \"session_id\": \"3r8e6LasrQgfjIZmGof9lBHCTAy2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3r8e6LasrQgfjIZmGof9lBHCTAy2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"resume_assembler\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-01-11T04:15:02.042933",
+"user_id": "3r8e6LasrQgfjIZmGof9lBHCTAy2",
+"event_type": "session_created",
+"session_id": "3r8e6LasrQgfjIZmGof9lBHCTAy2",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1768447348_0b8d745f",
+"document": "{\"event_id\": \"audit_1768447348_0b8d745f\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-01-15T03:22:28.315011\", \"user_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"session_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"BjiMtvwjRhV5suulvSOqic4IkL32\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"session_id": "BjiMtvwjRhV5suulvSOqic4IkL32",
+"timestamp": "2026-01-15T03:22:28.315011",
+"event_type": "session_created",
+"severity": "medium"
+}
+},
+{
+"id": "audit_1771485449_2e61be02",
+"document": "{\"event_id\": \"audit_1771485449_2e61be02\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-19T07:17:29.638995\", \"user_id\": \"ZXQWQsE5qlRxgxFp1GMQCozTr9W2\", \"session_id\": \"ZXQWQsE5qlRxgxFp1GMQCozTr9W2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"ZXQWQsE5qlRxgxFp1GMQCozTr9W2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "ZXQWQsE5qlRxgxFp1GMQCozTr9W2",
+"event_type": "session_created",
+"session_id": "ZXQWQsE5qlRxgxFp1GMQCozTr9W2",
+"severity": "medium",
+"timestamp": "2026-02-19T07:17:29.638995"
+}
+},
+{
+"id": "audit_1771821936_fa391531",
+"document": "{\"event_id\": \"audit_1771821936_fa391531\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-23T04:45:36.841890\", \"user_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"session_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"event_type": "session_created",
+"severity": "medium",
+"user_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"session_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"timestamp": "2026-02-23T04:45:36.841890"
+}
+},
+{
+"id": "audit_1771822091_0f390f00",
+"document": "{\"event_id\": \"audit_1771822091_0f390f00\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-23T04:48:11.415970\", \"user_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"session_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"session_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"user_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"timestamp": "2026-02-23T04:48:11.415970",
+"severity": "medium",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1771822178_326e6478",
+"document": "{\"event_id\": \"audit_1771822178_326e6478\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-23T04:49:38.538981\", \"user_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"session_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"assessment_recommender\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"user_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"session_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"timestamp": "2026-02-23T04:49:38.538981",
+"severity": "medium",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1771822735_0c133295",
+"document": "{\"event_id\": \"audit_1771822735_0c133295\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-23T04:58:55.155675\", \"user_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"session_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"3zOJzLW5FefpsEnAKSZwdkEWTc33\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-02-23T04:58:55.155675",
+"user_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33",
+"severity": "medium",
+"event_type": "session_created",
+"session_id": "3zOJzLW5FefpsEnAKSZwdkEWTc33"
+}
+},
+{
+"id": "audit_1771823032_d10bf0ee",
+"document": "{\"event_id\": \"audit_1771823032_d10bf0ee\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-02-23T05:03:52.664990\", \"user_id\": \"4soCJFyS1GSrJOxt5Mj4hdXmVx73\", \"session_id\": \"4soCJFyS1GSrJOxt5Mj4hdXmVx73\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"4soCJFyS1GSrJOxt5Mj4hdXmVx73\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-02-23T05:03:52.664990",
+"event_type": "session_created",
+"severity": "medium",
+"session_id": "4soCJFyS1GSrJOxt5Mj4hdXmVx73",
+"user_id": "4soCJFyS1GSrJOxt5Mj4hdXmVx73"
+}
+},
+{
+"id": "audit_1772669670_ca9775d3",
+"document": "{\"event_id\": \"audit_1772669670_ca9775d3\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-03-05T00:14:30.459143\", \"user_id\": \"6ZnKmGaBxsNSxIpqzfYos6eNjBo2\", \"session_id\": \"6ZnKmGaBxsNSxIpqzfYos6eNjBo2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"6ZnKmGaBxsNSxIpqzfYos6eNjBo2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-03-05T00:14:30.459143",
+"severity": "medium",
+"user_id": "6ZnKmGaBxsNSxIpqzfYos6eNjBo2",
+"session_id": "6ZnKmGaBxsNSxIpqzfYos6eNjBo2",
+"event_type": "session_created"
+}
+},
+{
+"id": "audit_1772670330_8b662949",
+"document": "{\"event_id\": \"audit_1772670330_8b662949\", \"event_type\": \"session_created\", \"severity\": \"medium\", \"timestamp\": \"2026-03-05T00:25:30.559061\", \"user_id\": \"TemrbeBXqqePlG7TOZ9bRoZ0yCb2\", \"session_id\": \"TemrbeBXqqePlG7TOZ9bRoZ0yCb2\", \"request_id\": null, \"resource_type\": \"session\", \"resource_id\": \"TemrbeBXqqePlG7TOZ9bRoZ0yCb2\", \"action\": \"session_created\", \"description\": \"Created new candidate_pipeline session\", \"details\": {\"owner_type\": \"candidate\", \"kind\": \"candidate_pipeline\", \"initial_step\": \"start\", \"ttl_minutes\": 120}, \"ip_address\": null, \"user_agent\": null, \"metadata\": {}}",
+"metadata": {
+"timestamp": "2026-03-05T00:25:30.559061",
+"session_id": "TemrbeBXqqePlG7TOZ9bRoZ0yCb2",
+"event_type": "session_created",
+"user_id": "TemrbeBXqqePlG7TOZ9bRoZ0yCb2",
+"severity": "medium"
+}
+}
+]

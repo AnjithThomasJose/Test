@@ -1,0 +1,19 @@
+# Assessment builder agent
+description: "Assessment question building"
+prompts:
+  - file://prompts/assessment_builder.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      topic: "Python basics"
+      assessment_type: "mcq"
+      difficulty: "easy"
+      num_questions: 2
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p.assessment_questions && Object.keys(p.assessment_questions).length > 0;
+          } catch (e) { return false; }

@@ -1,0 +1,17 @@
+# Job matcher agent
+description: "Job matching"
+prompts:
+  - file://prompts/job_matcher.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      candidate_profile: "Python, React, 3 years"
+      jobs_list: '[{"title":"Software Engineer","skills":["Python"]}]'
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.matches || p.jobs || Array.isArray(p));
+          } catch (e) { return false; }

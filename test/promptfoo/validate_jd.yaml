@@ -1,0 +1,16 @@
+# Validate JD agent
+description: "Job description validation"
+prompts:
+  - file://prompts/validate_jd.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      jd_text: "Software Engineer at TechCorp. Required: Python, React. 3-5 years experience."
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return typeof p.is_valid === 'boolean' && p.reasons !== undefined;
+          } catch (e) { return false; }

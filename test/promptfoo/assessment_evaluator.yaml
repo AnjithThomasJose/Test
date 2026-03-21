@@ -1,0 +1,19 @@
+# Assessment evaluator agent
+description: "Assessment answer evaluation"
+prompts:
+  - file://prompts/assessment_evaluator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      question_text: "What is a variable in Python?"
+      expected_answer: "A named storage location"
+      candidate_answer: "A variable stores data in memory"
+      question_type: "short_answer"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.score !== undefined || p.feedback);
+          } catch (e) { return false; }

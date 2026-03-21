@@ -1,0 +1,107 @@
+name: Agent Build & Deploy to GCP VM - DEV
+
+on:
+  push:
+    branches:
+      - develop
+
+  # Run workflow manually
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Agent Build & Deploy to GCP VM - DEV Job
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12" # change to your required version
+
+      - name: Debug working directory
+        run: |
+          echo "WORKING DIR: $PWD"
+          ls -la
+
+      #- name: Create virtual environment for githun ubuntu
+      #  run: |
+       #   python -m venv agentvenv
+         # source agentvenv/bin/activate
+         # python -m pip install --upgrade pip
+
+      #- name: Install dependencies
+       # run: |
+        #  source agentvenv/bin/activate
+         # pip install -r ./requirements.txt
+         # pip list
+
+      - name: Debug - List directory contents
+        run: |
+          echo "📁 Current working directory:"
+          pwd
+          echo "📁 Root directory contents:"
+          ls -la
+          echo "📁 Looking for agents directory:"
+          ls -la agents/ || echo "❌ agents directory not found"
+          echo "📁 All directories in workspace:"
+          find . -type d -name "*" | head -20
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.GCP_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.GCP_VM_IP }} >> ~/.ssh/known_hosts
+
+      - name: Ensure target directory exists on VM
+        run: |
+          ssh -i ~/.ssh/id_rsa ${{ secrets.GCP_VM_USERNAME }}@${{ secrets.GCP_VM_IP }} "mkdir -p ${{ secrets.GCP_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents"
+
+      #- name: Temporarily move agentvenv
+       # run: |
+        #  mv agentvenv /tmp/agentvenv || echo "agentvenv not present"
+
+      - name: Upload code to GCP VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.GCP_VM_IP }}
+          username: ${{ secrets.GCP_VM_USERNAME }}
+          key: ${{ secrets.GCP_SSH_PRIVATE_KEY }}
+          source: "."
+          target: ${{ secrets.GCP_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents
+
+     # - name: Restore agentvenv (if needed later)
+       # run: |
+         # mv /tmp/agentvenv ./ || echo "No agentvenv to restore"
+
+      - name: Debug working directory
+        run: |
+          echo "WORKING DIR: $PWD"
+          ls -la
+
+      # - name: Install rsync
+      #   run: sudo apt-get update && sudo apt-get install -y rsync
+
+      # - name: Install rsync on remote VM
+      #   run: |
+      #     ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.GCP_VM_USERNAME }}@${{ secrets.GCP_VM_IP }} "sudo apt-get update && sudo apt-get install -y rsync"
+
+      # - name: Upload using rsync (with exclude)
+      #   run: |
+      #     rsync -avz --exclude 'agentvenv' -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa" ./ ${{ secrets.GCP_VM_USERNAME }}@${{ secrets.GCP_VM_IP }}:${{ secrets.GCP_DEPLOY_DIR }}/agent_build_${{ github.run_number }}/agents
+
+      - name: Deploy on GCP VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.GCP_VM_IP }}
+          username: ${{ secrets.GCP_VM_USERNAME }}
+          key: ${{ secrets.GCP_SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.GCP_DEPLOY_DIR }}
+            ./agent.run.sh ${{ github.run_number }}

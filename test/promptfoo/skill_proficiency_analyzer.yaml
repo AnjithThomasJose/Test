@@ -1,0 +1,18 @@
+# Skill proficiency analyzer agent
+description: "Skill proficiency - proficiency level assessment"
+prompts:
+  - file://prompts/skill_proficiency_analyzer.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      skills_list: "Python, React, AWS"
+      work_experience: "3 years as Software Engineer at TechCorp"
+      education: "BS Computer Science, MIT"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p.skills && Array.isArray(p.skills) && p.skills.length >= 1;
+          } catch (e) { return false; }

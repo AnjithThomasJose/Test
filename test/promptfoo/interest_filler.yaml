@@ -1,0 +1,17 @@
+# Interest filler agent
+description: "Interest filler - profile from resume"
+prompts:
+  - file://prompts/interest_filler.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_source: "Software engineer with Python and React experience"
+      questions: "What type of roles are you looking for?: Full-stack"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.answers || p.responses || Array.isArray(p));
+          } catch (e) { return false; }

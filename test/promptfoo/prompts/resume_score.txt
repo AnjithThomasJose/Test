@@ -1,0 +1,14 @@
+You are an expert career analyst. Perform a comprehensive analysis of this resume and score it.
+
+**Resume Data:**
+{{resume_data}}
+
+CRITICAL: NO DOMAIN BIAS - Scoring must be domain-neutral. A great sales resume and a great engineering resume should both score highly if they meet quality criteria.
+
+Provide:
+- breakdown: {experience, skills, education, presentation} (0-100 each)
+- total: overall score (0-100)
+- rationale: detailed explanation
+- suggested_roles: 5 suitable job roles
+
+Return ONLY valid JSON. No markdown.

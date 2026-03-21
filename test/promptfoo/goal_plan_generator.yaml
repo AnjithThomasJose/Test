@@ -1,0 +1,19 @@
+# Goal plan generator agent
+description: "Career goal plan generation"
+prompts:
+  - file://prompts/goal_plan_generator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      user_profile: "Software engineer with 3 years experience"
+      current_skills: "Python, React, SQL"
+      skill_gaps: "System design, AWS"
+      target_role: "Senior Software Engineer"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.goals || p.plan || p.short_term || p.recommendations);
+          } catch (e) { return false; }

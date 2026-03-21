@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+# JD parser eval - groq_jd_parser
+# Run from agents/: npx promptfoo eval -c promptfoo/jd_parser.yaml
+
+description: "Job description parsing - groq_jd_parser"
+
+prompts:
+  - file://prompts/jd_parser.txt
+
+providers:
+  - file://providers/jd_parser_provider.py
+
+tests:
+  - vars:
+      jd_text: |
+        Software Engineer - Full Stack
+        Company: TechCorp Inc.
+        Location: Bangalore, India
+        Type: Full-Time
+        Experience: 3-5 years
+        Salary: ₹15-25 Lakhs per annum
+
+        Requirements:
+        - Strong proficiency in JavaScript, React, Node.js
+        - Experience with PostgreSQL and Redis
+        - Bachelor's degree in Computer Science or equivalent
+        - Good communication and teamwork skills
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return !!(p.jobTitle && p.requiredSkills && Array.isArray(p.requiredSkills) && p.jobDomains);
+          } catch (e) {
+            return false;
+          }
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const skills = p.requiredSkills || [];
+            const lower = skills.map(s => (s || '').toLowerCase()).join(' ');
+            return lower.includes('javascript') || lower.includes('react');
+          } catch (e) {
+            return false;
+          }
+      - type: not-contains
+        value: "```"

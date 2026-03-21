@@ -1,0 +1,277 @@
+version: v1
+
+# ============================================================================
+# FEATURE FLAGS - Enable/Disable Major Features
+# ============================================================================
+feature_flags:
+  SAFETY_ENFORCED: false
+  COVERAGE_GATING_ENABLED: false
+  METRICS_ENABLED: false
+  
+  # Intelligent Flow: Adapts interview pace based on candidate performance
+  # rather than just question count. Recommended: true for better UX
+  INTELLIGENT_FLOW: true
+
+# ============================================================================
+# TOPIC WEIGHTING - Adjust question importance by category
+# ============================================================================
+# Controls how much weight different question types receive when interview_topic is set
+# Values > 1.0 increase weight, < 1.0 decrease weight
+# Total weights are normalized automatically
+topic_weighting:
+  # Technical/problem-solving questions (architecture, ML, data, design, etc.)
+  # Recommended: 1.5-2.0 for engineering roles, 1.2-1.5 for product roles
+  technical_multiplier: 1.6
+  
+  # Communication-focused questions
+  # Recommended: 1.2-1.5 for customer-facing or leadership roles
+  comm_multiplier: 1.2
+  
+  # Generic/behavioral questions (not topic-specific)
+  # Recommended: 0.5-0.8 to keep interviews focused on the topic
+  other_multiplier: 0.6
+
+# ============================================================================
+# INTELLIGENT STAGING - Smart interview progression
+# ============================================================================
+# When INTELLIGENT_FLOW is enabled, uses response quality metrics
+# instead of just question count to determine stage transitions
+intelligent_staging:
+  enabled: true
+  
+  # Default thresholds (used when role-specific thresholds not available)
+  confidence_threshold: 0.7
+  word_count_threshold: 50
+  coverage_gap_weight: 0.3
+  
+  # Role-based thresholds for adaptive progression
+  # Automatically adjusts based on candidate experience level
+  role_thresholds:
+    junior:
+      confidence_threshold: 0.6
+      word_count_threshold: 40
+      coverage_gap_weight: 0.2
+      description: "More lenient thresholds for junior candidates"
+    mid:
+      confidence_threshold: 0.7
+      word_count_threshold: 50
+      coverage_gap_weight: 0.3
+      description: "Standard thresholds for mid-level candidates"
+    senior:
+      confidence_threshold: 0.8
+      word_count_threshold: 60
+      coverage_gap_weight: 0.4
+      description: "Stricter thresholds for senior candidates"
+  
+  # Stage skipping: Allow skipping stages if candidate excels
+  allow_skip_stage: true
+  skip_conditions:
+    # Skip to deep_dive if candidate demonstrates exceptional knowledge
+    - condition: "confidence > 0.9 AND word_count > 80 AND engagement_score > 0.85"
+      action: "skip_to_deep_dive"
+      description: "Skip problem_solving if fundamentals are exceptional"
+    # Skip to candidate_questions if all core topics covered well
+    - condition: "coverage_score > 0.9 AND question_count >= 5"
+      action: "skip_to_candidate_questions"
+      description: "Move to candidate questions if coverage is complete"
+  
+  # Adaptive timeouts: Extend time if candidate is engaged
+  adaptive_timeout:
+    enabled: true
+    engagement_threshold: 0.7  # Extend timeout if engagement above this
+    extension_multiplier: 1.5  # Extend by 50% if engaged
+    max_extension: 2.0  # Maximum 2x original timeout
+
+# ============================================================================
+# ANTI-REPETITION - Prevent asking similar questions
+# ============================================================================
+# Uses n-gram fingerprinting to detect and block semantically similar questions
+anti_repetition:
+  # Number of recent questions to check for similarity
+  # Higher = more memory, more protection. Lower = faster, less restrictive
+  # Recommended: 5 for balanced, 3 for faster, 7+ for comprehensive
+  window_size: 5
+  
+  # Jaccard similarity threshold (0.0-1.0) to block questions
+  # Higher = only block very similar. Lower = block more aggressively
+  # Recommended: 0.7 for balanced, 0.8 for lenient, 0.6 for strict
+  similarity_threshold: 0.7
+  
+  # Size of word groups for comparison (typically 2-4)
+  # 3 = "what is your" vs "is your experience"
+  # Recommended: 3 for most cases
+  ngram_size: 3
+
+# ============================================================================
+# NEGATIVE INTENT LOOP-BREAKER - Help struggling candidates
+# ============================================================================
+# Detects when candidates repeatedly say "don't know" and offers helpful options
+negative_intent:
+  # Number of consecutive negative signals before offering help
+  # Lower = offer help sooner, Higher = give more chances
+  # Recommended: 2 for empathetic, 3 for standard, 1 for very supportive
+  consecutive_threshold: 2
+  
+  # Options to offer when loop-breaker triggers
+  # Available: "primer" (fundamentals), "switch" (new topic), "end" (finish)
+  # Remove options you don't want to offer
+  auto_offer_options: ["primer", "switch", "end"]
+  
+  # Confidence thresholds for negative intent detection
+  # Adjust these to control sensitivity of negative intent detection
+  confidence_thresholds:
+    # Standard threshold for normal responses (>= 5 words)
+    standard: 0.7
+    
+    # Lower threshold for short responses (< 5 words)
+    short_response: 0.5
+    
+    # Very low threshold for very short responses (<= 3 words)
+    very_short_response: 0.3
+    
+    # Minimum confidence to consider for loop-breaker triggering
+    loop_breaker_minimum: 0.3
+    
+    # Single high-confidence negative response triggers loop-breaker immediately
+    single_high_confidence_trigger: 0.6
+
+# ============================================================================
+# LOGGING & SECURITY - Control output and data protection
+# ============================================================================
+logging:
+  # Print full request/response payloads (disable in production for performance)
+  # Recommended: false in production, true for debugging
+  verbose_payload_logging: false
+  
+  # Automatically mask auth tokens in logs (ALWAYS keep true for security)
+  # Masks: auth_token, password, api_key, secret, Authorization headers
+  # Recommended: true (always)
+  mask_auth_tokens: true
+
+thresholds:
+  main_to_candidate_engagement: 0.7
+  main_to_candidate_min_questions: 6
+  unresponsive_confidence_to_end: 0.8
+  allow_first_empty_answer: true
+
+states:
+  topic_introduction:
+    max_questions: 2
+    focus: "Introduce interview topic, set context, and ask opening questions about candidate's experience with {interview_topic}"
+    next_states: ["topic_fundamentals"]
+    timeout_minutes: 5
+    adaptive_timeout: true  # Enable adaptive timeout for this stage
+    transitions:
+      - to: topic_fundamentals
+  topic_fundamentals:
+    max_questions: 3
+    focus: "Assess foundational knowledge and core concepts of {interview_topic}"
+    next_states: ["topic_problem_solving", "topic_deep_dive"]  # Allow skipping
+    timeout_minutes: 10
+    adaptive_timeout: true
+    allow_skip: true  # Allow skipping this stage if candidate excels
+    transitions:
+      - to: topic_deep_dive
+        condition: "scores.topic_knowledge > 7 OR (confidence > 0.9 AND word_count > 80)"
+        description: "Skip to deep_dive if exceptional performance"
+      - to: topic_problem_solving
+        condition: "default"
+  topic_problem_solving:
+    max_questions: 5
+    focus: "Evaluate practical problem-solving skills using real-world scenarios related to {interview_topic}"
+    next_states: ["topic_deep_dive", "candidate_questions"]
+    timeout_minutes: 20
+    adaptive_timeout: true
+    allow_skip: true
+    transitions:
+      - to: topic_deep_dive
+        condition: "default"
+      - to: candidate_questions
+        condition: "coverage_score > 0.9 AND question_count >= 5"
+        description: "Skip to candidate questions if coverage complete"
+  topic_deep_dive:
+    max_questions: 4
+    focus: "Explore advanced concepts, edge cases, and depth of understanding in {interview_topic}"
+    next_states: ["candidate_questions"]
+    timeout_minutes: 15
+    adaptive_timeout: true
+    transitions:
+      - to: candidate_questions
+  candidate_questions:
+    max_questions: 3
+    focus: "Address candidate questions about the role, team, or company's use of {interview_topic}"
+    next_states: ["topic_feedback"]
+    timeout_minutes: 10
+    adaptive_timeout: true
+    transitions:
+      - to: topic_feedback
+  topic_feedback:
+    max_questions: 1
+    focus: "Provide constructive, topic-specific feedback and outline next steps"
+    next_states: ["closing"]
+    timeout_minutes: 5
+    transitions:
+      - to: closing
+  closing:
+    max_questions: 1
+    focus: "Wrap up interview and thank candidate"
+    next_states: ["completed"]
+    timeout_minutes: 3
+    transitions:
+      - to: completed
+
+stage_instructions:
+  topic_introduction: "Introduce the topic and ask broad questions about their experience with it."
+  topic_fundamentals: "Ask about core concepts, definitions, and basic principles of the topic."
+  topic_problem_solving: "Present a realistic problem and ask them to walk through their solution."
+  topic_deep_dive: "Probe for deeper knowledge on complex aspects of the topic."
+  candidate_questions: "Give the candidate an opportunity to ask their own questions."
+  topic_feedback: "Summarize their performance on the topic and provide feedback."
+  wrap_up: "Summarize and provide feedback opportunity."
+
+follow_up_guidance:
+  deeper_probe: "Ask challenging technical questions. Explore edge cases."
+  corrective: "Ask clarifying questions. Provide examples if needed."
+  escalation: "Gradually increase complexity. Build on their answers."
+  continuation: "Continue with similar difficulty level."
+
+coverage_quotas:
+  default:
+    skills: 1
+    experience: 1
+    problem_solving: 1
+    collaboration: 1
+
+safe_default_questions:
+  topic_introduction:
+    - "Today we'll be focusing on {interview_topic}. To start, could you give me an overview of your experience with it?"
+    - "This interview will be about {interview_topic}. Can you tell me what interests you most about this area?"
+  topic_fundamentals:
+    - "What are the core principles of {interview_topic}?"
+    - "Can you explain a fundamental concept in {interview_topic}?"
+  topic_problem_solving:
+    - "Imagine you need to solve a common problem using {interview_topic}. How would you approach it?"
+  topic_deep_dive:
+    - "Let's discuss a more advanced area of {interview_topic}. What are your thoughts on [specific advanced concept]?"
+  candidate_questions:
+    - "What questions do you have for me about the role, the team, or our use of {interview_topic}?"
+  topic_feedback:
+    - "Thanks for discussing {interview_topic} with me. I'd like to share some brief feedback—does that work for you?"
+  closing:
+    - "Thank you for your time today. We’ll follow up with next steps soon."
+
+scoring:
+  topic_focused_criteria:
+    topic_knowledge:
+      weight: 0.4
+      max_score: 10
+    problem_solving:
+      weight: 0.3
+      max_score: 10
+    communication:
+      weight: 0.15
+      max_score: 10
+    experience_relevance:
+      weight: 0.15
+      max_score: 10
+

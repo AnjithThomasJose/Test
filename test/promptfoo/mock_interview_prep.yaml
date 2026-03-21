@@ -1,0 +1,18 @@
+# Mock interview prep agent
+description: "Mock interview prep - question generation"
+prompts:
+  - file://prompts/mock_interview_prep.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      num_questions: 3
+      job_title: "Software Engineer"
+      skills_str: "Python, React, AWS"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const arr = JSON.parse(output);
+            return Array.isArray(arr) && arr.length >= 2;
+          } catch (e) { return false; }

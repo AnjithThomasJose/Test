@@ -1,0 +1,8 @@
+Validate the assessment structure and question format.
+
+**Assessment Data:**
+{{assessment_data}}
+
+Check: valid question types, expected_answer present, options for MCQ, breakdown matches counts.
+
+Return valid JSON: {"is_valid": true/false, "errors": [], "warnings": []}

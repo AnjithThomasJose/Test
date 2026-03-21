@@ -1,0 +1,17 @@
+# Report generator agent
+description: "Assessment report generation"
+prompts:
+  - file://prompts/report_generator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      assessment_results: '{"scores":{"mcq":80,"coding":70}}'
+      candidate_info: "John Doe, Software Engineer"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.overall_score !== undefined || p.strengths || p.recommendations);
+          } catch (e) { return false; }

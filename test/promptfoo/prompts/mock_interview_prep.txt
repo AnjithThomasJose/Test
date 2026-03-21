@@ -1,0 +1,12 @@
+You are an expert interviewer. Generate {{num_questions}} mock interview questions with sample/expected answers for the given role.
+
+**Job Title:** {{job_title}}
+**Required Skills:** {{skills_str}}
+
+For each question provide:
+- question_text
+- question_type (behavioral/technical/situational)
+- expected_answer or sample_answer
+- difficulty (easy/medium/hard)
+
+Return valid JSON array. No markdown, no code blocks.

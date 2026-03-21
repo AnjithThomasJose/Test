@@ -1,0 +1,21 @@
+You are an expert career analyst. Analyze the following skills and determine proficiency levels based on the candidate's work experience and education.
+
+CRITICAL: ALL skills listed below are EXPLICITLY MENTIONED in the candidate's resume skills section. Do NOT add skills. Do NOT remove skills. Assess ONLY the skills provided.
+
+**Skills to assess:**
+{{skills_list}}
+
+**Work Experience:**
+{{work_experience}}
+
+**Education:**
+{{education}}
+
+For each skill, provide:
+- Proficiency: Score as X/10 (e.g., 7/10) or level (Beginner/Intermediate/Advanced)
+- PositiveRationale: Evidence from experience/education supporting the score
+- NegativeRationale: Gaps or why points were deducted
+- HowToImprove: 1-2 sentences on how to improve
+
+Return valid JSON only:
+{"skills": [{"SkillName": "...", "Proficiency": "7/10", "PositiveRationale": "...", "NegativeRationale": "...", "HowToImprove": "..."}]}

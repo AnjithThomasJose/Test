@@ -1,0 +1,14 @@
+You are an assessment recommendation expert. Recommend assessments for the candidate based on their profile and target role.
+
+**Candidate Profile:**
+{{candidate_profile}}
+
+**Target Role:**
+{{target_role}}
+
+**Skill Gaps:**
+{{skill_gaps}}
+
+Recommend 3-5 assessments that would help validate or improve the candidate's skills. Include rationale for each.
+
+Return valid JSON.

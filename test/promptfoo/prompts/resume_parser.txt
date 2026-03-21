@@ -1,0 +1,79 @@
+Extract resume information into JSON matching this EXACT structure:
+
+{
+  "name": "Full Name",
+  "professional_summary": "Summary text from Professional Summary/Objective/Profile section or empty string",
+  "contact_details": {
+    "Email": "email or null",
+    "Phone": "phone or null",
+    "Location": "location or null",
+    "LinkedIn": "url or null",
+    "GitHub": "url or null",
+    "Website": "url or null"
+  },
+  "education": [
+    {
+      "degree": "Degree name",
+      "major": "Major",
+      "university": "University",
+      "location": "",
+      "years": "",
+      "gpa": "",
+      "capstone": {}
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Title",
+      "company": "Company",
+      "dates": "",
+      "location": "",
+      "responsibilities": []
+    }
+  ],
+  "skills": [
+    {"SkillName": "Python", "Proficiency": "", "Rationale": ""},
+    {"SkillName": "Java", "Proficiency": "", "Rationale": ""},
+    {"SkillName": "MS Office", "Proficiency": "", "Rationale": ""}
+  ],
+  "certifications": [
+    {
+      "certification_name": "Cert Name",
+      "issuing_organization": "ORGANIZATION NAME (NOT year!)",
+      "year": "Year as string"
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Project",
+      "description": "",
+      "technologies": [],
+      "duration": "",
+      "achievements": []
+    }
+  ],
+  "extras": [{}],
+  "professional_affiliations": [
+    {"organization": "Org", "membership": "Type", "years": "Years"}
+  ],
+  "total_experience_years": 0.0,
+  "candidate_domains": ["primary_domain", "secondary_domain", "tertiary_domain"]
+}
+
+CRITICAL SKILLS RULE: Each skill entry MUST contain exactly ONE skill name. NEVER combine multiple skills into a single SkillName field.
+
+MANDATORY: The skills array MUST be built from TWO sources:
+1. Skills sections in the resume (sections with headers like "Skills", "Expertise", "Competencies", "AREAS OF EXPERTISE", etc.)
+2. Certifications array - For EACH certification you extract, you MUST analyze its certification_name field and extract skill-related terms, then add those skills to the skills array
+
+THIS IS NOT OPTIONAL: After you extract certifications into the certifications array, you MUST go through each certification, analyze its certification_name, extract any skill-related terms (technologies, platforms, tools, methodologies, standards, compliance requirements, regulatory terms, quality standards, domain knowledge, etc.), and add those extracted skills to the skills array. The final skills array must include skills from BOTH sources.
+
+CRITICAL: Extract ONLY information explicitly stated in the resume. DO NOT infer, guess, or make up information. Use null or empty string for missing fields.
+
+CRITICAL OUTPUT FORMAT:
+- Your response MUST be a SINGLE, VALID JSON object.
+- Start with { and end with }.
+- NO markdown code blocks (no ```json or ```).
+- NO explanatory text before or after the JSON.
+
+Remember: You are a JSON API that extracts ONLY what is explicitly in the resume. Your ENTIRE response must be valid JSON that can be parsed directly with json.loads(). Nothing else.

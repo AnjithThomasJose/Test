@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+# Resume parsing eval - uses same prompt as groq_resume_parser (prompts/resume_parse_system_prompt.txt)
+# Python provider loads the shared prompt and calls Groq
+
+description: "Resume parsing eval - groq_resume_parser prompt"
+
+prompts:
+  - "{{resume_text}}"
+
+providers:
+  - file://promptfoo_resume_provider.py
+
+tests:
+  - vars:
+      resume_text: |
+        John Doe
+        Software Engineer
+        john.doe@email.com | (555) 123-4567
+
+        Experience:
+        Senior Developer at Google (2020-2023)
+        - Led team of 5 engineers
+        - Built scalable microservices
+
+        Education:
+        BS Computer Science, MIT, 2018
+
+        Skills: Python, Java, AWS, Docker
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return !!(p.name && p.skills && Array.isArray(p.skills) && (p.total_experience_years !== undefined || p.totalExperienceYears !== undefined));
+          } catch (e) {
+            return false;
+          }
+      - type: icontains
+        value: "John"
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const skills = p.skills || [];
+            const getSkillName = (s) => typeof s === 'string' ? s.toLowerCase() : (s && (s.SkillName || s.skillName || s.name || '')).toString().toLowerCase();
+            const allNames = skills.map(getSkillName).join(' ');
+            return allNames.includes('python') && allNames.includes('java');
+          } catch (e) {
+            return false;
+          }
+      - type: not-contains
+        value: "```"

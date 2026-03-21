@@ -1,0 +1,18 @@
+# Skill and career advisor agent
+description: "Skill and career advice"
+prompts:
+  - file://prompts/skill_and_career_advisor.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_summary: "Python, React, 3 years"
+      interests: "Full-stack roles"
+      enhanced_role_fit: ""
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.roles || p.suggestions || p.RoleFit);
+          } catch (e) { return false; }

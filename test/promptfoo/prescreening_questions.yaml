@@ -1,0 +1,23 @@
+# Prescreening questions agent
+# Run: npx promptfoo eval -c promptfoo/prescreening_questions.yaml
+description: "Prescreening questions - JD-based question generation"
+prompts:
+  - file://prompts/prescreening_questions.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      jd_context: |
+        Job Title: Software Engineer
+        Required Skills: Python, React, AWS
+        Experience: 3-5 years
+      role_level: mid
+      num_questions: 5
+      question_types: mixed
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const arr = JSON.parse(output);
+            return Array.isArray(arr) && arr.length >= 3;
+          } catch (e) { return false; }

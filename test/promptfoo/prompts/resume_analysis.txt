@@ -1,0 +1,14 @@
+You are an expert career analyst. Based on the provided resume data, perform a detailed analysis.
+
+**Resume Summary:**
+{{resume_summary}}
+
+**Chat History (if any):**
+{{chat_history}}
+
+**Assessment Results (if any):**
+{{assessment_context}}
+
+Suggest 5 suitable job roles. Calculate resumeScore with breakdown (experience, skills, education, presentation), total (0-100), and rationale.
+
+Return ONLY valid JSON: {"RoleFit": [...], "resumeScore": {"breakdown": {...}, "total": N, "rationale": "..."}}

@@ -1,0 +1,209 @@
+# Fallback questions organized by state and role
+
+# Topic-aware fallback questions (when interview_topic is provided)
+topic_aware:
+  opening_rapport:
+    first_question:
+      - "Hello {name}! What motivated you to apply for this {role} position focusing on {interview_topic}?"
+      - "Welcome! Can you tell me about your experience with {interview_topic}?"
+    follow_up:
+      - "What aspects of {interview_topic} excite you most?"
+      - "How do you see yourself using {interview_topic} in this role?"
+  
+  stage_setting:
+    - "Let me explain how our interview will work today. We'll focus on your experience with {interview_topic} and how it relates to the role. Does that sound good?"
+    - "I'd like to learn about your experience with {interview_topic} and how it aligns with this position. Are you ready to begin?"
+  
+  main_questions:
+    - "Can you describe a challenging project you've worked on involving {interview_topic}?"
+    - "What was your most impactful contribution using {interview_topic} in your previous role?"
+    - "How do you approach solving complex problems with {interview_topic}?"
+    - "Tell me about a time you had to learn something new about {interview_topic} quickly."
+  
+  candidate_questions:
+    - "What questions do you have about how we use {interview_topic} in this role?"
+    - "Is there anything specific you'd like to know about our use of {interview_topic}?"
+    - "What aspects of {interview_topic} would you like to learn more about in this position?"
+  
+  feedback:
+    - "Thank you for sharing your experience with {interview_topic}. What are your thoughts on the next steps?"
+    - "I appreciate the time you've taken to discuss {interview_topic} with me today. Do you have any final questions?"
+  
+  closing:
+    - "Thank you for your time today. We'll be in touch soon about next steps."
+    - "It was great speaking with you. We'll review your application and get back to you shortly."
+
+# Generic fallback questions (when no topic is specified)
+generic:
+  opening_rapport:
+    first_question:
+      - "Hello {name}! What motivated you to apply for this {role} position?"
+      - "Welcome! Can you tell me about yourself and what interests you most about this opportunity?"
+    follow_up:
+      - "What aspects of this role excite you most?"
+      - "How do you see yourself contributing to our team?"
+  
+  stage_setting:
+    - "Let me explain how our interview will work today. We'll cover your background, technical skills, and discuss the role. Does that sound good?"
+    - "I'd like to learn about your experience and how it aligns with this position. Are you ready to begin?"
+  
+  main_questions:
+    - "Can you describe a challenging project you've worked on recently?"
+    - "What was your most impactful contribution in your previous role?"
+    - "How do you approach solving complex technical problems?"
+    - "Tell me about a time you had to learn something new quickly."
+  
+  candidate_questions:
+    - "What questions do you have about the role or our team?"
+    - "Is there anything specific you'd like to know about our company culture?"
+    - "What aspects of this position would you like to learn more about?"
+  
+  feedback:
+    - "Thank you for sharing your experience with me. Based on our conversation, I can see you have strong skills in [area]. What are your thoughts on the next steps?"
+    - "I appreciate the time you've taken to speak with me today. Do you have any final questions about the role?"
+  
+  closing:
+    - "Thank you for your time today. We'll be in touch soon about next steps."
+    - "It was great speaking with you. We'll review your application and get back to you shortly."
+
+# Topic-focused default questions by state
+topic_defaults:
+  topic_introduction: "Tell me about your experience with {interview_topic}."
+  topic_fundamentals: "What are the core concepts of {interview_topic} that you find most important?"
+  topic_problem_solving: "Can you walk me through how you would approach a problem using {interview_topic}?"
+  topic_deep_dive: "What are some advanced features or concepts in {interview_topic} that you've worked with?"
+  topic_feedback: "Based on our discussion about {interview_topic}, what would you like to explore further?"
+  candidate_questions: "Do you have any questions about {interview_topic} or how it's used in this role?"
+  closing: "Thank you for your time. We'll be in touch with next steps."
+  completed: "Thank you for your time. We'll be in touch with next steps."
+
+# Role-specific fallback questions
+role_specific:
+  TECHNICAL_DESIGN:
+    opening:
+      - "Hi {name}! What draws you to user experience design?"
+      - "Welcome! I'd love to hear about your design background and what excites you about this UX role."
+      - "Hello! Can you tell me about your experience with design tools and what interests you about this position?"
+      - "Great to meet you! What aspects of user-centered design are you most passionate about?"
+      - "Welcome! I'm excited to learn about your design journey. What should I know about your background?"
+    exploration:
+      - "That's interesting! Can you walk me through your design process for a recent project?"
+      - "I'd love to hear more about how you approach user research and validation."
+      - "What design tools do you find most effective for your workflow?"
+      - "How do you typically collaborate with developers and stakeholders?"
+      - "Can you tell me about a design challenge you recently solved?"
+      - "What's your approach to creating user personas and journey maps?"
+      - "How do you handle feedback and iteration in your design process?"
+      - "What's the most innovative design solution you've implemented?"
+    deep_dive:
+      - "That's a great example. How did you validate that design decision with users?"
+      - "What usability testing methods do you prefer and why?"
+      - "Can you elaborate on the accessibility considerations in that project?"
+      - "How did you measure the success of that design solution?"
+      - "What design systems or component libraries have you worked with?"
+      - "How do you approach responsive design and cross-platform consistency?"
+      - "What's your experience with prototyping and user testing tools?"
+      - "How do you balance user needs with business requirements?"
+  
+  TECHNICAL_CODING:
+    opening:
+      - "Hi {name}! What programming languages are you most comfortable with?"
+      - "Welcome! I'd love to hear about your development background and what excites you about this role."
+      - "Hello! Can you tell me about your coding experience and what interests you about this position?"
+      - "Great to meet you! What aspects of software development are you most passionate about?"
+      - "Welcome! I'm excited to learn about your technical journey. What should I know about your background?"
+    exploration:
+      - "That's interesting! Can you walk me through a recent coding project you worked on?"
+      - "I'd love to hear more about your experience with different programming languages."
+      - "What development frameworks and tools do you find most effective?"
+      - "How do you typically approach debugging and problem-solving?"
+      - "Can you tell me about a technical challenge you recently solved?"
+      - "What's your experience with version control and collaboration tools?"
+      - "How do you handle code reviews and maintain code quality?"
+      - "What's the most complex algorithm or system you've implemented?"
+    deep_dive:
+      - "That's a great example. How did you optimize that solution for performance?"
+      - "What testing strategies do you use to ensure code reliability?"
+      - "Can you elaborate on the architecture decisions you made in that project?"
+      - "How did you handle scalability and deployment challenges?"
+      - "What design patterns do you find most useful in your work?"
+      - "How do you approach database design and optimization?"
+      - "What's your experience with cloud platforms and DevOps practices?"
+      - "How do you balance code maintainability with development speed?"
+  
+  BUSINESS_STRATEGIC:
+    opening:
+      - "Hi {name}! What draws you to strategic business roles?"
+      - "Welcome! I'd love to hear about your business background and what excites you about this position."
+      - "Hello! Can you tell me about your experience with strategy and what interests you about this role?"
+      - "Great to meet you! What aspects of business development are you most passionate about?"
+      - "Welcome! I'm excited to learn about your strategic journey. What should I know about your background?"
+    exploration:
+      - "That's interesting! Can you walk me through a strategic initiative you led?"
+      - "I'd love to hear more about your experience with market analysis and planning."
+      - "What business tools and methodologies do you find most effective?"
+      - "How do you typically approach stakeholder management and communication?"
+      - "Can you tell me about a business challenge you recently solved?"
+      - "What's your experience with data-driven decision making?"
+      - "How do you handle cross-functional collaboration and alignment?"
+      - "What's the most impactful business strategy you've implemented?"
+    deep_dive:
+      - "That's a great example. How did you measure the success of that strategic initiative?"
+      - "What frameworks do you use for competitive analysis and positioning?"
+      - "Can you elaborate on the risk assessment and mitigation strategies you employed?"
+      - "How did you handle change management and organizational alignment?"
+      - "What's your approach to financial modeling and ROI analysis?"
+      - "How do you balance short-term results with long-term strategic goals?"
+      - "What's your experience with partnership development and negotiations?"
+      - "How do you approach innovation and market opportunity identification?"
+  
+  OPERATIONS_MANAGEMENT:
+    opening:
+      - "Hi {name}! What draws you to operations and leadership roles?"
+      - "Welcome! I'd love to hear about your leadership background and what excites you about this position."
+      - "Hello! Can you tell me about your experience with operations management and what interests you about this role?"
+      - "Great to meet you! What aspects of team leadership and operational excellence are you most passionate about?"
+      - "Welcome! I'm excited to learn about your leadership journey. What should I know about your background?"
+    exploration:
+      - "That's interesting! Can you walk me through a major operational challenge you've led?"
+      - "I'd love to hear more about your approach to team management and development."
+      - "What strategies do you use to drive operational efficiency and process improvement?"
+      - "How do you typically handle stakeholder management and cross-functional collaboration?"
+      - "Can you tell me about a time when you had to transform or scale operations?"
+      - "What's your experience with change management and organizational development?"
+      - "How do you balance strategic vision with day-to-day operational execution?"
+      - "What's the most significant operational improvement you've implemented?"
+    deep_dive:
+      - "That's a great example. How did you measure the success of that operational initiative?"
+      - "What challenges did you face in implementing that change and how did you overcome them?"
+      - "Can you elaborate on your approach to building and developing high-performing teams?"
+      - "How do you handle conflict resolution and difficult conversations with team members?"
+      - "What's your experience with budget management and resource allocation?"
+      - "How do you ensure operational excellence while maintaining team morale and engagement?"
+      - "What metrics do you use to track operational performance and team productivity?"
+      - "How do you approach strategic planning and long-term operational roadmapping?"
+
+# Engagement-based questions
+engagement_based:
+  low_engagement:
+    - "I'd love to hear about a project you're particularly proud of. What made it special?"
+    - "Can you share an example of when you had to learn something new quickly?"
+    - "What's the most exciting challenge you've tackled recently?"
+    - "Tell me about a time when you had to think outside the box to solve a problem."
+    - "What aspect of your work gets you most excited and motivated?"
+  
+  high_engagement:
+    - "That's fascinating! Can you dive deeper into the technical details?"
+    - "I'm really interested in this. How did you approach the implementation?"
+    - "That sounds complex. What were the key challenges you overcame?"
+    - "Excellent! What would you do differently if you tackled this again?"
+    - "That's impressive! What did you learn from this experience?"
+
+# Progression questions (for deeper interviews)
+progression:
+  - "Based on our conversation so far, what would you say are your key strengths?"
+  - "What areas are you looking to develop further in your career?"
+  - "How do you see yourself contributing to our team and projects?"
+  - "What kind of projects or challenges excite you most?"
+  - "What's your approach to continuous learning and skill development?"
+

@@ -1,0 +1,66 @@
+fastapi==0.115.12
+
+# Core LangChain stack actually used (strict versions for fast installation)
+langchain_core==1.0.4
+langchain>=0.3.0  # Required by langfuse.langchain.CallbackHandler
+langchain_google_genai==3.0.3
+langchain_groq==1.0.1
+langgraph==1.0.3
+langsmith==0.4.42
+langfuse[langchain]>=3.0.0
+
+pydantic==2.11.7
+pydantic-settings==2.5.2
+
+
+python-dotenv==1.1.0
+requests==2.32.5
+httpx>=0.28.1,<1.0.0  # google-genai 1.50.1 requires >=0.28.1, langsmith requires <1
+aiohttp==3.10.0
+uvicorn==0.23.2
+python-multipart>=0.0.9  # Form data / file uploads (required by FastAPI)
+tenacity>=8.2.0  # Retry logic for API calls
+
+# Google Cloud services (strict versions)
+google-cloud-firestore==2.21.0
+google-auth==2.43.0
+# New unified Google Genai SDK (replaces deprecated google-generativeai)
+# No dependency conflicts with langchain-google-genai==3.0.3
+google-genai==1.50.1
+
+# Vector stores and embeddings
+sentence-transformers==5.1.0
+chromadb>=1.2.0,<1.5.0
+attrs>=23.0.0  # jsonschema (chromadb) expects this; explicit pin avoids ModuleNotFoundError
+openai>=1.0.0  # OpenAI embeddings for skill matching
+sendgrid==6.11.0
+novu-py>=1.0.0
+
+# Note: numpy==1.26.4 has pre-built wheels for Python 3.12 (faster installation)
+numpy==1.26.4
+
+# Document processing libraries for PDF/DOCX/DOC extraction
+# DOCX extraction (fallbacks for Gemini)
+mammoth>=1.6.0  # DOCX to HTML/text conversion
+python-docx>=1.1.0  # DOCX parsing fallback
+
+# PDF extraction (fallbacks)
+PyPDF2>=3.0.0  # PDF fallback extraction
+pdfminer.six>=20221105  # Column-aware PDF extraction
+
+# PyMuPDF removed - using PyPDF2 and pdfminer instead
+
+# DOC file support (legacy)
+docx2txt>=0.8  # RTF to text conversion (used in app.py)
+
+# Testing (Issue 7.1 & 7.4)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-timeout>=2.0.0
+pytest-cov>=4.0.0
+
+# Code quality (Issue 7.4 CI)
+ruff>=0.4.0
+
+opentelemetry-sdk==1.39.1
+opentelemetry-exporter-otlp-proto-grpc==1.39.1

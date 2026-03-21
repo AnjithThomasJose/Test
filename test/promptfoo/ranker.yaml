@@ -1,0 +1,17 @@
+# Ranker agent
+description: "Job-candidate ranking"
+prompts:
+  - file://prompts/ranker.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      candidate_summary: "Python developer, 3 years, AWS"
+      job_description: "Software Engineer - Python, AWS required. 2-5 years."
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.score !== undefined || p.rationale);
+          } catch (e) { return false; }

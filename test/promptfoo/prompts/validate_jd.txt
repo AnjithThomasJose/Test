@@ -1,0 +1,8 @@
+Validate the following job description text. Check if it is a valid, parseable job description.
+
+**Job Description Text:**
+{{jd_text}}
+
+A valid JD should contain: job title or role, company (or "Confidential"), required skills or responsibilities, and some description of the role.
+
+Return valid JSON: {"is_valid": true/false, "confidence": 0.0-1.0, "reasons": []}

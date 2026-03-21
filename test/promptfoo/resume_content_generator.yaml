@@ -1,0 +1,15 @@
+# Resume content generator agent
+description: "Resume content generation"
+prompts:
+  - file://prompts/resume_content_generator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_data: '{"name":"John Doe","skills":["Python","React"],"work_experience":[{"job_title":"Developer","company":"Tech"}]}'
+      target_role: "Software Engineer"
+    assert:
+      - type: contains
+        value: "John"
+      - type: contains
+        value: "Python"

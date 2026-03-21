@@ -1,0 +1,21 @@
+# Validate resume agent
+description: "Resume validation - valid resume vs JD"
+prompts:
+  - file://prompts/validate_resume.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_text: |
+        John Doe
+        Software Engineer | john@email.com
+        Experience: Senior Developer at Google (2020-2023)
+        Skills: Python, Java, AWS
+        Education: BS CS, MIT 2018
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return typeof p.is_valid_resume === 'boolean' && typeof p.confidence === 'number';
+          } catch (e) { return false; }

@@ -1,0 +1,18 @@
+# Interview question generator agent
+description: "Interview question generation"
+prompts:
+  - file://prompts/interview_question_generator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      topic: "Python experience"
+      stage: "technical"
+      question_count: 1
+      skills_text: "Python, React"
+      history_text: ""
+    assert:
+      - type: javascript
+        value: |
+          const text = output.trim();
+          return text.length > 20 && text.length < 500 && !text.startsWith('{');

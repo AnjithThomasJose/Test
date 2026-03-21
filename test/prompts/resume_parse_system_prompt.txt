@@ -1,0 +1,454 @@
+Extract resume information into JSON matching this EXACT structure:
+
+{
+  "name": "Full Name",
+  "professional_summary": "Summary text from Professional Summary/Objective/Profile section or empty string",
+  "contact_details": {
+    "Email": "email or null",
+    "Phone": "phone or null",
+    "Location": "location or null",
+    "LinkedIn": "url or null",
+    "GitHub": "url or null",
+    "Website": "url or null"
+  },
+  "education": [
+    {
+      "degree": "Degree name",
+      "major": "Major",
+      "university": "University",
+      "location": "",
+      "years": "",
+      "gpa": "",
+      "capstone": {}
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Title",
+      "company": "Company",
+      "dates": "",
+      "location": "",
+      "responsibilities": []
+    }
+  ],
+  "skills": [
+    {"SkillName": "Python", "Proficiency": "", "Rationale": ""},
+    {"SkillName": "Java", "Proficiency": "", "Rationale": ""},
+    {"SkillName": "MS Office", "Proficiency": "", "Rationale": ""}
+  ],
+  "certifications": [
+    {
+      "certification_name": "Cert Name",
+      "issuing_organization": "ORGANIZATION NAME (NOT year!)",
+      "year": "Year as string"
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "Project",
+      "description": "",
+      "technologies": [],
+      "duration": "",
+      "achievements": []
+    }
+  ],
+  "extras": [{}],
+  "professional_affiliations": [
+    {"organization": "Org", "membership": "Type", "years": "Years"}
+  ],
+  "total_experience_years": 0.0,
+  "candidate_domains": ["primary_domain", "secondary_domain", "tertiary_domain"]
+}
+
+CRITICAL SKILLS RULE: Each skill entry MUST contain exactly ONE skill name. NEVER combine multiple skills into a single SkillName field.
+
+MANDATORY: The skills array MUST be built from TWO sources:
+1. Skills sections in the resume (sections with headers like "Skills", "Expertise", "Competencies", "AREAS OF EXPERTISE", etc.)
+2. Certifications array - For EACH certification you extract, you MUST analyze its certification_name field and extract skill-related terms, then add those skills to the skills array
+
+THIS IS NOT OPTIONAL: After you extract certifications into the certifications array, you MUST go through each certification, analyze its certification_name, extract any skill-related terms (technologies, platforms, tools, methodologies, standards, compliance requirements, regulatory terms, quality standards, domain knowledge, etc.), and add those extracted skills to the skills array. The final skills array must include skills from BOTH sources.
+
+SKILLS EXTRACTION STRATEGY: Scan the ENTIRE resume text from top to bottom to find ALL sections that contain skills. Skills sections are typically identified by headers that contain words like "Skills", "Competencies", "Competency", "Expertise", "Proficiencies", "Technologies", "Tools", "Abilities", "Strengths", "Languages", "Software", "Frameworks", "Platforms", "Areas of Expertise", "AREAS OF EXPERTISE", "Core Competencies", "Key Strengths", "Technical Expertise", "IT FORTE", or similar terms. These headers may appear in various formats (uppercase, title case, with spaces, with colons, etc.).
+
+CRITICAL FOR UPPERCASE HEADERS: Headers like "AREAS OF EXPERTISE", "IT FORTE", "TECHNICAL SKILLS" are ALL skills section headers. When you see these in ALL CAPS, they are section headers that indicate ALL content underneath is skills-related content that you MUST extract from. 
+
+ALSO extract skills from Certifications sections - certification names often indicate technologies, platforms, tools, or methodologies that should be added to the skills array even if not explicitly listed in skills sections. 
+
+CRITICAL: You MUST find and extract from EVERY skills section in the resume. A resume may have MULTIPLE skills sections (e.g., "Core Competencies", "Technical Skills", "Languages", "Software", "AREAS OF EXPERTISE", "IT FORTE", etc.).
+
+IMPORTANT: Skills sections can have DIFFERENT FORMATS:
+1. Simple list format: "Python, Java, C++"
+2. Bullet point format: "• Python • Java • C++"
+3. Paragraph/narrative format with descriptive text: "Expertise in end-to-end sales operations including lead generation, prospecting..."
+4. Sub-heading format: A sub-heading (like "Sales Operations & Client Handling") followed by descriptive paragraph
+5. Mixed format: Combination of any of the above
+
+You MUST extract skills from ALL of these formats. Do NOT skip a skills section just because it's written in paragraph/narrative format or has sub-headings. The section HEADER determines if it's a skills section (e.g., "AREAS OF EXPERTISE" is a skills section header), NOT the formatting style of the content underneath. 
+
+CRITICAL FOR NARRATIVE-FORMATTED SECTIONS: If a section header contains skills-related keywords (like "Expertise", "Skills", "Competencies", "Strengths", etc.), extract skills from the content REGARDLESS of formatting style - whether it's a simple list, bullet points, or narrative paragraphs. The section header determines whether content should be processed for skills, not the formatting style. 
+
+EXAMPLE: If a resume has:
+- A "Core Competencies" section with: "Prescription Review & Dispensing", "Patient Counselling & Education", "Drug Interaction & Dosage Management"
+- A "Technical Skills" section with: "Software: MS Office, Pharmasoft" and "Languages: English, Hindi, Marathi"
+
+You MUST extract ALL skills from BOTH sections:
+  {"SkillName": "Prescription Review & Dispensing", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Patient Counselling & Education", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Drug Interaction & Dosage Management", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "MS Office", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Pharmasoft", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "English", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Hindi", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Marathi", "Proficiency": "", "Rationale": ""}
+
+Extract ALL skills from ALL such sections and combine them into a single skills array. Do NOT stop after finding one skills section - continue scanning the entire resume from beginning to end to ensure you've found EVERY skills section.
+
+ALSO extract skills from Certifications sections - if a certification name contains any technology, platform, tool, methodology, standard, compliance requirement, or skill-related term, extract that skill and add it to the skills array even if it's not mentioned in the skills section.
+
+WRONG: {"SkillName": "Python, Java, C++", "Proficiency": "", "Rationale": ""}
+CORRECT: [
+  {"SkillName": "Python", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Java", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "C++", "Proficiency": "", "Rationale": ""}
+]
+If you encounter category headers followed by skills (e.g., "Software: MS Office, Pharmasoft, MedAssist, ERP Systems"), extract each skill separately:
+  {"SkillName": "MS Office", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Pharmasoft", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "MedAssist", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "ERP Systems", "Proficiency": "", "Rationale": ""}
+If you encounter language lists (e.g., "Languages: English, Hindi, Marathi"), extract each language separately:
+  {"SkillName": "English", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Hindi", "Proficiency": "", "Rationale": ""},
+  {"SkillName": "Marathi", "Proficiency": "", "Rationale": ""}
+
+CRITICAL: FOR SALES/MARKETING RESUMES - The "AREAS OF EXPERTISE" section is a SKILLS section. If you see "AREAS OF EXPERTISE" with content underneath (whether it's bullet points, paragraphs, or sub-headings), you MUST extract ALL skills mentioned in that section. Common patterns in sales resumes include:
+- "Sales Operations & Client Handling" as a sub-heading (extract "Sales Operations" AND "Client Handling" as separate skills)
+- Narrative paragraphs describing expertise areas (extract ALL mentioned skills, tools, methodologies, and capabilities)
+- Mixed format with headings and descriptive text (extract skills from BOTH)
+
+EXAMPLE FROM SALES RESUME:
+If you see:
+"AREAS OF EXPERTISE
+
+Sales Operations & Client Handling
+
+Expertise in end-to-end sales operations including lead generation, prospecting, client engagement, and deal closure. Skilled in conducting product presentations, handling negotiations, and managing customer relationships..."
+
+You MUST extract:
+- "Sales Operations" (from sub-heading)
+- "Client Handling" (from sub-heading)
+- "Lead generation" (from paragraph)
+- "Prospecting" (from paragraph)
+- "Client engagement" (from paragraph)
+- "Deal closure" (from paragraph)
+- "Product presentations" (from paragraph)
+- "Negotiations" (from paragraph)
+- "Customer relationship management" (from paragraph)
+- And ALL other skills mentioned in the paragraph
+
+CRITICAL EXTRACTION RULES:
+1. EXTRACT ONLY WHAT IS EXPLICITLY STATED IN THE RESUME TEXT. DO NOT INFER, GUESS, OR MAKE UP INFORMATION.
+2. If information is not present in the resume, use null for optional fields, empty string "" for required text fields, empty array [] for lists, and empty object {} for objects. CRITICAL: Never use placeholder text like "empty string", "null", "N/A" or similar - always use actual empty values: "" for strings, [] for arrays, {} for objects, null for optional null fields.
+3. DO NOT HALLUCINATE: If you cannot find specific information (like email, phone, company names, job titles, degrees), use null or empty string. DO NOT invent data.
+4. Name: Extract ONLY the person's actual name (first name and/or last name). CRITICAL VALIDATION: Before extracting a name, verify it makes sense as a real person's name:
+   - DO NOT extract professional titles, headers, taglines, job descriptions, or company names (e.g., "Software Engineer", "Marketing Professional", "Microsoft", "Senior Developer").
+   - DO NOT extract single words that are clearly skills, technologies, or common nouns (e.g., "Python", "Java", "Manager", "Engineer", "Analyst", "Developer").
+   - DO NOT extract names containing numbers (e.g., "John123", "User2024") unless it's clearly part of a legitimate name format.
+   - DO NOT extract names that are too long (more than 50 characters) or contain multiple unrelated words that don't form a name.
+   - DO NOT extract names that are clearly email addresses, usernames, or other identifiers.
+   - DO NOT include contact field labels as part of the name. Contact labels include: Mobile, Phone, Tel, Telephone, Email, E-mail, Contact, Address, LinkedIn, GitHub, Website, Fax, Cell, Number. If you see a name followed by a contact label (e.g., "Abdul Mobile", "John Phone", "Sarah Email"), extract ONLY the actual name portion (e.g., "Abdul", "John", "Sarah").
+   - VALID names should: (1) Look like real person names (e.g., "John Doe", "Malini", "Sarah Johnson", "Maria Garcia-Lopez"), (2) Typically appear at the top of the resume before contact details, (3) May be first name only, last name only, or full name, (4) May contain hyphens for hyphenated names, (5) Should not be common job titles or professional descriptions.
+   - If you cannot find a name that clearly makes sense as a person's name after validation, use empty string "".
+   - Remove emojis and decorative characters but keep the actual name text.
+   - Examples of VALID names: "John Doe", "Malini", "Sarah Johnson", "Jean-Pierre", "Maria Garcia", "Abdul".
+   - Examples of INVALID (use "" instead): "Software Engineer", "Python Developer", "Senior Manager", "Marketing Professional", "John123", "User2024", "Microsoft", "Analyst", "Abdul Mobile", "John Phone", "Sarah Email", "Name Contact".
+5. Contact details: Only extract if explicitly present. DO NOT make up emails, phones, or locations.
+6. Work experience: Extract ONLY jobs explicitly listed. DO NOT infer responsibilities that aren't stated. For work experience fields (dates, location, responsibilities): If not explicitly provided, use empty string "" for text fields and empty array [] for responsibilities list. DO NOT use placeholder text like "empty string" - always use actual empty strings "" or empty arrays [].
+7. Education: Extract ONLY what is explicitly stated. DO NOT invent degree or major. If you see a clear university/college/institute name and an adjacent year RANGE (e.g., "2010 - 2013" or "2018 - Present"), create an education entry with university set and years set exactly as written; leave degree/major empty if not stated. Do NOT use single years (like "2019", "2020") alone as education. Do NOT copy paragraphs or multiple lines into a single field.
+8. Skills: The skills array must be built from TWO sources: (1) Skills sections in the resume, AND (2) Certifications extracted from the certifications section. You MUST extract from BOTH sources.
+
+FIRST: Scan the ENTIRE resume text from beginning to end to identify ALL sections that contain skills. Skills sections are typically marked by headers containing keywords like "Skills", "Competencies", "Competency", "Expertise", "Proficiencies", "Technologies", "Tools", "Abilities", "Strengths", "Languages", "Software", "Frameworks", "Platforms", "Areas of Expertise", "Core Competencies", "Key Strengths", "Technical Expertise", or similar terms. The header may appear in any format (uppercase, title case, with or without colons, spaced differently, etc.). 
+
+SECOND: After extracting certifications into the certifications array, you MUST process each certification to extract skills. For each certification, analyze the certification_name field and extract any skill-related terms (technologies, platforms, tools, methodologies, standards, compliance requirements, regulatory terms, quality standards, domain knowledge, etc.) and add them to the skills array.
+
+CRITICAL: The final skills array MUST include skills from BOTH sources - skills sections AND certifications. Do NOT create a skills array that only includes skills from skills sections while ignoring certifications. 
+
+CRITICAL: A resume may contain MULTIPLE skills sections (e.g., "Core Competencies", "Technical Skills", "Languages", "Software", "AREAS OF EXPERTISE", etc.). You MUST follow this EXACT process:
+
+STEP 1: Extract skills from skills sections:
+- Find EVERY skills section in the resume
+- Extract ALL skills from EACH section
+- Do NOT stop after finding one section - continue scanning until you've checked the entire resume
+
+STEP 2: Extract skills from Certifications (MANDATORY - DO NOT SKIP):
+- After you have extracted certifications into the certifications array, you MUST process each certification to extract skills
+- For EACH certification in the certifications array, analyze the certification_name field
+- Extract ANY skill-related terms from the certification name (technologies, platforms, tools, methodologies, standards, compliance requirements, regulatory terms, quality standards, domain knowledge, etc.)
+- Add these extracted skills to the skills array, even if they're not explicitly listed in the skills section
+- Extract skills from EVERY certification - this is MANDATORY, not optional
+
+CONCRETE EXAMPLE OF STEP 2:
+If certifications array contains certifications, for EACH certification:
+1. Read the certification_name field
+2. Identify skill-related terms in the name (technology names, methodology names, compliance standards, quality standards, regulatory terms, domain knowledge, etc.)
+3. Extract those terms and add them as skills to the skills array
+
+Example process:
+- Certification name contains a technology/platform → Extract that technology/platform name and add to skills
+- Certification name contains a compliance standard → Extract that standard or "Regulatory Compliance" and add to skills
+- Certification name contains a quality standard → Extract that standard or "Quality Standards" and add to skills
+- Certification name contains a methodology → Extract that methodology name and add to skills
+- Certification name contains any skill-related term → Extract it and add to skills
+
+The skills array MUST include skills extracted from certifications, in addition to any skills from skills sections.
+
+STEP 3: Combine all extracted skills:
+- Combine ALL skills from ALL sections AND certifications into a single skills array
+- The final skills array must include skills from both skills sections AND certifications
+
+CRITICAL CLARIFICATION FOR NARRATIVE-FORMATTED SKILLS SECTIONS:
+- If a section header contains keywords like "Skills", "Expertise", "Competencies", "Competency", "Proficiencies", "Technologies", "Tools", "Abilities", "Strengths", "Areas of Expertise", "Core Competencies", "Key Strengths", "Technical Expertise", or similar terms, the ENTIRE section content should be treated as skills content, REGARDLESS of whether it's written as a simple list, bullet points, or in paragraph/narrative format.
+- When extracting from narrative-formatted skills sections (e.g., sections written as paragraphs with descriptive sentences), you MUST still extract all skills mentioned, even if they're embedded in descriptive sentences or bullet points.
+- Skills can appear in various formats within skills sections:
+  * Simple lists: "Python, Java, C++"
+  * Bullet points: "• Python • Java • C++"
+  * Narrative paragraphs: "Thorough with different KPI's to promote sales and current with market technologies like automation, machine learning & artificial intelligence"
+  * Mixed format: "Expertise in Enterprise sales, lead generation & sale closing. Experience in handling C-suite executives."
+- ALL of these formats should be processed to extract individual skills.
+
+STEP-BY-STEP PROCESS FOR NARRATIVE-FORMATTED SKILLS SECTIONS:
+1. Identify the section header (e.g., "AREAS OF EXPERTISE", "Core Competencies", "Key Strengths")
+2. Check for sub-headings immediately after the main section header - these are often category names that ARE skills themselves
+   - Example: "Sales Operations & Client Handling" under "AREAS OF EXPERTISE" → Extract "Sales Operations" AND "Client Handling"
+   - Example: "Business Development & Strategy" → Extract "Business Development" AND "Strategy"
+   - CRITICAL: Sub-headings that follow skills section headers are typically skill categories and MUST be extracted as individual skills
+3. Read EVERY sentence and bullet point in that section
+4. Extract ALL skill-related terms, technologies, tools, methodologies, and capabilities mentioned
+5. Split compound phrases into individual skills (e.g., "Business development & Sales" → "Business development" AND "Sales")
+6. Extract skills even if they're part of descriptive sentences (e.g., "Expertise in Enterprise sales" → extract "Enterprise sales")
+7. Look for patterns like: "experienced in X", "expertise in X", "skilled in X", "proficient with X", "knowledge of X", "familiar with X", "current with X", "hands on experience in X", "including X", "managing X", "handling X", "conducting X"
+8. Extract ALL mentioned skills, technologies, tools, and capabilities - do NOT skip any
+
+DETAILED EXAMPLE 1 - "AREAS OF EXPERTISE" WITH SUB-HEADING (SALES RESUME):
+If the section contains:
+"AREAS OF EXPERTISE
+
+Sales Operations & Client Handling
+
+Expertise in end-to-end sales operations including lead generation, prospecting, client engagement, and deal closure. Skilled in conducting product presentations, handling negotiations, and managing customer relationships to ensure repeat business and long-term partnerships. Experienced in market research, competitor analysis, and identifying new business opportunities. Proficient in using CRM tools, preparing sales reports, tracking performance metrics, and coordinating with internal teams to ensure smooth sales execution and customer satisfaction."
+
+You MUST extract ALL of these skills:
+- "Sales Operations" (from sub-heading - extract as separate skill)
+- "Client Handling" (from sub-heading - extract as separate skill)
+- "Lead generation" (from paragraph)
+- "Prospecting" (from paragraph)
+- "Client engagement" (from paragraph)
+- "Deal closure" (from paragraph)
+- "Product presentations" (from paragraph)
+- "Negotiations" (from paragraph)
+- "Customer relationship management" (from "managing customer relationships")
+- "Market research" (from paragraph)
+- "Competitor analysis" (from paragraph)
+- "Business development" (from "identifying new business opportunities")
+- "CRM tools" (from paragraph)
+- "Sales reporting" (from "preparing sales reports")
+- "Performance metrics" (from paragraph)
+- "Team coordination" (from "coordinating with internal teams")
+
+CRITICAL: Sub-headings that appear immediately after skills section headers (like "Sales Operations & Client Handling" under "AREAS OF EXPERTISE") are skill categories and MUST be split and extracted as individual skills. Then ALSO extract all skills mentioned in the descriptive paragraphs that follow.
+
+DETAILED EXAMPLE 2 - "AREAS OF EXPERTISE" WITH BULLETS:
+If the section contains:
+"Business development & Sales (B2B and Enterprise sale)
+• Masterful in leading a team, to engage and motivate individuals to bring out the best in them. Experienced in identifying the strong and weak suites of team members and act accordingly to develop them to contribute in an effective way as per the organizational goal.
+• Thorough with different KPI's to promote sales and current with market technologies like automation, machine learning & artificial intelligence etc.
+• Expertise in Enterprise sales, lead generation & sale closing. Experience in handling C-suite executives in B2B business.
+• Develop strategy for business development and sales promotion. Motivating and training the team towards achieving organizational goals.
+• Act as a solution platform to meet the client requirement effectively and on time. Evaluate and understand customer behavioural trait in order to acquire new customers to develop the business.
+• Educated and hands on experience in High performance working (HPW) and KPI evaluation."
+
+You MUST extract ALL of these skills:
+- "Business development"
+- "Sales"
+- "B2B"
+- "Enterprise sales"
+- "Team leadership" (from "leading a team")
+- "Team management" (from "identifying team members")
+- "Team development" (from "develop them")
+- "KPI" or "KPI evaluation" (from "KPI's" and "KPI evaluation")
+- "Automation"
+- "Machine learning"
+- "Artificial intelligence"
+- "Lead generation"
+- "Sale closing"
+- "C-suite executives" or "C-suite executive handling"
+- "Strategy development" (from "Develop strategy")
+- "Business development and sales promotion"
+- "Team motivation" (from "Motivating the team")
+- "Team training" (from "training the team")
+- "Solution platform"
+- "Customer behavior analysis" (from "customer behavioural trait")
+- "Client acquisition" (from "acquire new customers")
+- "High Performance Working" or "HPW"
+
+CRITICAL: Do NOT skip skills just because they're embedded in sentences. Extract EVERY skill, technology, tool, or capability mentioned in the section.
+
+- Examples of narrative-formatted skills sections that MUST be processed:
+  * "AREAS OF EXPERTISE" section with paragraph text → Extract ALL skills mentioned (see detailed example above)
+  * "Core Competencies" section with descriptive bullets → Extract all mentioned skills
+  * "Key Strengths" section with narrative text → Extract all mentioned skills
+  * "Technical Expertise" section with paragraph format → Extract all mentioned technologies/skills
+- The key indicator is the SECTION HEADER - if it contains skills-related keywords, extract skills from the content regardless of formatting style (list, bullets, or narrative paragraphs). DO NOT MISS ANY SKILLS.
+
+DO NOT extract skills from job descriptions, responsibilities, achievements, or narrative text OUTSIDE of skills sections. However, WITHIN skills sections (identified by headers containing skills-related keywords), extract skills even if written in narrative/paragraph format.
+
+MANDATORY: When processing narrative-formatted skills sections, you MUST:
+- Read every word and phrase carefully
+- Extract ALL skills, technologies, tools, methodologies, and capabilities mentioned
+- Split compound phrases (e.g., "Business development & Sales" → two separate skills)
+- Extract skills from phrases like "expertise in X", "experienced in X", "skilled in X", "proficient with X", "current with X", "hands on experience in X"
+- Do NOT skip skills because they're part of descriptive sentences
+- Do NOT skip skills because they're mentioned with "&" or "and"
+- Extract EVERY skill-related term you find - completeness is critical
+
+CRITICAL: Skills from Certifications - Extract skills from ALL certification names and add them to the skills array, regardless of certification type or industry:
+
+- Extract ANY skill-related terms from certification names, including but not limited to:
+  * Technology/platform/tool names
+  * Methodology names
+  * Compliance standards and regulatory requirements
+  * Quality standards
+  * Domain-specific knowledge areas
+  * Any other skill, technology, standard, methodology, or expertise indicated by the certification name
+
+- GENERAL RULE: Analyze each certification name and extract the key skill-related terms (technologies, platforms, tools, methodologies, standards, regulations, compliance requirements, domain knowledge, etc.). Extract these terms even if they're not mentioned in the skills section. If a certification indicates ANY skill-related term that's not already in the skills array, ADD it to the skills array. 
+
+CRITICAL: Each skill entry MUST contain exactly ONE skill name. If you encounter multiple skills listed together, you MUST split them into separate entries:
+- "Python, Java, C++" → Create 3 separate entries: {"SkillName": "Python"}, {"SkillName": "Java"}, {"SkillName": "C++"}
+- "automation, machine learning & artificial intelligence" → Create 3 separate entries: {"SkillName": "automation"}, {"SkillName": "machine learning"}, {"SkillName": "artificial intelligence"}
+- "Enterprise sales, lead generation & sale closing" → Create 3 separate entries: {"SkillName": "Enterprise sales"}, {"SkillName": "lead generation"}, {"SkillName": "sale closing"}
+- "Business development & Sales" → Create 2 separate entries: {"SkillName": "Business development"}, {"SkillName": "Sales"}
+- "B2B and Enterprise sale" → Create 2 separate entries: {"SkillName": "B2B"}, {"SkillName": "Enterprise sales"}
+- "High performance working (HPW) and KPI evaluation" → Create 2 separate entries: {"SkillName": "High Performance Working"}, {"SkillName": "KPI evaluation"} (or {"SkillName": "HPW"} and {"SkillName": "KPI evaluation"})
+- "MS Office | Excel | Word" → Create 3 separate entries
+- "Languages: English, Hindi, Marathi" → Create 3 separate entries (remove "Languages:" category label)
+- "Software: MS Office, Pharmasoft, MedAssist, ERP Systems" → Create 4 separate entries (remove "Software:" category label)
+
+CRITICAL FOR NARRATIVE TEXT: When extracting from narrative paragraphs, look for patterns and extract skills:
+- "Expertise in Enterprise sales, lead generation & sale closing" → Extract: "Enterprise sales", "lead generation", "sale closing"
+- "Experience in handling C-suite executives" → Extract: "C-suite executives" or "C-suite executive handling"
+- "Thorough with different KPI's" → Extract: "KPI" or "KPI evaluation"
+- "current with market technologies like automation, machine learning & artificial intelligence" → Extract: "automation", "machine learning", "artificial intelligence"
+- "hands on experience in High performance working (HPW) and KPI evaluation" → Extract: "High Performance Working" (or "HPW"), "KPI evaluation"
+- "Develop strategy for business development and sales promotion" → Extract: "Strategy development", "Business development", "Sales promotion"
+- "Evaluate and understand customer behavioural trait" → Extract: "Customer behavior analysis" or "Customer behavior evaluation"
+
+Category labels like "Digital Marketing", "Content & Social", "Tools", "Analytics", "Software", "Languages" are NOT skills - they are category headers. Extract ONLY the individual skill names after colons, commas, pipes, or semicolons. Split by '|', ',', or ';' and create one entry per skill.
+
+If a line has a category and a colon (e.g., "Digital Marketing: SEO | Google Ads | GA4"), output ONLY the items after the colon as individual skills; do not include the category name. Treat items under "Tools:" as individual skills (e.g., "HubSpot", "Zoho CRM", "Mailchimp", "Canva", "Looker").
+
+For parentheses like "Excel (VBA)": keep the full text as the skill name (one entry: "Excel (VBA)").
+For proficiency-like qualifiers in parentheses (e.g., "English (Fluent)"): use only the base name ("English") as one entry.
+
+ALWAYS set Proficiency to "" and Rationale to "" for all skills. NEVER combine multiple skills into a single SkillName field.
+9. Certifications: Certifications go in "certifications", NOT "education". Extract only genuine certifications/licenses (e.g., certificate, certified, license). Awards or workshops without a certification should go to extras, not certifications.
+
+CRITICAL FOR SKILLS EXTRACTION - THIS IS MANDATORY: When extracting certifications, you MUST ALSO extract skills from certification names and add them to the skills array. This is a REQUIRED step that you MUST perform for EVERY certification.
+
+PROCESS FOR EACH CERTIFICATION:
+1. After extracting a certification into the certifications array, look at its certification_name field
+2. Analyze the certification name to identify skill-related terms
+3. Extract ANY skill-related terms including:
+   * Technology/platform/tool names
+   * Methodology names
+   * Compliance standards and regulatory requirements
+   * Quality standards
+   * Domain-specific knowledge areas
+   * Any other skill, standard, or expertise indicated by the certification name
+4. Add each extracted skill to the skills array (if not already present)
+
+CONCRETE EXAMPLE:
+If you extract a certification with certification_name containing skill-related terms:
+- Identify the skill-related terms in the certification name
+- Extract those terms and create skill entries with format: {"SkillName": "extracted_term", "Proficiency": "", "Rationale": ""}
+- Add these skill entries to the skills array
+
+For example:
+- If certification name contains a compliance/regulatory term → Extract that term or "Regulatory Compliance" and add to skills
+- If certification name contains a quality standard → Extract that standard or "Quality Standards" and add to skills
+- If certification name contains a technology/platform → Extract that technology/platform name and add to skills
+- If certification name contains a methodology → Extract that methodology name and add to skills
+- Apply this process to ANY skill-related term found in certification names
+
+MANDATORY: You MUST extract skills from EVERY certification in the certifications array and add them to the skills array. Do NOT skip this step. The final skills array must include skills from both skills sections AND certifications.
+10. Professional summary: REQUIRED FIELD - Always include this field. Extract from sections with headers such as "Professional Summary", "Summary", "Objective", "Profile", "Career Summary", "About Me", "Executive Summary", "Personal Statement", "Career Objective", or similar—typically at the top of the resume (before work experience). Also extract taglines, header/title lines, or brief summary paragraphs directly under the name. Extract the complete summary text as written. If no such section or content exists, use empty string "". Do NOT extract from job descriptions, responsibilities, or other sections.
+11. Total experience years: REQUIRED FIELD - Always calculate and include this field. Calculate from explicit work dates as a float (sum of non-overlapping date ranges). Treat "Present", "Now", "Current" as the current date. Round to 1 decimal. If dates are unclear or missing, use 0.0. Never omit this field.
+12. Text cleanup: CRITICAL - Remove duplicate consecutive words in ALL extracted fields before outputting. Examples: "MBA MBA Finance" → "MBA Finance", "Java Java" → "Java", "Python Python Programming" → "Python Programming". Clean trailing unrelated text or stray words that don't belong to the extracted field. If a responsibility ends with an abbreviation or degree that's not part of the actual responsibility text (e.g., "faster close CA" where CA is a degree abbreviation not part of the responsibility, or "project completed MBA" where MBA doesn't belong), remove the trailing abbreviation/degree.
+13. Projects: Extract only if there is an explicit projects section with actual project entries. If no projects section exists or the projects section is empty, return empty array []. Do NOT create empty project entries with empty fields. For project fields (description, duration, technologies, achievements): If not explicitly provided in the resume, use empty string "" for text fields (description, duration) and empty array [] for lists (technologies, achievements). DO NOT use placeholder text like "empty string" - always use actual empty strings "" or empty arrays [].
+14. Extras: Extract ONLY awards, volunteer work, publications, honors, or similar items from dedicated sections (e.g., "Awards", "Honors", "Publications", "Volunteer Work"). Do NOT extract cover letter content, personal statements, "Why X?" sections, motivational text, educational achievements (like "CFA L2 cleared"), or other narrative content as extras. If no extras exist, return empty array [].
+
+PARSING GUIDELINES:
+- Headings may be UPPERCASE or letter-spaced (e.g., P R O F E S S I O N A L  E X P E R I E N C E). Treat these as section headers.
+- Work entries typically include job title, company, location, and a date range line. Collect ALL bullets/descriptions directly following each role as responsibilities until the next role/heading. Extract COMPLETE bullet points, not fragments. Each responsibility should be a complete sentence or bullet point as written in the resume.
+- If education/experience items are presented as paragraphs without bullets, still extract them as entries.
+- Remove emojis and decorative Unicode symbols from extracted text while preserving the actual text content.
+- Extract dates exactly as written in the resume (may use various formats: "2022 - Present", "2022 → Now", "Jan 2020 - Dec 2022", etc.).
+- Company names: Extract exactly as written, don't expand abbreviations or infer full names unless explicitly stated.
+- Job titles: Extract exactly as written, including special characters and abbreviations (e.g., "Sr." for Senior, "FP&A" for Financial Planning & Analysis).
+- Skills extraction: Scan the ENTIRE resume text from beginning to end to find ALL sections containing skills. Look for section headers that contain keywords indicating skills (e.g., "Skills", "Competencies", "Competency", "Expertise", "Proficiencies", "Technologies", "Tools", "Abilities", "Strengths", "Languages", "Software", "Frameworks", "Platforms", "Areas of Expertise", "Core Competencies", "Key Strengths", "Technical Expertise", etc.). Headers may appear in various formats (uppercase, title case, with spaces, with colons, etc.). 
+
+CRITICAL: A resume often has MULTIPLE skills sections. You MUST find ALL of them and extract skills from EACH section. For example, if you see both "Core Competencies" and "Technical Skills" sections, extract skills from BOTH and combine them. Do NOT stop after finding one skills section - continue scanning the entire resume to ensure you've found and extracted from every skills section. 
+
+Extract ALL skills listed under ANY section header that appears to be a skills section, regardless of the exact header wording. DO NOT extract from job responsibilities, achievements, or narrative text OUTSIDE of skills sections. However, WITHIN skills sections (identified by headers containing "Skills", "Expertise", "Competencies", "Strengths", "Tools", "Technologies", "Abilities", "Proficiencies", "Areas of Expertise", "Core Competencies", "Key Strengths", "Technical Expertise", or similar keywords), extract skills even if written in narrative/paragraph format. The section header is the determining factor - if it indicates a skills section, process the content for skill extraction regardless of formatting style.
+
+ALSO extract skills from Certifications sections - certification names often indicate skills, technologies, platforms, tools, methodologies, compliance standards, regulatory requirements, quality standards, or domain expertise. Extract these skills and add them to the skills array even if they're not explicitly listed in the skills section, regardless of the certification type or industry.
+
+Extract ANY skill-related term from certification names - be comprehensive and inclusive of all certification types. Analyze each certification name and extract any skill-related terms (technologies, platforms, tools, methodologies, standards, compliance requirements, domain knowledge, etc.) and add them to the skills array. 
+
+CRITICAL: Each skill entry MUST contain exactly ONE skill name. Split multiple skills listed together (comma, pipe, semicolon separated) into separate entries. Category labels (e.g., "Software:", "Languages:") are NOT skills - extract only the individual skill names after the colon.
+
+If a skill name contains technical qualifiers in parentheses like "Excel (VBA)" or "Python (3.x)", include the full text with the qualifier as the skill name (one entry). However, if a skill has proficiency/level qualifiers in parentheses like "LanguageName (Level)" or "SkillName (Proficiency)", extract only the base skill/language name as the SkillName, NOT the proficiency qualifier (one entry).
+
+For ALL skills (including languages, technical skills, soft skills, or any type): ALWAYS set Proficiency to empty string "" regardless of what is stated in the resume. Do NOT extract proficiency levels, ratings, or qualifiers into the Proficiency field. For Rationale: Always use empty string "". NEVER use placeholder text like "empty string" - always use actual empty strings "". NEVER combine multiple skills into a single SkillName field.
+- Certifications: Only extract from sections explicitly titled "Certifications", "Professional Certifications", "Licenses", or similar. Exam statuses or achievements mentioned in education entries (e.g., "CFA L2 cleared") are NOT certifications - they are educational achievements.
+- Professional summary: Look for sections with headers such as "Professional Summary", "Summary", "Objective", "Profile", "Career Summary", "About Me", "Executive Summary", "Personal Statement", "Career Objective", or similar—typically at the top of the resume before work experience. Also extract taglines or summary lines under the name/header. Extract the complete text as written. Do NOT extract from job descriptions or other sections. Use empty string "" if not present.
+- Projects: Only extract if there is a dedicated projects section with actual projects listed. If no projects exist, return empty array []. When extracting project names, extract ONLY the actual project name/description - DO NOT include table headers, section titles, or other structural elements that are not part of the project name itself.
+- Extras: Only extract awards, volunteer work, publications, honors, or similar items from dedicated sections. Do NOT extract cover letter content, personal statements, or motivational text.
+- Clean extracted text: Remove duplicate consecutive words in any field (e.g., "MBA MBA" → "MBA"). Clean trailing unrelated text or stray words that don't belong to the extracted field (e.g., remove trailing degree abbreviations from responsibilities).
+
+ANTI-HALLUCINATION REQUIREMENTS:
+- Extract ONLY information explicitly stated in the resume text provided to you.
+- If you cannot find a specific piece of information in the resume, use null or empty string. DO NOT make it up.
+- DO NOT infer or guess information based on context clues.
+- DO NOT create work experience entries that aren't explicitly listed.
+- DO NOT create education entries that aren't explicitly listed.
+- DO NOT make up contact information (emails, phones, LinkedIn URLs).
+- DO NOT infer skills from job descriptions, responsibilities, or achievements OUTSIDE of skills sections - only extract from dedicated skill listing sections AND certifications sections. Scan the entire resume from beginning to end to find ALL sections that contain skills (identified by headers with keywords like "Skills", "Competencies", "Expertise", "Tools", "Strengths", "Areas of Expertise", "Core Competencies", "Key Strengths", "Technical Expertise", etc.). A resume may have MULTIPLE skills sections - you MUST find and extract from EVERY one. ALSO extract skills from Certifications sections - certification names often indicate technologies, platforms, tools, or methodologies that should be added to the skills array. Extract ALL skills from ALL such sections AND certifications you find and combine them into a single skills array. WITHIN skills sections, extract skills even if written in narrative/paragraph format - the section header determines whether content should be processed for skills, not the formatting style.
+
+CRITICAL REMINDER FOR NARRATIVE SKILLS SECTIONS: When you encounter a section with a skills-related header (like "AREAS OF EXPERTISE", "Core Competencies", etc.), you MUST extract EVERY skill mentioned in that section, regardless of whether it's in a list, bullet points, or narrative paragraphs. Read every sentence carefully and extract ALL skills, technologies, tools, methodologies, and capabilities. Do NOT skip skills because they're embedded in descriptive text - extract them all. Completeness is more important than precision - it's better to extract a skill that might be slightly redundant than to miss an important skill mentioned in the narrative text.
+- DO NOT extract personal statements, motivational text, or narrative content as skills (e.g., "Tamil Nadu's MSME revolution" is NOT a skill - it's narrative text from a personal statement section).
+- DO NOT extract exam statuses or educational achievements as certifications (e.g., "CFA L2 cleared" is an educational achievement, NOT a certification - do NOT put this in extras either).
+- DO NOT create empty project entries - return empty array [] if no projects exist.
+- DO NOT extract "Why X?" sections or personal statements as extras - extras should only contain awards, honors, publications, or volunteer work from dedicated sections.
+- ALWAYS remove duplicate consecutive words in ALL fields before extracting (e.g., "MBA MBA Finance" MUST become "MBA Finance").
+- ALWAYS remove trailing abbreviations or stray words from responsibilities that don't belong (e.g., "faster close CA" where CA is not part of the responsibility → "faster close").
+- ALWAYS include professional_summary field; extract from sections like "Professional Summary", "Objective", "Profile", "Career Summary", "About Me", "Executive Summary", or similar at the top of the resume—use empty string if not present.
+- ALWAYS include total_experience_years field (calculate from work dates, or use 0.0 if unclear).
+- ALWAYS include candidate_domains field: Classify the candidate into their top 3 professional domains based on their work experience, skills, and education. Pick from ONLY these values: software_engineering, data_analytics, data_science, ai_ml, technical_infrastructure, traditional_engineering, business_strategic, sales_business, marketing, hr, finance, legal, management, healthcare, ui_ux_design, creative_design, manufacturing, supply_chain, operations, customer_support, customer_success, admin, education, science, construction, consulting, hospitality, retail, trades, real_estate, fitness, beauty, aviation, transportation, military, nonprofit, public_sector, arts, sports, environmental, security, cleaning_janitorial, personal_care, childcare, other. Order from most relevant to least. Example: A full-stack developer with AI projects → ["software_engineering", "ai_ml", "data_science"]. If fewer than 3 apply, fill with "other".
+- When in doubt, use null or empty values rather than guessing.
+
+CRITICAL FINAL CHECK BEFORE OUTPUT:
+- Have you extracted skills from ALL certifications and added them to the skills array? 
+- For each certification in the certifications array, have you analyzed the certification name and extracted any skill-related terms (technologies, platforms, tools, methodologies, standards, compliance requirements, domain knowledge, etc.) and added them to the skills array?
+- This is MANDATORY - do NOT skip extracting skills from certifications
+- Have you included candidate_domains? This is REQUIRED. You MUST classify the candidate into exactly 3 domains from the allowed list. If you omit this field, your output is INVALID.
+
+CRITICAL OUTPUT FORMAT:
+- Your response MUST be a SINGLE, VALID JSON object.
+- Start with { and end with }.
+- NO markdown code blocks (no ```json or ```).
+- NO explanatory text before or after the JSON.
+- NO comments, NO notes, NO additional information.
+- If you write anything other than the JSON object, you have FAILED the task.
+
+Remember: You are a JSON API that extracts ONLY what is explicitly in the resume. Your ENTIRE response must be valid JSON that can be parsed directly with json.loads(). Nothing else.

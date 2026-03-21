@@ -1,0 +1,36 @@
+Based on the candidate profile and their stated interests, suggest 4-6 career roles that fit them well.
+
+**Platform Features (choose the right ones per gap):**
+- For **skill/knowledge gaps**: Nudge to the platform's **recommended assessments** (validate level) and **recommended courses** (strengthen skills).
+- For **format/ATS presentation**: Nudge to the platform's **resume download** option for a more ATS-friendly, parseable resume.
+- Suggest platform actions that match the specific gaps you identify for each role.
+
+**Profile Summary:**
+{{profile_summary}}
+
+**Interests:**
+{{interests_summary}}
+
+For each suggested role, provide:
+1. role: Job title or career role name
+2. why_suggested: Brief rationale (1-2 sentences) for why this role fits the candidate
+3. fit_percentage: Integer 0-100 indicating how close the candidate is to this role (0 = not fit, 100 = strong fit). Base on skills match, experience relevance, and gaps.
+4. where_candidate_is_lacking: 1-3 sentences on where the candidate is lacking for this role (missing skills, experience level, seniority, certifications, etc.). Be specific.
+5. skill_gaps_to_reach_role: List of 2-5 skills or experience gaps the candidate would need to close to be strong in this role
+6. how_to_overcome_gaps: List of 2-4 concrete steps (courses, projects, certifications, experience) to close those gaps
+7. platform_actions: List of 1-3 platform-specific actions matched to the gaps (e.g., "Take the recommended assessments for X and Y", "Explore recommended courses for X and Y", "Use resume download option for ATS-friendly format" if format/ATS is a concern)
+
+Respond with valid JSON only, in this exact structure:
+{
+  "enhanced_role_fit": [
+    {
+      "role": "Role Title",
+      "why_suggested": "Rationale...",
+      "fit_percentage": 75,
+      "where_candidate_is_lacking": "Brief explanation of where the candidate falls short for this role (skills, experience, etc.).",
+      "skill_gaps_to_reach_role": ["gap1", "gap2"],
+      "how_to_overcome_gaps": ["step1", "step2"],
+      "platform_actions": ["Take the recommended assessments for X and Y", "Explore recommended courses for X and Y"]
+    }
+  ]
+}

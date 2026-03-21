@@ -1,0 +1,18 @@
+# Market and course recommender agent
+description: "Course and market recommendations"
+prompts:
+  - file://prompts/market_and_course_recommender.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      candidate_profile: "Developer with Python"
+      skill_gaps: "AWS, System Design"
+      target_role: "Senior Software Engineer"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.queries || p.recommendations || p.courses);
+          } catch (e) { return false; }

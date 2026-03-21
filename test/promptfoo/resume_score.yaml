@@ -1,0 +1,17 @@
+# Resume score agent
+description: "Resume scoring"
+prompts:
+  - file://prompts/resume_score.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      resume_data: '{"skills":[{"SkillName":"Python"}],"work_experience":[{"job_title":"Developer","company":"Tech"}]}'
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const score = p.resumeScore || p.resume_score || p;
+            return !!(score && (score.total !== undefined || score.breakdown || score.rationale));
+          } catch (e) { return false; }

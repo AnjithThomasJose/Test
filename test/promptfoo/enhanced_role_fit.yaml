@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+# Enhanced role fit eval - enhanced_role_fit_agent
+# Run from agents/: npx promptfoo eval -c promptfoo/enhanced_role_fit.yaml
+
+description: "Enhanced role fit - career role suggestions"
+
+prompts:
+  - file://prompts/enhanced_role_fit.txt
+
+providers:
+  - file://providers/enhanced_role_fit_provider.py
+
+tests:
+  - vars:
+      profile_summary: |
+        **Candidate:** John Doe
+        **Work Experience:**
+        1. Senior Developer at Google (2020-2023)
+        2. Software Engineer at StartupCo (2018-2020)
+        **Skills:** Python, Java, AWS, Docker, React, SQL
+        **Education:**
+        - BS Computer Science from MIT
+      interests_summary: |
+        What type of roles are you looking for?: Full-stack or backend engineering roles, preferably at product companies
+        What's your target level?: Senior or Staff engineer
+        Any specific industries?: Fintech or SaaS
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const list = p.enhanced_role_fit || p;
+            return Array.isArray(list) && list.length >= 4 && list.length <= 8;
+          } catch (e) {
+            return false;
+          }
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const list = p.enhanced_role_fit || p;
+            return list.every(r => r.role && typeof r.fit_percentage === 'number' && r.fit_percentage >= 0 && r.fit_percentage <= 100);
+          } catch (e) {
+            return false;
+          }
+      - type: not-contains
+        value: "```"

@@ -1,0 +1,16 @@
+# Career chatbot agent
+description: "Career coaching chat"
+prompts:
+  - file://prompts/career_chatbot.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      user_profile: "Python developer, 3 years"
+      user_message: "What roles should I target?"
+      chat_history: ""
+    assert:
+      - type: javascript
+        value: |
+          const text = output.trim();
+          return text.length > 50;

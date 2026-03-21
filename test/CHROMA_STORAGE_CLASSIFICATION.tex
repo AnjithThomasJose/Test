@@ -1,0 +1,252 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\title{ChromaDB Storage Classification}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+This document classifies all ChromaDB collections by what is stored as \textbf{embeddings}, \textbf{documents}, and \textbf{metadata}.
+
+\section*{Important: How Embeddings Work}
+
+\textbf{Embeddings are not field-level.} Chroma stores a single vector (embedding) per record, computed from the \textbf{entire document text}. The embedding model (e.g.\ \texttt{BAAI/bge-small-en-v1.5}) converts the full input string into a dense vector. Individual fields are not stored as separate embeddings.
+
+\section{Classification Summary}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Category} & \textbf{Collections} & \textbf{Vector Search Used?} \\
+\midrule
+Semantic search & \texttt{resume}, \texttt{job\_descriptions}, \texttt{job\_closed} & Yes \\
+Document storage & \texttt{candidate\_job\_rankings}, \texttt{job\_matcher\_rankings}, \texttt{chat\_sessions}, \texttt{session\_chunks}, \texttt{session\_history}, \texttt{user\_assessments} & No (embeddings computed but not queried) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Collections Used for Semantic (Vector) Search}
+
+\subsection{\texttt{resume}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire \texttt{resume\_data} JSON serialized to string (compact JSON). Includes: \texttt{Name}, \texttt{Skills}, \texttt{Education}, \texttt{WorkExperience}, \texttt{ContactDetails}, \texttt{projects}, \texttt{certifications}, etc.\ --- all fields combined as one vector. \\
+\midrule
+Document & Placeholder only (\texttt{RESUME\_DOC\_PLACEHOLDER}) --- not the actual resume. \\
+\midrule
+Metadata & \texttt{uid}, \texttt{name}, \texttt{location}, \texttt{skills\_count}, \texttt{education\_count}, \texttt{total\_experience\_years}, \texttt{candidate\_domains}, \texttt{doc\_size}, \texttt{embedding\_model}, \texttt{content\_hash}, \texttt{structured\_resume\_json} (full resume JSON), \texttt{created\_at}, \texttt{updated\_at}, \texttt{tenant\_id} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} \texttt{json.dumps(resume\_data, separators=(",",":"), ensure\_ascii=False)} --- the complete structured resume.
+
+\subsection{\texttt{job\_descriptions}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire \texttt{jd\_data} JSON serialized to string. Chroma auto-computes embedding from the document. Includes: \texttt{jobTitle}, \texttt{location}, \texttt{experience}, \texttt{educationRequired}, \texttt{jobType}, \texttt{company}, \texttt{requiredSkills}, \texttt{jobDescription}, \texttt{jobDomains}, etc.\ --- all fields combined as one vector. \\
+\midrule
+Document & Full JD JSON text (\texttt{json.dumps(jd\_data, indent=2)}). \\
+\midrule
+Metadata & \texttt{job\_id}, \texttt{job\_title}, \texttt{location}, \texttt{experience}, \texttt{education\_required}, \texttt{job\_type}, \texttt{company}, \texttt{skills\_count}, \texttt{job\_domains}, \texttt{job\_domain\_primary}, \texttt{file\_url}, \texttt{embedding\_model}, \texttt{tenant\_id} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Same as document --- full job description JSON.
+
+\subsection{\texttt{job\_closed}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Same as \texttt{job\_descriptions} --- full JD JSON. Chroma auto-computes from document. \\
+\midrule
+Document & Same JD text as \texttt{job\_descriptions} (moved when job is closed). \\
+\midrule
+Metadata & Same as \texttt{job\_descriptions} plus: \texttt{status}, \texttt{closed\_at}, \texttt{previous\_collection}, \texttt{closed\_by}, \texttt{tenant\_id} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Same as document --- full job description JSON.
+
+\section{Collections Used for Document Storage}
+
+These collections pass \texttt{documents} only; Chroma computes embeddings internally, but the app does \textbf{not} use vector search on them. They are keyed by ID and retrieved by \texttt{get(ids=[...])}.
+
+\subsection{\texttt{candidate\_job\_rankings}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire document text (match result JSON). Chroma auto-computes. \\
+\midrule
+Document & Match result JSON: \texttt{match\_score}, \texttt{similar\_jobs}, \texttt{job\_id}, \texttt{uid}, \texttt{confidence\_score}, etc.\ Main doc + optional \texttt{similar\_jobs} chunks. \\
+\midrule
+Metadata & \texttt{uid}, \texttt{job\_id}, \texttt{stored\_at}, \texttt{resume\_hash} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} \texttt{main\_payload} (match result) + \texttt{similar\_jobs} JSON --- entire stored payload.
+
+\subsection{\texttt{job\_matcher\_rankings}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire document text (match result JSON). Chroma auto-computes. \\
+\midrule
+Document & Match result JSON: \texttt{top\_matches}, \texttt{matched\_jobs}, \texttt{total\_matches\_found}, \texttt{job\_matcher\_status}, \texttt{confidence\_score}, \texttt{processing\_time\_seconds}, \texttt{total\_jobs\_matched}, \texttt{semantic\_filter\_threshold}, \texttt{processing\_method}, \texttt{batches\_processed}, \texttt{message} \\
+\midrule
+Metadata & \texttt{uid}, \texttt{stored\_at} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Full payload from \texttt{\_JOB\_MATCHER\_CACHE\_KEYS} --- entire stored payload.
+
+\subsection{\texttt{chat\_sessions}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire session JSON. Chroma auto-computes. \\
+\midrule
+Document & Session JSON: \texttt{uid}, \texttt{timestamp}, \texttt{status}, \texttt{structured\_resume}, agent outputs (\texttt{personal\_info\_parser}, \texttt{education\_parser}, \texttt{experience\_parser}, \texttt{skills\_parser}, \texttt{resume\_assembler}, etc.), \texttt{resume\_url}, etc. \\
+\midrule
+Metadata & \texttt{session\_id}, \texttt{uid}, \texttt{timestamp}, \texttt{resume\_url}, \texttt{status}, \texttt{data\_hash}, \texttt{doc\_size}, \texttt{num\_chunks}, \texttt{tenant\_id} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Full session JSON --- entire session data.
+
+\subsection{\texttt{session\_chunks}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Chunked session text. Chroma auto-computes. \\
+\midrule
+Document & Chunked session JSON (continuation of main session when over limit). \\
+\midrule
+Metadata & \texttt{source\_id}, \texttt{chunk\_num}, \texttt{num\_chunks}, \texttt{priority}, \texttt{session\_id}, \texttt{uid}, \texttt{timestamp}, etc. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Chunk text --- same as document.
+
+\subsection{\texttt{session\_history}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Previous session document. Chroma auto-computes. \\
+\midrule
+Document & Previous session doc (compressed JSON). \\
+\midrule
+Metadata & History metadata (\texttt{session\_id}, \texttt{uid}, \texttt{timestamp}, etc.) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Same as document.
+
+\subsection{\texttt{user\_assessments}}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{2.2cm}p{11cm}@{}}
+\toprule
+\textbf{Storage Type} & \textbf{Content} \\
+\midrule
+Embedding & Entire assessment JSON. Chroma auto-computes. \\
+\midrule
+Document & Assessment JSON: plans, answers, reports, generated questions, etc.\ Chunked when over size limit. \\
+\midrule
+Metadata & \texttt{uid}, \texttt{doc\_size}, \texttt{chroma\_chunk\_index}, \texttt{chroma\_total\_chunks}, \texttt{tenant\_id} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Embedding input:} Full assessment payload --- same as document.
+
+\section{Fields Embedded (What Gets Turned Into Vectors)}
+
+Embeddings are computed from the \textbf{entire document string}, not per field. The following are the \textbf{source inputs} that get embedded:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{10cm}@{}}
+\toprule
+\textbf{Collection} & \textbf{Embedding source (full text)} \\
+\midrule
+\texttt{resume} & Entire \texttt{resume\_data} JSON: \texttt{Name}, \texttt{Skills}, \texttt{Education}, \texttt{WorkExperience}, \texttt{ContactDetails}, \texttt{projects}, \texttt{certifications}, \texttt{summary}, \texttt{location}, etc. \\
+\midrule
+\texttt{job\_descriptions} & Entire \texttt{jd\_data} JSON: \texttt{jobTitle}, \texttt{location}, \texttt{experience}, \texttt{educationRequired}, \texttt{jobType}, \texttt{company}, \texttt{requiredSkills}, \texttt{jobDescription}, \texttt{jobDomains}, etc. \\
+\midrule
+\texttt{job\_closed} & Same as \texttt{job\_descriptions} \\
+\midrule
+\texttt{candidate\_job\_rankings} & Match result JSON: \texttt{match\_score}, \texttt{similar\_jobs}, \texttt{job\_id}, \texttt{confidence\_score}, etc. \\
+\midrule
+\texttt{job\_matcher\_rankings} & Match result JSON: \texttt{top\_matches}, \texttt{matched\_jobs}, \texttt{total\_matches\_found}, \texttt{confidence\_score}, etc. \\
+\midrule
+\texttt{chat\_sessions} & Session JSON: \texttt{uid}, \texttt{timestamp}, \texttt{status}, \texttt{structured\_resume}, all agent outputs \\
+\midrule
+\texttt{session\_chunks} & Chunked session text \\
+\midrule
+\texttt{session\_history} & Previous session doc \\
+\midrule
+\texttt{user\_assessments} & Assessment JSON: plans, answers, reports, questions \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Embedding Model}
+
+\begin{itemize}
+\item \textbf{Model:} \texttt{BAAI/bge-small-en-v1.5} (configurable via \texttt{CHROMA\_EMBEDDING\_MODEL})
+\item \textbf{Type:} SentenceTransformer (dense vector)
+\item \textbf{Usage:} All collections with an embedding function use this model for the document $\rightarrow$ vector conversion.
+\end{itemize}
+
+\end{document}

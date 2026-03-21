@@ -1,0 +1,154 @@
+{
+  "info": {
+    "name": "Interview Transcript Evaluator",
+    "description": "Evaluate interview transcripts against job descriptions. Provides per-answer feedback, overall candidate summary, and interviewer feedback.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Evaluate with job_id only (fetch JD from Chroma)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"job_id\": \"your_job_id_from_chroma\",\n  \"uid\": \"candidate_uid\",\n  \"interviewer_questions\": [\n    {\n      \"question\": \"Tell me about a time you led a technical project.\",\n      \"answer\": \"At my last company I led a team of 4 engineers to migrate our monolith to microservices.\"\n    }\n  ],\n  \"include_interviewer_feedback\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/evaluate-interview-transcript",
+          "host": ["{{base_url}}"],
+          "path": ["evaluate-interview-transcript"]
+        },
+        "description": "Fetch job description from Chroma by job_id. No job_description override."
+      }
+    },
+    {
+      "name": "Evaluate with interviewer_questions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"job_id\": \"job_123\",\n  \"uid\": \"candidate_456\",\n  \"job_description\": \"Senior Software Engineer - Backend\\n\\nRequirements:\\n- 5+ years of experience with Python/Java\\n- Strong SQL and database design\\n- Experience with distributed systems and microservices\\n- Excellent problem-solving and communication skills\\n- Team leadership experience preferred\",\n  \"interviewer_questions\": [\n    {\n      \"question\": \"Tell me about a time you led a technical project.\",\n      \"answer\": \"At my last company I led a team of 4 engineers to migrate our monolith to microservices. We used Python and Django. It took about 6 months. I coordinated with product and stakeholders.\"\n    },\n    {\n      \"question\": \"How do you approach database design for high-traffic systems?\",\n      \"answer\": \"I focus on indexing strategies first. We use PostgreSQL and I've worked with read replicas. I also consider partitioning for large tables.\"\n    }\n  ],\n  \"include_interviewer_feedback\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/evaluate-interview-transcript",
+          "host": ["{{base_url}}"],
+          "path": ["evaluate-interview-transcript"]
+        },
+        "description": "Use pre-structured Q&A format. Preferred when you have question-answer pairs already."
+      }
+    },
+    {
+      "name": "Evaluate with transcript (list of turns)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"job_id\": \"job_123\",\n  \"uid\": \"candidate_456\",\n  \"job_description\": \"Senior Software Engineer - Backend\\n\\nRequirements:\\n- 5+ years Python/Java\\n- SQL and database design\\n- Distributed systems\\n- Problem-solving and communication\",\n  \"transcript\": [\n    {\n      \"speaker\": \"interviewer\",\n      \"text\": \"Tell me about a time you led a technical project.\"\n    },\n    {\n      \"speaker\": \"candidate\",\n      \"text\": \"At my last company I led a team of 4 engineers to migrate our monolith to microservices. We used Python and Django. It took about 6 months.\"\n    },\n    {\n      \"speaker\": \"interviewer\",\n      \"text\": \"How do you approach database design for high-traffic systems?\"\n    },\n    {\n      \"speaker\": \"candidate\",\n      \"text\": \"I focus on indexing strategies first. We use PostgreSQL and I've worked with read replicas.\"\n    }\n  ],\n  \"include_interviewer_feedback\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/evaluate-interview-transcript",
+          "host": ["{{base_url}}"],
+          "path": ["evaluate-interview-transcript"]
+        },
+        "description": "Use transcript as list of {speaker, text} turns. Speaker: 'interviewer' or 'candidate'."
+      }
+    },
+    {
+      "name": "Evaluate with transcript (raw string)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"job_id\": \"job_123\",\n  \"uid\": \"candidate_456\",\n  \"job_description\": \"Senior Software Engineer - Backend\\n\\nRequirements:\\n- 5+ years Python/Java\\n- SQL and database design\",\n  \"transcript\": \"Interviewer: Tell me about a time you led a technical project.\\n\\nCandidate: At my last company I led a team of 4 engineers to migrate our monolith to microservices. We used Python and Django.\\n\\nInterviewer: How do you approach database design for high-traffic systems?\\n\\nCandidate: I focus on indexing strategies first. We use PostgreSQL and read replicas.\",\n  \"include_interviewer_feedback\": true\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/evaluate-interview-transcript",
+          "host": ["{{base_url}}"],
+          "path": ["evaluate-interview-transcript"]
+        },
+        "description": "Use raw string with 'Interviewer:' and 'Candidate:' (or Q: and A:) prefixes."
+      }
+    },
+    {
+      "name": "Evaluate (no interviewer feedback)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"job_id\": \"job_123\",\n  \"uid\": \"candidate_456\",\n  \"job_description\": \"Senior Software Engineer - Backend\\n\\nRequirements: 5+ years Python, SQL, microservices.\",\n  \"interviewer_questions\": [\n    {\n      \"question\": \"Describe your experience with microservices.\",\n      \"answer\": \"I've built and maintained several microservices using Python and FastAPI.\"\n    }\n  ],\n  \"include_interviewer_feedback\": false\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/evaluate-interview-transcript",
+          "host": ["{{base_url}}"],
+          "path": ["evaluate-interview-transcript"]
+        },
+        "description": "Skip interviewer feedback section. Faster response."
+      }
+    }
+  ]
+}

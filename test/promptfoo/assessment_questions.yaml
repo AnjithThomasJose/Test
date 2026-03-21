@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+# Assessment question generator eval
+# Run from agents/: npx promptfoo eval -c promptfoo/assessment_questions.yaml
+
+description: "Assessment question generator - structured prompt"
+
+prompts:
+  - file://prompts/assessment_questions.txt
+
+providers:
+  - file://providers/assessment_question_provider.py
+
+tests:
+  - vars:
+      topic: "Python programming basics"
+      difficulty: "easy"
+      assessment_type: "mcq"
+      breakdown: "- 3 mcq questions"
+      coding_note: ""
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const aq = p.assessment_questions || p;
+            const list = aq.mcq || aq[Object.keys(aq)[0]] || [];
+            return Array.isArray(list) && list.length >= 2;
+          } catch (e) {
+            return false;
+          }
+
+  - vars:
+      topic: "Data structures and algorithms"
+      difficulty: "medium"
+      assessment_type: "multi"
+      breakdown: |
+        - mcq: 2
+        - short_answer: 1
+        - coding: 1
+      coding_note: "- CRITICAL: Generate coding questions as specified in the number of questions breakdown above."
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const aq = p.assessment_questions || p;
+            const list = aq.multi || [];
+            return Array.isArray(list) && list.length >= 3;
+          } catch (e) {
+            return false;
+          }
+
+  - vars:
+      topic: "System design"
+      difficulty: "hard"
+      assessment_type: "short_answer"
+      breakdown: "- 2 short_answer questions"
+      coding_note: ""
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            const aq = p.assessment_questions || p;
+            const list = aq.short_answer || aq[Object.keys(aq)[0]] || [];
+            return Array.isArray(list) && list.length >= 1;
+          } catch (e) {
+            return false;
+          }

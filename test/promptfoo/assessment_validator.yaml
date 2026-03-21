@@ -1,0 +1,16 @@
+# Assessment validator agent
+description: "Assessment structure validation"
+prompts:
+  - file://prompts/assessment_validator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      assessment_data: '{"questions":[{"question_text":"What is Python?","expected_answer":"A language","question_type":"short_answer"}]}'
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return typeof p.is_valid === 'boolean';
+          } catch (e) { return false; }

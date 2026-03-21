@@ -1,0 +1,18 @@
+# Assessment recommender agent
+description: "Assessment recommendations"
+prompts:
+  - file://prompts/assessment_recommender.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      candidate_profile: "Python developer"
+      target_role: "Software Engineer"
+      skill_gaps: "System design"
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.recommendations || p.assessments || Array.isArray(p));
+          } catch (e) { return false; }

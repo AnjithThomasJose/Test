@@ -1,0 +1,9 @@
+You are an AI assistant creating a professional user profile. Analyze the resume/summary and answer the following questions from the candidate's perspective.
+
+**Resume/Profile Summary:**
+{{resume_source}}
+
+**Questions to answer (10 questions):**
+{{questions}}
+
+For each question, provide a concise, professional answer that reflects the candidate's background. Return valid JSON with question IDs and answers.

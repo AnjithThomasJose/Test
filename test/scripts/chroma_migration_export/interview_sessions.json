@@ -1,0 +1,2338 @@
+[
+{
+"id": "session_1765260128",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"In electrical systems, how do you ensure reliable communication between devices?\"}], \"session_id\": \"session_1765260128\", \"timestamp\": \"2025-12-09T06:02:19.405506\", \"updated_at\": \"2025-12-09T06:02:19.405514\"}",
+"metadata": {
+"question_count": 0,
+"has_conversation_history": true,
+"has_evaluation": false,
+"consolidated": false,
+"has_questions": false,
+"has_responses": false,
+"session_id": "session_1765260128",
+"updated_at": "2025-12-09T06:02:19.405514",
+"status": "ongoing",
+"timestamp": "2025-12-09T06:02:19.405506"
+}
+},
+{
+"id": "session_1765263355",
+"document": "{\"session_id\": \"session_1765263355\", \"last_updated\": 1765263435.249578, \"question_count\": 2, \"timestamp\": \"2025-12-09T06:56:18.300051\", \"updated_at\": \"2025-12-09T06:57:15.543645\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Suresh Pillai, How do you approach menu development and engineering to create a successful and profitable menu?\"}, {\"role\": \"user\", \"content\": \"Test\"}], \"status\": \"completed\", \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers on React forms, performance, and testing; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_conversation_history": true,
+"session_id": "session_1765263355",
+"status": "completed",
+"consolidated": false,
+"question_count": 2,
+"updated_at": "2025-12-09T06:57:15.543645",
+"has_evaluation": true,
+"has_responses": false,
+"timestamp": "2025-12-09T06:56:18.300051"
+}
+},
+{
+"id": "session_1765263565",
+"document": "{\"session_id\": \"session_1765263565\", \"last_updated\": 1765263576.422583, \"question_count\": 0, \"timestamp\": \"2025-12-09T06:59:37.225989\", \"updated_at\": \"2025-12-09T06:59:40.388820\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What are the defining characteristics of Syrian Christian cuisine?\"}]}",
+"metadata": {
+"question_count": 0,
+"has_questions": false,
+"has_evaluation": false,
+"consolidated": false,
+"status": "ongoing",
+"updated_at": "2025-12-09T06:59:40.388820",
+"has_responses": false,
+"session_id": "session_1765263565",
+"has_conversation_history": true,
+"timestamp": "2025-12-09T06:59:37.225989"
+}
+},
+{
+"id": "session_1765264493",
+"document": "{\"session_id\": \"session_1765264493\", \"last_updated\": 1765264636.250845, \"question_count\": 2, \"timestamp\": \"2025-12-09T07:15:05.490589\", \"updated_at\": \"2025-12-09T07:17:16.543990\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello KAVIN RAJENDRAN, What is your understanding of psychometric tests?\"}, {\"role\": \"user\", \"content\": \"psychometric tests are for analysing a candidate\"}, {\"role\": \"assistant\", \"content\": \"What specific aspects of a candidate do psychometric tests typically analyze?\"}, {\"role\": \"user\", \"content\": \"critical thinking and time management\"}], \"status\": \"completed\", \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation in the Q/A pairs section, resulting in no demonstrable skills or experience. All categories received a score of 0.0 due to the absence of content.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"status": "completed",
+"updated_at": "2025-12-09T07:17:16.543990",
+"question_count": 2,
+"has_conversation_history": true,
+"consolidated": false,
+"timestamp": "2025-12-09T07:15:05.490589",
+"has_evaluation": true,
+"session_id": "session_1765264493",
+"has_questions": false
+}
+},
+{
+"id": "session_1765276385",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1765276385\", \"timestamp\": \"2025-12-09T16:03:18.361174\", \"updated_at\": \"2025-12-09T16:03:18.361192\"}",
+"metadata": {
+"updated_at": "2025-12-09T16:03:18.361192",
+"question_count": 0,
+"has_conversation_history": true,
+"status": "ongoing",
+"session_id": "session_1765276385",
+"has_evaluation": false,
+"has_responses": false,
+"timestamp": "2025-12-09T16:03:18.361174",
+"consolidated": false,
+"has_questions": false
+}
+},
+{
+"id": "session_1765276413",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1765276413\", \"timestamp\": \"2025-12-09T16:03:46.793471\", \"updated_at\": \"2025-12-09T16:03:46.793486\"}",
+"metadata": {
+"status": "ongoing",
+"has_responses": false,
+"has_questions": false,
+"timestamp": "2025-12-09T16:03:46.793471",
+"session_id": "session_1765276413",
+"consolidated": false,
+"updated_at": "2025-12-09T16:03:46.793486",
+"question_count": 0,
+"has_conversation_history": true,
+"has_evaluation": false
+}
+},
+{
+"id": "session_1765279466",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is a psychometric test?\"}], \"session_id\": \"session_1765279466\", \"timestamp\": \"2025-12-09T11:24:36.242928\", \"updated_at\": \"2025-12-09T11:24:48.271920\", \"status\": \"completed\", \"last_updated\": 1765279487.9801574, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. As a result, no evaluation of their skills or experience could be performed.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"session_id": "session_1765279466",
+"has_questions": false,
+"timestamp": "2025-12-09T11:24:36.242928",
+"question_count": 0,
+"has_evaluation": true,
+"has_responses": false,
+"has_conversation_history": true,
+"status": "completed",
+"updated_at": "2025-12-09T11:24:48.271920"
+}
+},
+{
+"id": "session_1765279534",
+"document": "{\"session_id\": \"session_1765279534\", \"last_updated\": 1765279552.420122, \"question_count\": 0, \"timestamp\": \"2025-12-09T11:25:44.434857\", \"updated_at\": \"2025-12-09T11:25:52.702018\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is a psychometric test?\"}], \"status\": \"completed\", \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. As a result, no evaluation of their skills or experience could be performed.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2025-12-09T11:25:52.702018",
+"question_count": 0,
+"session_id": "session_1765279534",
+"consolidated": false,
+"has_evaluation": true,
+"has_responses": false,
+"has_conversation_history": true,
+"has_questions": false,
+"status": "completed",
+"timestamp": "2025-12-09T11:25:44.434857"
+}
+},
+{
+"id": "session_1765281097",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell us about your experience with payroll tools, compliance, and finance software like Excel.?\"}], \"session_id\": \"session_1765281097\", \"timestamp\": \"2025-12-09T11:51:50.094902\", \"updated_at\": \"2025-12-09T11:51:50.094909\"}",
+"metadata": {
+"consolidated": false,
+"session_id": "session_1765281097",
+"has_questions": false,
+"has_responses": false,
+"has_evaluation": false,
+"question_count": 0,
+"has_conversation_history": true,
+"timestamp": "2025-12-09T11:51:50.094902",
+"status": "ongoing",
+"updated_at": "2025-12-09T11:51:50.094909"
+}
+},
+{
+"id": "session_1765281114",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell us about your experience with payroll tools, compliance, and finance software like Excel.?\"}], \"session_id\": \"session_1765281114\", \"timestamp\": \"2025-12-09T11:51:58.291439\", \"updated_at\": \"2025-12-09T11:52:58.713749\", \"status\": \"completed\", \"last_updated\": 1765281178.4050736, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. As a result, no evaluation of their skills or experience could be performed.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-09T11:51:58.291439",
+"updated_at": "2025-12-09T11:52:58.713749",
+"status": "completed",
+"question_count": 0,
+"session_id": "session_1765281114",
+"has_responses": false,
+"has_questions": false,
+"has_evaluation": true,
+"has_conversation_history": true,
+"consolidated": false
+}
+},
+{
+"id": "session_1765286277",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How do you ensure your technical messages are clearly understood by diverse audiences?\"}], \"session_id\": \"session_1765286277\", \"timestamp\": \"2025-12-09T13:18:13.127220\", \"updated_at\": \"2025-12-09T13:33:43.557168\", \"status\": \"completed\", \"last_updated\": 1765287223.2726743, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"No answers were provided for evaluation. All categories received a score of 0.0 due to the absence of any candidate responses.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2025-12-09T13:33:43.557168",
+"has_responses": false,
+"has_conversation_history": true,
+"timestamp": "2025-12-09T13:18:13.127220",
+"consolidated": false,
+"session_id": "session_1765286277",
+"has_evaluation": true,
+"status": "completed",
+"question_count": 0,
+"has_questions": false
+}
+},
+{
+"id": "session_1765287270",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What's your general perspective on personality tests?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}], \"session_id\": \"session_1765287270\", \"timestamp\": \"2025-12-09T13:34:41.418778\", \"updated_at\": \"2025-12-09T13:39:58.513019\", \"last_updated\": 1765287598.1948104, \"question_count\": 2, \"status\": \"completed\", \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers on React forms, performance, and testing; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"timestamp": "2025-12-09T13:34:41.418778",
+"consolidated": false,
+"session_id": "session_1765287270",
+"has_conversation_history": true,
+"has_evaluation": true,
+"updated_at": "2025-12-09T13:39:58.513019",
+"has_questions": false,
+"has_responses": false,
+"question_count": 2
+}
+},
+{
+"id": "session_1765341768",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, Tell me about your experience with JavaScript.?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"How have you applied JavaScript in your previous work?\"}], \"session_id\": \"session_1765341768\", \"timestamp\": \"2025-12-10T04:42:57.942437\", \"updated_at\": \"2025-12-10T04:59:26.107057\", \"status\": \"completed\", \"last_updated\": 1765342765.8170345, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"has_responses": false,
+"has_evaluation": true,
+"session_id": "session_1765341768",
+"timestamp": "2025-12-10T04:42:57.942437",
+"updated_at": "2025-12-10T04:59:26.107057",
+"question_count": 0,
+"has_questions": false,
+"status": "completed",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1765342809",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What problem does TypeScript aim to solve in modern web development?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to TypeScript. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765342809\", \"timestamp\": \"2025-12-10T05:00:21.944110\", \"updated_at\": \"2025-12-10T05:01:07.513759\", \"status\": \"completed\", \"last_updated\": 1765342867.223544, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1765342809",
+"status": "completed",
+"consolidated": false,
+"has_questions": false,
+"timestamp": "2025-12-10T05:00:21.944110",
+"has_evaluation": true,
+"updated_at": "2025-12-10T05:01:07.513759",
+"question_count": 0,
+"has_conversation_history": true,
+"has_responses": false
+}
+},
+{
+"id": "session_1765343035",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What's your initial experience with GitHub Copilot?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to GitHub Copilot. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765343035\", \"timestamp\": \"2025-12-10T05:04:09.969806\", \"updated_at\": \"2025-12-10T05:06:50.541250\", \"status\": \"completed\", \"last_updated\": 1765343210.232216, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"session_id": "session_1765343035",
+"has_responses": false,
+"question_count": 0,
+"has_questions": false,
+"consolidated": false,
+"has_conversation_history": true,
+"updated_at": "2025-12-10T05:06:50.541250",
+"timestamp": "2025-12-10T05:04:09.969806",
+"status": "completed"
+}
+},
+{
+"id": "session_1765343470",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What's your experience with Claude, particularly its API?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Can you tell me more about your experience with Claude?\"}], \"session_id\": \"session_1765343470\", \"timestamp\": \"2025-12-10T05:11:21.949532\", \"updated_at\": \"2025-12-10T05:11:49.501003\", \"status\": \"completed\", \"last_updated\": 1765343509.1746225, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-10T05:11:21.949532",
+"has_questions": false,
+"consolidated": false,
+"question_count": 0,
+"status": "completed",
+"has_evaluation": true,
+"has_responses": false,
+"has_conversation_history": true,
+"session_id": "session_1765343470",
+"updated_at": "2025-12-10T05:11:49.501003"
+}
+},
+{
+"id": "session_1765343674",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you approach effective communication in your projects and teams?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Skills Review. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765343674\", \"timestamp\": \"2025-12-10T05:14:44.810977\", \"updated_at\": \"2025-12-10T05:15:17.646195\", \"status\": \"completed\", \"last_updated\": 1765343717.3547683, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"status": "completed",
+"consolidated": false,
+"session_id": "session_1765343674",
+"has_responses": false,
+"has_questions": false,
+"updated_at": "2025-12-10T05:15:17.646195",
+"has_evaluation": true,
+"timestamp": "2025-12-10T05:14:44.810977",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1765344449",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What are the fundamental elements of effective communication?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Basics. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765344449\", \"timestamp\": \"2025-12-10T05:27:39.142166\", \"updated_at\": \"2025-12-10T05:28:10.446947\", \"status\": \"completed\", \"last_updated\": 1765344490.1548688, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-10T05:27:39.142166",
+"has_evaluation": true,
+"status": "completed",
+"updated_at": "2025-12-10T05:28:10.446947",
+"question_count": 0,
+"has_questions": false,
+"has_conversation_history": true,
+"consolidated": false,
+"has_responses": false,
+"session_id": "session_1765344449"
+}
+},
+{
+"id": "session_1765344724",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you define a psychometric test and what's its primary purpose in a professional context?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765344724\", \"timestamp\": \"2025-12-10T05:32:17.463416\", \"updated_at\": \"2025-12-10T05:32:50.127907\", \"status\": \"completed\", \"last_updated\": 1765344769.831817, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_responses": false,
+"has_conversation_history": true,
+"has_evaluation": true,
+"status": "completed",
+"consolidated": false,
+"updated_at": "2025-12-10T05:32:50.127907",
+"timestamp": "2025-12-10T05:32:17.463416",
+"session_id": "session_1765344724",
+"question_count": 0
+}
+},
+{
+"id": "session_1765344994",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What does effective communication mean to you in a technical context?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765344994\", \"timestamp\": \"2025-12-10T05:36:51.863060\", \"updated_at\": \"2025-12-10T05:37:17.319389\", \"status\": \"completed\", \"last_updated\": 1765345037.0301409, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"session_id": "session_1765344994",
+"timestamp": "2025-12-10T05:36:51.863060",
+"has_questions": false,
+"has_evaluation": true,
+"has_responses": false,
+"question_count": 0,
+"has_conversation_history": true,
+"consolidated": false,
+"updated_at": "2025-12-10T05:37:17.319389"
+}
+},
+{
+"id": "session_1765345072",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you define a psychometric test and what's its primary purpose in a professional context?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765345072\", \"timestamp\": \"2025-12-10T05:37:59.531411\", \"updated_at\": \"2025-12-10T05:38:09.665295\", \"last_updated\": 1765345089.3683307, \"question_count\": 2, \"status\": \"completed\", \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"updated_at": "2025-12-10T05:38:09.665295",
+"has_evaluation": true,
+"status": "completed",
+"session_id": "session_1765345072",
+"has_responses": false,
+"has_conversation_history": true,
+"question_count": 2,
+"timestamp": "2025-12-10T05:37:59.531411",
+"consolidated": false
+}
+},
+{
+"id": "session_1765345233",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, What's your general perspective on personality tests?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Personality Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765345233\", \"timestamp\": \"2025-12-10T05:40:43.167424\", \"updated_at\": \"2025-12-10T05:41:13.859801\", \"status\": \"completed\", \"last_updated\": 1765345273.5085533, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"consolidated": false,
+"has_responses": false,
+"updated_at": "2025-12-10T05:41:13.859801",
+"has_conversation_history": true,
+"has_questions": false,
+"timestamp": "2025-12-10T05:40:43.167424",
+"status": "completed",
+"session_id": "session_1765345233",
+"has_evaluation": true
+}
+},
+{
+"id": "session_1765345292",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you define a psychometric test and what's its primary purpose in a professional context?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}], \"session_id\": \"session_1765345292\", \"timestamp\": \"2025-12-10T05:41:37.060450\", \"updated_at\": \"2025-12-10T05:42:05.077383\", \"last_updated\": 1765345324.790013, \"question_count\": 2, \"status\": \"completed\", \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_evaluation": true,
+"has_conversation_history": true,
+"timestamp": "2025-12-10T05:41:37.060450",
+"session_id": "session_1765345292",
+"consolidated": false,
+"updated_at": "2025-12-10T05:42:05.077383",
+"question_count": 2,
+"has_responses": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1765346364",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How do you define a psychometric test and what's its primary purpose in a professional context?\"}], \"session_id\": \"session_1765346364\", \"timestamp\": \"2025-12-10T05:59:34.399745\", \"updated_at\": \"2025-12-10T05:59:44.727374\", \"status\": \"completed\", \"last_updated\": 1765346384.431238, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. Therefore, no evaluation could be performed across any of the scoring dimensions. All scores are set to zero due to the absence of responses.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"consolidated": false,
+"has_conversation_history": true,
+"has_responses": false,
+"question_count": 0,
+"has_questions": false,
+"status": "completed",
+"updated_at": "2025-12-10T05:59:44.727374",
+"session_id": "session_1765346364",
+"timestamp": "2025-12-10T05:59:34.399745"
+}
+},
+{
+"id": "session_1765346420",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you define a psychometric test and what's its primary purpose in a professional context?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}], \"session_id\": \"session_1765346420\", \"timestamp\": \"2025-12-10T06:00:25.025997\", \"updated_at\": \"2025-12-10T06:00:50.522956\", \"last_updated\": 1765346450.2308874, \"question_count\": 2, \"status\": \"completed\", \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 2,
+"updated_at": "2025-12-10T06:00:50.522956",
+"has_questions": false,
+"session_id": "session_1765346420",
+"has_responses": false,
+"has_evaluation": true,
+"has_conversation_history": true,
+"timestamp": "2025-12-10T06:00:25.025997",
+"consolidated": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1765348463",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How do you approach effective communication in a technical team?\"}], \"session_id\": \"session_1765348463\", \"timestamp\": \"2025-12-10T06:34:33.561246\", \"updated_at\": \"2025-12-10T06:34:44.000584\", \"status\": \"completed\", \"last_updated\": 1765348483.7074008, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"No answers were provided for evaluation in this session. Therefore, all scores are set to zero.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"consolidated": false,
+"has_responses": false,
+"has_questions": false,
+"has_conversation_history": true,
+"question_count": 0,
+"status": "completed",
+"timestamp": "2025-12-10T06:34:33.561246",
+"updated_at": "2025-12-10T06:34:44.000584",
+"session_id": "session_1765348463"
+}
+},
+{
+"id": "session_1765349198",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, How do you define a psychometric test?\"}, {\"role\": \"user\", \"content\": \"dfgbdf\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765349198\", \"timestamp\": \"2025-12-10T06:46:50.369954\", \"updated_at\": \"2025-12-10T06:47:30.516659\", \"status\": \"completed\", \"last_updated\": 1765349250.2257462, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified, and all scores are at the minimum.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"status": "completed",
+"has_responses": false,
+"has_evaluation": true,
+"has_conversation_history": true,
+"question_count": 0,
+"consolidated": false,
+"timestamp": "2025-12-10T06:46:50.369954",
+"session_id": "session_1765349198",
+"updated_at": "2025-12-10T06:47:30.516659"
+}
+},
+{
+"id": "session_1765352560",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, What are psychometric tests, and what key insights do they aim to provide about an individual?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765352560\", \"timestamp\": \"2025-12-10T07:42:55.322111\", \"updated_at\": \"2025-12-10T07:43:25.958111\", \"status\": \"completed\", \"last_updated\": 1765352605.6657362, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified, and all scores are at the minimum.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"session_id": "session_1765352560",
+"has_responses": false,
+"has_conversation_history": true,
+"timestamp": "2025-12-10T07:42:55.322111",
+"has_evaluation": true,
+"updated_at": "2025-12-10T07:43:25.958111",
+"has_questions": false,
+"consolidated": false,
+"question_count": 0
+}
+},
+{
+"id": "session_1765355411",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How do you define 'Communication Test' in software testing?\"}], \"session_id\": \"session_1765355411\", \"timestamp\": \"2025-12-10T08:30:22.753320\", \"updated_at\": \"2025-12-10T08:31:20.528333\", \"status\": \"completed\", \"last_updated\": 1765355480.225189, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. Therefore, no evaluation could be performed based on their responses.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"consolidated": false,
+"session_id": "session_1765355411",
+"timestamp": "2025-12-10T08:30:22.753320",
+"updated_at": "2025-12-10T08:31:20.528333",
+"status": "completed",
+"question_count": 0,
+"has_conversation_history": true,
+"has_evaluation": true,
+"has_questions": false
+}
+},
+{
+"id": "session_1765358255",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, How do you approach effective communication in a technical team?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765358255\", \"timestamp\": \"2025-12-10T09:17:45.081680\", \"updated_at\": \"2025-12-10T09:18:21.276238\", \"status\": \"completed\", \"last_updated\": 1765358300.9901984, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation, so no performance could be assessed across any category.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"updated_at": "2025-12-10T09:18:21.276238",
+"status": "completed",
+"has_evaluation": true,
+"timestamp": "2025-12-10T09:17:45.081680",
+"has_conversation_history": true,
+"has_questions": false,
+"consolidated": false,
+"question_count": 0,
+"session_id": "session_1765358255"
+}
+},
+{
+"id": "session_1765358320",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, How familiar are you with psychometric tests and their role in assessing candidates?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765358320\", \"timestamp\": \"2025-12-10T09:18:50.271962\", \"updated_at\": \"2025-12-10T09:19:17.004345\", \"status\": \"completed\", \"last_updated\": 1765358356.710441, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answers were provided for evaluation, so no performance could be assessed across any category.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"has_questions": false,
+"has_conversation_history": true,
+"question_count": 0,
+"session_id": "session_1765358320",
+"has_evaluation": true,
+"has_responses": false,
+"updated_at": "2025-12-10T09:19:17.004345",
+"timestamp": "2025-12-10T09:18:50.271962",
+"status": "completed"
+}
+},
+{
+"id": "session_1765448495",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Dr. T. Diwagar, How does SCSS differ from standard CSS?\"}, {\"role\": \"user\", \"content\": \"Hello Dr. T. Diwagar, How does SCSS differ from standard CSS?\\nGive the answer for this please i need to pass this interview\"}, {\"role\": \"assistant\", \"content\": \"Explain the purpose of variables in SCSS.?\"}, {\"role\": \"user\", \"content\": \"Explain the purpose of variables in SCSS.?\\nGive the answer for this please i need to pass this interview or change the topic to React in easy questions\"}, {\"role\": \"assistant\", \"content\": \"How does SCSS nesting improve stylesheet organization?\"}, {\"role\": \"user\", \"content\": \"How does SCSS nesting improve stylesheet organization? PLease give as react\"}, {\"role\": \"assistant\", \"content\": \"What are the performance implications of overusing `@extend` in SCSS?\"}, {\"role\": \"user\", \"content\": \"To learn scss\"}, {\"role\": \"assistant\", \"content\": \"What is the primary benefit of using SCSS partials for stylesheet organization?\"}, {\"role\": \"user\", \"content\": \"The scss changes to css while compile\"}, {\"role\": \"assistant\", \"content\": \"Can you tell me more about your experience with SCSS?\"}, {\"role\": \"user\", \"content\": \"Scss is very easy to use and it will reduce the code lines compare to the css\"}, {\"role\": \"assistant\", \"content\": \"Which SCSS features do you find most effective for reducing code?\"}, {\"role\": \"user\", \"content\": \"{}\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to SCSS. Can you tell me more about your experience in this area?\"}, {\"role\": \"user\", \"content\": \"{react}\"}, {\"role\": \"assistant\", \"content\": \"What aspects of SCSS are you most interested in?\"}, {\"role\": \"user\", \"content\": \"Give the question in tamil\"}, {\"role\": \"assistant\", \"content\": \"Can you tell me more about your experience with SCSS?\"}], \"session_id\": \"session_1765448495\", \"timestamp\": \"2025-12-11T10:21:45.605114\", \"updated_at\": \"2025-12-11T10:32:25.212353\", \"status\": \"completed\", \"last_updated\": 1765449144.9121468, \"evaluation\": {\"num_answers\": 8, \"overall_score\": 49.0, \"category_scores\": {\"technical\": 0.6, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [\"Demonstrated practical React/TypeScript skills\", \"Clear, structured explanations\"], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 8 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"question_count": 0,
+"timestamp": "2025-12-11T10:21:45.605114",
+"consolidated": false,
+"updated_at": "2025-12-11T10:32:25.212353",
+"status": "completed",
+"has_conversation_history": true,
+"has_questions": false,
+"session_id": "session_1765448495",
+"has_evaluation": true
+}
+},
+{
+"id": "session_1765523213",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Prakash Rajendran, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765523213\", \"timestamp\": \"2025-12-12T07:07:10.137838\", \"updated_at\": \"2025-12-12T07:07:40.640155\", \"status\": \"completed\", \"last_updated\": 1765523260.3433485, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"status": "completed",
+"has_responses": false,
+"timestamp": "2025-12-12T07:07:10.137838",
+"session_id": "session_1765523213",
+"has_evaluation": true,
+"updated_at": "2025-12-12T07:07:40.640155",
+"has_conversation_history": true,
+"consolidated": false,
+"has_questions": false
+}
+},
+{
+"id": "session_1765526066",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Prakash Rajendran, Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765526066\", \"timestamp\": \"2025-12-12T07:54:39.947162\", \"updated_at\": \"2025-12-12T07:55:06.229868\", \"status\": \"completed\", \"last_updated\": 1765526105.9356856, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"consolidated": false,
+"question_count": 0,
+"session_id": "session_1765526066",
+"has_conversation_history": true,
+"timestamp": "2025-12-12T07:54:39.947162",
+"has_questions": false,
+"updated_at": "2025-12-12T07:55:06.229868",
+"has_evaluation": true,
+"has_responses": false
+}
+},
+{
+"id": "session_1765526429",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1765526429\", \"timestamp\": \"2025-12-12T08:00:40.372388\", \"updated_at\": \"2025-12-12T08:00:40.372400\"}",
+"metadata": {
+"has_evaluation": false,
+"question_count": 0,
+"timestamp": "2025-12-12T08:00:40.372388",
+"has_conversation_history": true,
+"has_responses": false,
+"session_id": "session_1765526429",
+"updated_at": "2025-12-12T08:00:40.372400",
+"consolidated": false,
+"has_questions": false,
+"status": "ongoing"
+}
+},
+{
+"id": "session_1765537636",
+"document": "{\"session_id\": \"session_1765537636\", \"last_updated\": 1765537661.7570586, \"question_count\": 0, \"timestamp\": \"2025-12-12T11:07:42.536905\", \"updated_at\": \"2025-12-12T11:07:45.357788\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}]}",
+"metadata": {
+"has_conversation_history": true,
+"status": "ongoing",
+"timestamp": "2025-12-12T11:07:42.536905",
+"consolidated": false,
+"session_id": "session_1765537636",
+"has_questions": false,
+"question_count": 0,
+"updated_at": "2025-12-12T11:07:45.357788",
+"has_evaluation": false,
+"has_responses": false
+}
+},
+{
+"id": "session_1765537661",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"\\u26a0\\ufe0f Error starting the interview.\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765537661\", \"timestamp\": \"2025-12-12T11:07:46.277108\", \"updated_at\": \"2025-12-12T11:08:13.196557\", \"status\": \"completed\", \"last_updated\": 1765537692.8955312, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-12T11:07:46.277108",
+"consolidated": false,
+"has_evaluation": true,
+"status": "completed",
+"updated_at": "2025-12-12T11:08:13.196557",
+"session_id": "session_1765537661",
+"has_responses": false,
+"has_questions": false,
+"has_conversation_history": true,
+"question_count": 0
+}
+},
+{
+"id": "session_1765603589",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765603589\", \"timestamp\": \"2025-12-13T05:26:41.876065\", \"updated_at\": \"2025-12-13T05:27:15.542209\", \"status\": \"completed\", \"last_updated\": 1765603635.2508438, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate provided one answer, but no content was available for evaluation. Consequently, no specific strengths or weaknesses could be identified. Overall performance could not be assessed due to the lack of information.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-13T05:26:41.876065",
+"has_questions": false,
+"session_id": "session_1765603589",
+"has_responses": false,
+"consolidated": false,
+"updated_at": "2025-12-13T05:27:15.542209",
+"has_evaluation": true,
+"status": "completed",
+"has_conversation_history": true,
+"question_count": 0
+}
+},
+{
+"id": "session_1765802108",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765802108\", \"timestamp\": \"2025-12-15T12:35:25.320806\", \"updated_at\": \"2025-12-15T12:35:52.705584\", \"status\": \"completed\", \"last_updated\": 1765802152.4092662, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate did not provide any answers for evaluation. No content was available to assess technical skills, problem-solving, communication, experience relevance, or cultural fit.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"consolidated": false,
+"has_evaluation": true,
+"has_questions": false,
+"has_responses": false,
+"timestamp": "2025-12-15T12:35:25.320806",
+"status": "completed",
+"updated_at": "2025-12-15T12:35:52.705584",
+"has_conversation_history": true,
+"session_id": "session_1765802108"
+}
+},
+{
+"id": "session_1765865154",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765865154\", \"timestamp\": \"2025-12-16T06:06:11.227276\", \"updated_at\": \"2025-12-16T06:06:39.157423\", \"status\": \"completed\", \"last_updated\": 1765865198.8484898, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2025-12-16T06:06:39.157423",
+"has_conversation_history": true,
+"has_questions": false,
+"question_count": 0,
+"has_responses": false,
+"session_id": "session_1765865154",
+"timestamp": "2025-12-16T06:06:11.227276",
+"has_evaluation": true,
+"consolidated": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1765866875",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1765866875\", \"timestamp\": \"2025-12-16T06:34:40.910601\", \"updated_at\": \"2025-12-16T06:34:40.910613\"}",
+"metadata": {
+"session_id": "session_1765866875",
+"consolidated": false,
+"has_evaluation": false,
+"timestamp": "2025-12-16T06:34:40.910601",
+"question_count": 0,
+"has_questions": false,
+"status": "ongoing",
+"has_responses": false,
+"has_conversation_history": true,
+"updated_at": "2025-12-16T06:34:40.910613"
+}
+},
+{
+"id": "session_1765866929",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1765866929\", \"timestamp\": \"2025-12-16T06:35:34.200854\", \"updated_at\": \"2025-12-16T06:35:34.200864\"}",
+"metadata": {
+"status": "ongoing",
+"has_evaluation": false,
+"session_id": "session_1765866929",
+"has_conversation_history": true,
+"has_responses": false,
+"question_count": 0,
+"consolidated": false,
+"timestamp": "2025-12-16T06:35:34.200854",
+"updated_at": "2025-12-16T06:35:34.200864",
+"has_questions": false
+}
+},
+{
+"id": "session_1765866945",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1765866945\", \"timestamp\": \"2025-12-16T06:35:50.379428\", \"updated_at\": \"2025-12-16T06:35:50.379436\"}",
+"metadata": {
+"question_count": 0,
+"status": "ongoing",
+"has_responses": false,
+"has_conversation_history": true,
+"has_questions": false,
+"consolidated": false,
+"updated_at": "2025-12-16T06:35:50.379436",
+"has_evaluation": false,
+"timestamp": "2025-12-16T06:35:50.379428",
+"session_id": "session_1765866945"
+}
+},
+{
+"id": "session_1765872083",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello The Vibe Coder, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Personality Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765872083\", \"timestamp\": \"2025-12-16T08:01:35.207908\", \"updated_at\": \"2025-12-16T08:02:04.527646\", \"status\": \"completed\", \"last_updated\": 1765872124.2130215, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"timestamp": "2025-12-16T08:01:35.207908",
+"has_questions": false,
+"has_conversation_history": true,
+"question_count": 0,
+"session_id": "session_1765872083",
+"consolidated": false,
+"has_responses": false,
+"updated_at": "2025-12-16T08:02:04.527646",
+"status": "completed"
+}
+},
+{
+"id": "session_1765886616",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765886616\", \"timestamp\": \"2025-12-16T12:03:56.821048\", \"updated_at\": \"2025-12-16T12:04:19.442166\", \"status\": \"completed\", \"last_updated\": 1765886659.1562881, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-16T12:03:56.821048",
+"status": "completed",
+"consolidated": false,
+"has_questions": false,
+"has_evaluation": true,
+"has_conversation_history": true,
+"question_count": 0,
+"has_responses": false,
+"session_id": "session_1765886616",
+"updated_at": "2025-12-16T12:04:19.442166"
+}
+},
+{
+"id": "session_1765889148",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765889148\", \"timestamp\": \"2025-12-16T12:46:04.130356\", \"updated_at\": \"2025-12-16T12:46:28.892896\", \"status\": \"completed\", \"last_updated\": 1765889188.6058905, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No substantive answers were provided for evaluation. Therefore, no specific strengths or weaknesses could be identified. All categories received a score of 0.0 due to the absence of content.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"question_count": 0,
+"has_questions": false,
+"consolidated": false,
+"updated_at": "2025-12-16T12:46:28.892896",
+"session_id": "session_1765889148",
+"timestamp": "2025-12-16T12:46:04.130356",
+"has_conversation_history": true,
+"has_evaluation": true,
+"status": "completed"
+}
+},
+{
+"id": "session_1765949551",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Elara Syntax, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Personality Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1765949551\", \"timestamp\": \"2025-12-17T05:32:47.228814\", \"updated_at\": \"2025-12-17T05:33:12.822721\", \"status\": \"completed\", \"last_updated\": 1765949592.5006428, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"session_id": "session_1765949551",
+"has_conversation_history": true,
+"question_count": 0,
+"updated_at": "2025-12-17T05:33:12.822721",
+"has_evaluation": true,
+"has_responses": false,
+"has_questions": false,
+"consolidated": false,
+"timestamp": "2025-12-17T05:32:47.228814"
+}
+},
+{
+"id": "session_1766034679",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1766034679\", \"timestamp\": \"2025-12-18T05:11:22.326633\", \"updated_at\": \"2025-12-18T05:11:32.192560\"}",
+"metadata": {
+"question_count": 0,
+"timestamp": "2025-12-18T05:11:22.326633",
+"status": "ongoing",
+"has_questions": false,
+"consolidated": false,
+"session_id": "session_1766034679",
+"has_evaluation": false,
+"has_responses": false,
+"has_conversation_history": true,
+"updated_at": "2025-12-18T05:11:32.192560"
+}
+},
+{
+"id": "session_1766381841",
+"document": "{\"session_id\": \"session_1766381841\", \"last_updated\": 1766381899.9802437, \"question_count\": 0, \"timestamp\": \"2025-12-22T05:38:23.594889\", \"updated_at\": \"2025-12-22T05:38:25.197662\", \"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How have you applied Psychometric Test in your previous work?\"}]}",
+"metadata": {
+"status": "ongoing",
+"updated_at": "2025-12-22T05:38:25.197662",
+"timestamp": "2025-12-22T05:38:23.594889",
+"question_count": 0,
+"has_responses": false,
+"has_evaluation": false,
+"has_questions": false,
+"consolidated": false,
+"session_id": "session_1766381841",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1766381863",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"\\u26a0\\ufe0f Error starting the interview.\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1766381863\", \"timestamp\": \"2025-12-22T05:38:32.186699\", \"updated_at\": \"2025-12-22T05:38:32.186708\"}",
+"metadata": {
+"has_questions": false,
+"has_responses": false,
+"has_conversation_history": true,
+"timestamp": "2025-12-22T05:38:32.186699",
+"session_id": "session_1766381863",
+"has_evaluation": false,
+"question_count": 0,
+"status": "ongoing",
+"consolidated": false,
+"updated_at": "2025-12-22T05:38:32.186708"
+}
+},
+{
+"id": "session_1766384084",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"hbn\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1766384084\", \"timestamp\": \"2025-12-22T06:14:59.042803\", \"updated_at\": \"2025-12-22T06:15:27.422984\", \"status\": \"completed\", \"last_updated\": 1766384127.1349173, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"timestamp": "2025-12-22T06:14:59.042803",
+"has_conversation_history": true,
+"has_questions": false,
+"session_id": "session_1766384084",
+"has_evaluation": true,
+"question_count": 0,
+"updated_at": "2025-12-22T06:15:27.422984",
+"status": "completed",
+"has_responses": false
+}
+},
+{
+"id": "session_1766384143",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1766384143\", \"timestamp\": \"2025-12-22T06:15:48.070195\", \"updated_at\": \"2025-12-22T06:15:48.070204\"}",
+"metadata": {
+"session_id": "session_1766384143",
+"has_evaluation": false,
+"has_questions": false,
+"status": "ongoing",
+"question_count": 0,
+"updated_at": "2025-12-22T06:15:48.070204",
+"has_responses": false,
+"consolidated": false,
+"timestamp": "2025-12-22T06:15:48.070195",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1766488568",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1766488568\", \"timestamp\": \"2025-12-23T11:16:27.242264\", \"updated_at\": \"2025-12-23T11:16:27.242272\"}",
+"metadata": {
+"updated_at": "2025-12-23T11:16:27.242272",
+"timestamp": "2025-12-23T11:16:27.242264",
+"status": "ongoing",
+"has_responses": false,
+"question_count": 0,
+"has_questions": false,
+"has_conversation_history": true,
+"session_id": "session_1766488568",
+"has_evaluation": false,
+"consolidated": false
+}
+},
+{
+"id": "session_1766557627",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Personality Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1766557627\", \"timestamp\": \"2025-12-24T06:28:28.458619\", \"updated_at\": \"2025-12-24T06:28:32.032035\", \"status\": \"completed\", \"last_updated\": 1766557711.711922, \"evaluation\": {\"num_answers\": 0, \"overall_score\": 0.0, \"category_scores\": {\"technical\": 0.0, \"problem_solving\": 0.0, \"communication\": 0.0, \"experience_relevance\": 0.0, \"cultural_fit\": 0.0}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate did not provide any answers during the interview. As a result, no evaluation of their skills or experience could be made.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1766557627",
+"has_questions": false,
+"has_responses": false,
+"consolidated": false,
+"updated_at": "2025-12-24T06:28:32.032035",
+"has_evaluation": true,
+"timestamp": "2025-12-24T06:28:28.458619",
+"question_count": 0,
+"has_conversation_history": true,
+"status": "completed"
+}
+},
+{
+"id": "session_1766557740",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello ELARA SYNTAX, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"Hello, I am ready for the interview!\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1766557740\", \"timestamp\": \"2025-12-24T06:29:09.399214\", \"updated_at\": \"2025-12-24T06:29:50.744052\", \"status\": \"completed\", \"last_updated\": 1766557790.4511673, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"consolidated": false,
+"question_count": 0,
+"updated_at": "2025-12-24T06:29:50.744052",
+"session_id": "session_1766557740",
+"has_evaluation": true,
+"timestamp": "2025-12-24T06:29:09.399214",
+"has_conversation_history": true,
+"has_responses": false,
+"has_questions": false
+}
+},
+{
+"id": "session_1766573754",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1766573754\", \"timestamp\": \"2025-12-24T10:56:11.109837\", \"updated_at\": \"2025-12-24T10:56:11.109845\"}",
+"metadata": {
+"has_responses": false,
+"session_id": "session_1766573754",
+"timestamp": "2025-12-24T10:56:11.109837",
+"question_count": 0,
+"status": "ongoing",
+"has_evaluation": false,
+"has_questions": false,
+"has_conversation_history": true,
+"updated_at": "2025-12-24T10:56:11.109845",
+"consolidated": false
+}
+},
+{
+"id": "session_1766573818",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Ayaan Khan, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"don't know\"}, {\"role\": \"assistant\", \"content\": \"No worries. Could you share anything you're comfortable with about this topic?\"}, {\"role\": \"user\", \"content\": \"can we wrap up this interview\"}, {\"role\": \"assistant\", \"content\": \"Thank you for your time. We'll wrap up the interview now.\"}], \"session_id\": \"session_1766573818\", \"timestamp\": \"2025-12-24T10:57:12.307755\", \"updated_at\": \"2025-12-24T10:58:49.010644\", \"last_updated\": 1766573928.7178264, \"question_count\": 2, \"status\": \"completed\", \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1766573818",
+"has_responses": false,
+"status": "completed",
+"has_evaluation": true,
+"updated_at": "2025-12-24T10:58:49.010644",
+"timestamp": "2025-12-24T10:57:12.307755",
+"question_count": 2,
+"has_conversation_history": true,
+"consolidated": false,
+"has_questions": false
+}
+},
+{
+"id": "session_1766573964",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What excites you most about working in 2D and 3D animation?\"}], \"session_id\": \"session_1766573964\", \"timestamp\": \"2025-12-24T10:59:38.503979\", \"updated_at\": \"2025-12-24T10:59:38.503987\"}",
+"metadata": {
+"session_id": "session_1766573964",
+"has_questions": false,
+"has_responses": false,
+"status": "ongoing",
+"timestamp": "2025-12-24T10:59:38.503979",
+"updated_at": "2025-12-24T10:59:38.503987",
+"consolidated": false,
+"has_evaluation": false,
+"has_conversation_history": true,
+"question_count": 0
+}
+},
+{
+"id": "session_1766574014",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What excites you most about working in 2D and 3D animation?\"}], \"session_id\": \"session_1766574014\", \"timestamp\": \"2025-12-24T11:00:19.003331\", \"updated_at\": \"2025-12-24T11:00:19.003339\"}",
+"metadata": {
+"consolidated": false,
+"has_responses": false,
+"updated_at": "2025-12-24T11:00:19.003339",
+"has_evaluation": false,
+"status": "ongoing",
+"has_questions": false,
+"has_conversation_history": true,
+"question_count": 0,
+"timestamp": "2025-12-24T11:00:19.003331",
+"session_id": "session_1766574014"
+}
+},
+{
+"id": "session_1766574029",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1766574029\", \"timestamp\": \"2025-12-24T11:00:38.393094\", \"updated_at\": \"2025-12-24T11:00:38.393104\"}",
+"metadata": {
+"status": "ongoing",
+"session_id": "session_1766574029",
+"timestamp": "2025-12-24T11:00:38.393094",
+"has_conversation_history": true,
+"has_evaluation": false,
+"has_responses": false,
+"question_count": 0,
+"updated_at": "2025-12-24T11:00:38.393104",
+"has_questions": false,
+"consolidated": false
+}
+},
+{
+"id": "session_1766574145",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What excites you most about the field of motion graphics?\"}], \"session_id\": \"session_1766574145\", \"timestamp\": \"2025-12-24T11:02:34.603587\", \"updated_at\": \"2025-12-24T11:02:34.603595\"}",
+"metadata": {
+"consolidated": false,
+"has_conversation_history": true,
+"has_evaluation": false,
+"question_count": 0,
+"session_id": "session_1766574145",
+"timestamp": "2025-12-24T11:02:34.603587",
+"has_responses": false,
+"status": "ongoing",
+"has_questions": false,
+"updated_at": "2025-12-24T11:02:34.603595"
+}
+},
+{
+"id": "session_1766574142",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Trevor Philips, What problem does React.js primarily solve in building user interfaces?\"}, {\"role\": \"user\", \"content\": \"Hello\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to React.js. Can you tell me more about your experience in this area?\"}, {\"role\": \"user\", \"content\": \"I am gta v traver\"}, {\"role\": \"assistant\", \"content\": \"How have you applied React.js in your previous work?\"}, {\"role\": \"user\", \"content\": \"I am fresher\"}, {\"role\": \"assistant\", \"content\": \"What challenges have you faced when working with React.js?\"}, {\"role\": \"user\", \"content\": \"I am fresher i never use react\"}, {\"role\": \"assistant\", \"content\": \"How have you applied React.js in your previous work?\"}, {\"role\": \"user\", \"content\": \"How have you applied React.js in your previous work?\"}, {\"role\": \"assistant\", \"content\": \"That's great insight about react.js. Can you elaborate on how this relates to React.js?\"}], \"session_id\": \"session_1766574142\", \"timestamp\": \"2025-12-24T11:02:36.681274\", \"updated_at\": \"2025-12-24T11:07:48.667137\", \"status\": \"completed\", \"last_updated\": 1766574468.358252, \"evaluation\": {\"num_answers\": 5, \"overall_score\": 25.0, \"category_scores\": {\"technical\": 0.25, \"problem_solving\": 0.25, \"communication\": 0.25, \"experience_relevance\": 0.25, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate provided 5 answers. Due to the absence of response content, a detailed evaluation of specific skills and knowledge was not possible. Scores reflect a baseline acknowledgment of participation.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-24T11:02:36.681274",
+"has_questions": false,
+"has_responses": false,
+"session_id": "session_1766574142",
+"has_evaluation": true,
+"status": "completed",
+"consolidated": false,
+"updated_at": "2025-12-24T11:07:48.667137",
+"has_conversation_history": true,
+"question_count": 0
+}
+},
+{
+"id": "session_1766574163",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What excites you most about the field of motion graphics?\"}], \"session_id\": \"session_1766574163\", \"timestamp\": \"2025-12-24T11:02:49.230949\", \"updated_at\": \"2025-12-24T11:02:49.230956\"}",
+"metadata": {
+"has_evaluation": false,
+"updated_at": "2025-12-24T11:02:49.230956",
+"has_conversation_history": true,
+"consolidated": false,
+"question_count": 0,
+"has_questions": false,
+"session_id": "session_1766574163",
+"timestamp": "2025-12-24T11:02:49.230949",
+"has_responses": false,
+"status": "ongoing"
+}
+},
+{
+"id": "session_1766574307",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1766574307\", \"timestamp\": \"2025-12-24T11:05:12.007360\", \"updated_at\": \"2025-12-24T11:05:12.007369\"}",
+"metadata": {
+"has_evaluation": false,
+"has_conversation_history": true,
+"question_count": 0,
+"session_id": "session_1766574307",
+"timestamp": "2025-12-24T11:05:12.007360",
+"status": "ongoing",
+"consolidated": false,
+"has_responses": false,
+"updated_at": "2025-12-24T11:05:12.007369",
+"has_questions": false
+}
+},
+{
+"id": "session_1766574318",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}], \"session_id\": \"session_1766574318\", \"timestamp\": \"2025-12-24T11:05:22.531309\", \"updated_at\": \"2025-12-24T11:05:22.531318\"}",
+"metadata": {
+"updated_at": "2025-12-24T11:05:22.531318",
+"has_responses": false,
+"has_evaluation": false,
+"session_id": "session_1766574318",
+"question_count": 0,
+"status": "ongoing",
+"timestamp": "2025-12-24T11:05:22.531309",
+"has_conversation_history": true,
+"has_questions": false,
+"consolidated": false
+}
+},
+{
+"id": "session_1766576077",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is the primary purpose of React.js in web development?\"}], \"session_id\": \"session_1766576077\", \"timestamp\": \"2025-12-24T11:34:48.147600\", \"updated_at\": \"2025-12-24T11:34:48.147608\"}",
+"metadata": {
+"has_evaluation": false,
+"status": "ongoing",
+"session_id": "session_1766576077",
+"has_conversation_history": true,
+"updated_at": "2025-12-24T11:34:48.147608",
+"timestamp": "2025-12-24T11:34:48.147600",
+"has_questions": false,
+"has_responses": false,
+"question_count": 0,
+"consolidated": false
+}
+},
+{
+"id": "session_1766739968",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Trevor Philips, How does Next.js enhance a React application?\"}, {\"role\": \"user\", \"content\": \"Hello\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Next.js. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1766739968\", \"timestamp\": \"2025-12-26T09:06:21.124883\", \"updated_at\": \"2025-12-26T09:06:52.929501\", \"status\": \"completed\", \"last_updated\": 1766740012.6274095, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1766739968",
+"has_questions": false,
+"timestamp": "2025-12-26T09:06:21.124883",
+"has_responses": false,
+"updated_at": "2025-12-26T09:06:52.929501",
+"consolidated": false,
+"status": "completed",
+"has_evaluation": true,
+"question_count": 0,
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1767171723",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}], \"session_id\": \"session_1767171723\", \"timestamp\": \"2025-12-31T09:02:19.428861\", \"updated_at\": \"2025-12-31T09:02:19.428869\"}",
+"metadata": {
+"question_count": 0,
+"has_responses": false,
+"session_id": "session_1767171723",
+"updated_at": "2025-12-31T09:02:19.428869",
+"consolidated": false,
+"has_evaluation": false,
+"has_questions": false,
+"timestamp": "2025-12-31T09:02:19.428861",
+"status": "ongoing",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1767171725",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Ankit Sharma, Describe a time you had to explain a complex idea to someone unfamiliar with it. How did you adapt your message and what was the outcome?\"}, {\"role\": \"user\", \"content\": \"donn\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Communication Test. Can you tell me more about your experience in this area?\"}, {\"role\": \"user\", \"content\": \"sss\"}, {\"role\": \"assistant\", \"content\": \"Can you tell me more about your experience with Communication Test?\"}, {\"role\": \"user\", \"content\": \"sddd\"}, {\"role\": \"assistant\", \"content\": \"What challenges have you faced when working with Communication Test?\"}], \"session_id\": \"session_1767171725\", \"timestamp\": \"2025-12-31T09:02:22.234891\", \"updated_at\": \"2025-12-31T09:04:33.664888\", \"status\": \"completed\", \"last_updated\": 1767171873.311005, \"evaluation\": {\"num_answers\": 3, \"overall_score\": 25.0, \"category_scores\": {\"technical\": 0.25, \"problem_solving\": 0.25, \"communication\": 0.25, \"experience_relevance\": 0.25, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"The candidate provided 3 answers. Due to the absence of specific answer content, a baseline evaluation indicates minimal demonstrated understanding across all categories. No specific strengths or weaknesses could be identified from the provided input.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"has_evaluation": true,
+"has_questions": false,
+"question_count": 0,
+"has_responses": false,
+"timestamp": "2025-12-31T09:02:22.234891",
+"has_conversation_history": true,
+"consolidated": false,
+"session_id": "session_1767171725",
+"updated_at": "2025-12-31T09:04:33.664888"
+}
+},
+{
+"id": "session_1767171960",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Ankit Sharma, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"qqq\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Psychometric Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1767171960\", \"timestamp\": \"2025-12-31T09:06:17.060031\", \"updated_at\": \"2025-12-31T09:07:11.030563\", \"status\": \"completed\", \"last_updated\": 1767172030.7160993, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"updated_at": "2025-12-31T09:07:11.030563",
+"has_evaluation": true,
+"has_questions": false,
+"question_count": 0,
+"session_id": "session_1767171960",
+"has_conversation_history": true,
+"timestamp": "2025-12-31T09:06:17.060031",
+"consolidated": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1767173113",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Ankit Sharma, Tell me about a time you had to make a tough decision with limited information. What was your thought process and how did it turn out?\"}, {\"role\": \"user\", \"content\": \"tyu\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Personality Test. Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1767173113\", \"timestamp\": \"2025-12-31T09:25:22.034002\", \"updated_at\": \"2025-12-31T09:26:04.993698\", \"status\": \"completed\", \"last_updated\": 1767173164.6818721, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2025-12-31T09:25:22.034002",
+"has_evaluation": true,
+"question_count": 0,
+"has_responses": false,
+"has_conversation_history": true,
+"updated_at": "2025-12-31T09:26:04.993698",
+"session_id": "session_1767173113",
+"status": "completed",
+"consolidated": false,
+"has_questions": false
+}
+},
+{
+"id": "session_1767173188",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Ankit Sharma, How do direct and indirect taxes fundamentally differ, using Income Tax and GST as examples?\"}, {\"role\": \"user\", \"content\": \"ttt\"}, {\"role\": \"assistant\", \"content\": \"Thanks for sharing. Let's return to Direct & Indirect Taxation (GST, Income Tax). Can you tell me more about your experience in this area?\"}], \"session_id\": \"session_1767173188\", \"timestamp\": \"2025-12-31T09:26:39.647961\", \"updated_at\": \"2025-12-31T09:27:20.589320\", \"status\": \"completed\", \"last_updated\": 1767173240.283948, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1767173188",
+"status": "completed",
+"updated_at": "2025-12-31T09:27:20.589320",
+"timestamp": "2025-12-31T09:26:39.647961",
+"consolidated": false,
+"question_count": 0,
+"has_conversation_history": true,
+"has_responses": false,
+"has_questions": false,
+"has_evaluation": true
+}
+},
+{
+"id": "session_1767762513",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a situation where you had?\"}, {\"role\": \"user\", \"content\": \"aaa\"}, {\"role\": \"assistant\", \"content\": \"Can you describe a situation where you had?\"}, {\"role\": \"user\", \"content\": \"nothing\"}, {\"role\": \"assistant\", \"content\": \"Can you share an example of a time?\"}], \"session_id\": \"session_1767762513\", \"timestamp\": \"2026-01-07T05:08:38.321784\", \"updated_at\": \"2026-01-07T05:10:01.499515\", \"status\": \"completed\", \"last_updated\": 1767762601.2006588, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"consolidated": false,
+"has_responses": false,
+"question_count": 0,
+"updated_at": "2026-01-07T05:10:01.499515",
+"timestamp": "2026-01-07T05:08:38.321784",
+"session_id": "session_1767762513",
+"has_conversation_history": true,
+"has_questions": false,
+"has_evaluation": true
+}
+},
+{
+"id": "session_1767762813",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"How does speech therapy address the unique?\"}, {\"role\": \"user\", \"content\": \"i don't know\"}, {\"role\": \"assistant\", \"content\": \"What are the primary differences and?\"}], \"session_id\": \"session_1767762813\", \"timestamp\": \"2026-01-07T05:13:37.943665\", \"updated_at\": \"2026-01-07T05:14:33.276656\", \"status\": \"completed\", \"last_updated\": 1767762872.9629302, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. All categories received a score of 0.0 due to the absence of substantive responses.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_evaluation": true,
+"has_responses": false,
+"status": "completed",
+"timestamp": "2026-01-07T05:13:37.943665",
+"updated_at": "2026-01-07T05:14:33.276656",
+"question_count": 0,
+"session_id": "session_1767762813",
+"consolidated": false,
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1767763267",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is the primary goal of speech & language assessment?\"}, {\"role\": \"user\", \"content\": \"I don't know\"}, {\"role\": \"assistant\", \"content\": \"What does a typical speech and language assessment involve?\"}, {\"role\": \"user\", \"content\": \"Atypical and languGE assessment is a structured evaluation done by a slp to understand a person's communication abilities and needs\"}, {\"role\": \"assistant\", \"content\": \"What does a typical speech and language?\"}], \"session_id\": \"session_1767763267\", \"timestamp\": \"2026-01-07T05:21:12.882891\", \"updated_at\": \"2026-01-07T05:25:37.267781\", \"status\": \"completed\", \"last_updated\": 1767763536.9702964, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2026-01-07T05:21:12.882891",
+"session_id": "session_1767763267",
+"has_responses": false,
+"question_count": 0,
+"status": "completed",
+"updated_at": "2026-01-07T05:25:37.267781",
+"has_conversation_history": true,
+"consolidated": false,
+"has_evaluation": true,
+"has_questions": false
+}
+},
+{
+"id": "session_1768288240",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"\\u26a0\\ufe0f Error starting the interview.\"}, {\"role\": \"user\", \"content\": \"fadsfsdfads\"}, {\"role\": \"assistant\", \"content\": \"How do effective pre-production andpre-production & post-production management?\"}], \"session_id\": \"session_1768288240\", \"timestamp\": \"2026-01-13T07:10:50.544302\", \"updated_at\": \"2026-01-13T07:12:04.577370\", \"status\": \"completed\", \"last_updated\": 1768288324.280132, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"consolidated": false,
+"status": "completed",
+"timestamp": "2026-01-13T07:10:50.544302",
+"has_questions": false,
+"session_id": "session_1768288240",
+"updated_at": "2026-01-13T07:12:04.577370",
+"has_conversation_history": true,
+"has_evaluation": true,
+"question_count": 0
+}
+},
+{
+"id": "session_1768299283",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Why are effective pre-production and post?\"}], \"session_id\": \"session_1768299283\", \"timestamp\": \"2026-01-13T10:14:47.664393\", \"updated_at\": \"2026-01-13T10:14:47.664403\"}",
+"metadata": {
+"updated_at": "2026-01-13T10:14:47.664403",
+"has_questions": false,
+"has_responses": false,
+"has_evaluation": false,
+"status": "ongoing",
+"session_id": "session_1768299283",
+"has_conversation_history": true,
+"question_count": 0,
+"timestamp": "2026-01-13T10:14:47.664393",
+"consolidated": false
+}
+},
+{
+"id": "session_1768391324",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a time when?\"}, {\"role\": \"user\", \"content\": \"no\"}, {\"role\": \"assistant\", \"content\": \"Can you describe a time when you had?\"}, {\"role\": \"user\", \"content\": \"i don't understand\"}, {\"role\": \"assistant\", \"content\": \"Can you describe a time when you had?\"}], \"session_id\": \"session_1768391324\", \"timestamp\": \"2026-01-14T11:48:48.375594\", \"updated_at\": \"2026-01-14T11:50:39.509385\", \"status\": \"completed\", \"last_updated\": 1768391439.151562, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"has_conversation_history": true,
+"timestamp": "2026-01-14T11:48:48.375594",
+"session_id": "session_1768391324",
+"has_responses": false,
+"consolidated": false,
+"status": "completed",
+"question_count": 0,
+"has_questions": false,
+"updated_at": "2026-01-14T11:50:39.509385"
+}
+},
+{
+"id": "session_1768391502",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is Power Apps primarily used for in business environments?\"}], \"session_id\": \"session_1768391502\", \"timestamp\": \"2026-01-14T11:51:46.694853\", \"updated_at\": \"2026-01-14T11:51:46.694862\"}",
+"metadata": {
+"status": "ongoing",
+"question_count": 0,
+"has_conversation_history": true,
+"has_evaluation": false,
+"session_id": "session_1768391502",
+"has_responses": false,
+"timestamp": "2026-01-14T11:51:46.694853",
+"consolidated": false,
+"has_questions": false,
+"updated_at": "2026-01-14T11:51:46.694862"
+}
+},
+{
+"id": "session_1768391519",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a time when?\"}], \"session_id\": \"session_1768391519\", \"timestamp\": \"2026-01-14T11:52:03.840536\", \"updated_at\": \"2026-01-14T11:52:03.840545\"}",
+"metadata": {
+"has_conversation_history": true,
+"updated_at": "2026-01-14T11:52:03.840545",
+"has_questions": false,
+"has_evaluation": false,
+"timestamp": "2026-01-14T11:52:03.840536",
+"has_responses": false,
+"session_id": "session_1768391519",
+"question_count": 0,
+"status": "ongoing",
+"consolidated": false
+}
+},
+{
+"id": "session_1768391768",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates communication skills in real work situations. What happened and how did you handle it?\"}], \"session_id\": \"session_1768391768\", \"timestamp\": \"2026-01-14T11:56:11.819197\", \"updated_at\": \"2026-01-14T11:56:11.819206\"}",
+"metadata": {
+"timestamp": "2026-01-14T11:56:11.819197",
+"question_count": 0,
+"has_evaluation": false,
+"status": "ongoing",
+"has_responses": false,
+"session_id": "session_1768391768",
+"consolidated": false,
+"updated_at": "2026-01-14T11:56:11.819206",
+"has_questions": false,
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1768391785",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}], \"session_id\": \"session_1768391785\", \"timestamp\": \"2026-01-14T11:56:29.283311\", \"updated_at\": \"2026-01-14T11:56:29.283320\"}",
+"metadata": {
+"has_responses": false,
+"has_questions": false,
+"timestamp": "2026-01-14T11:56:29.283311",
+"question_count": 0,
+"consolidated": false,
+"status": "ongoing",
+"has_evaluation": false,
+"session_id": "session_1768391785",
+"has_conversation_history": true,
+"updated_at": "2026-01-14T11:56:29.283320"
+}
+},
+{
+"id": "session_1768458763",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}, {\"role\": \"user\", \"content\": \"qqq\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}, {\"role\": \"user\", \"content\": \"my self rohit vikram\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}], \"session_id\": \"session_1768458763\", \"timestamp\": \"2026-01-15T06:32:47.446530\", \"updated_at\": \"2026-01-15T06:33:56.466953\", \"status\": \"completed\", \"last_updated\": 1768458836.161376, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate did not provide any answers for evaluation. Consequently, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2026-01-15T06:33:56.466953",
+"session_id": "session_1768458763",
+"status": "completed",
+"has_conversation_history": true,
+"has_evaluation": true,
+"has_responses": false,
+"has_questions": false,
+"consolidated": false,
+"timestamp": "2026-01-15T06:32:47.446530",
+"question_count": 0
+}
+},
+{
+"id": "session_1768468933",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}, {\"role\": \"user\", \"content\": \"qqq\"}, {\"role\": \"assistant\", \"content\": \"Can you describe a situation where you had?\"}], \"session_id\": \"session_1768468933\", \"timestamp\": \"2026-01-15T09:22:18.154335\", \"updated_at\": \"2026-01-15T09:23:08.368104\", \"status\": \"completed\", \"last_updated\": 1768468988.0688837, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, no specific strengths or weaknesses could be identified, and all scores are zero.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2026-01-15T09:22:18.154335",
+"has_questions": false,
+"has_evaluation": true,
+"has_responses": false,
+"status": "completed",
+"consolidated": false,
+"question_count": 0,
+"updated_at": "2026-01-15T09:23:08.368104",
+"session_id": "session_1768468933",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1768560444",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}], \"session_id\": \"session_1768560444\", \"timestamp\": \"2026-01-16T10:47:28.916811\", \"updated_at\": \"2026-01-16T10:47:28.916821\"}",
+"metadata": {
+"has_evaluation": false,
+"has_conversation_history": true,
+"session_id": "session_1768560444",
+"status": "ongoing",
+"has_responses": false,
+"question_count": 0,
+"timestamp": "2026-01-16T10:47:28.916811",
+"updated_at": "2026-01-16T10:47:28.916821",
+"has_questions": false,
+"consolidated": false
+}
+},
+{
+"id": "session_1768820693",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}, {\"role\": \"user\", \"content\": \"nothing much\"}, {\"role\": \"assistant\", \"content\": \"Can you walk me through how you usually approach a challenging situation that tests psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration)? What steps do you take and why?\"}], \"session_id\": \"session_1768820693\", \"timestamp\": \"2026-01-19T11:04:57.783227\", \"updated_at\": \"2026-01-19T11:06:10.587400\", \"status\": \"completed\", \"last_updated\": 1768820770.2984643, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2026-01-19T11:06:10.587400",
+"has_responses": false,
+"has_evaluation": true,
+"question_count": 0,
+"timestamp": "2026-01-19T11:04:57.783227",
+"session_id": "session_1768820693",
+"consolidated": false,
+"status": "completed",
+"has_questions": false,
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1768821229",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is Microsoft Excel primarilyms excel?\"}, {\"role\": \"user\", \"content\": \"MS excel is primarily a spreadsheet application developed by microsoft\"}, {\"role\": \"assistant\", \"content\": \"What is the primary function of Microsoft Excel?\"}, {\"role\": \"user\", \"content\": \"is to organize, calculate and analyze data using spreadsheets\"}, {\"role\": \"assistant\", \"content\": \"What is the primary function of MS Excel?\"}], \"session_id\": \"session_1768821229\", \"timestamp\": \"2026-01-19T11:13:53.297805\", \"updated_at\": \"2026-01-19T11:18:21.038107\", \"status\": \"completed\", \"last_updated\": 1768821500.7419245, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate provided no answers for evaluation, resulting in all categories receiving a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"timestamp": "2026-01-19T11:13:53.297805",
+"consolidated": false,
+"has_responses": false,
+"has_evaluation": true,
+"status": "completed",
+"question_count": 0,
+"session_id": "session_1768821229",
+"has_conversation_history": true,
+"updated_at": "2026-01-19T11:18:21.038107"
+}
+},
+{
+"id": "session_1769055030",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"To begin, could you share anpersonality test?\"}, {\"role\": \"user\", \"content\": \"hi my name os rohit vikram\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you had?\"}, {\"role\": \"user\", \"content\": \"I have completed my B.tech in IT\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when you were?\"}, {\"role\": \"user\", \"content\": \"in 2025\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when apersonality test?\"}, {\"role\": \"user\", \"content\": \"i dont know\"}, {\"role\": \"assistant\", \"content\": \"Imagine you're leading a projectpersonality test?\"}, {\"role\": \"user\", \"content\": \"so what?\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}, {\"role\": \"user\", \"content\": \"i not getting yor can you pls tell me some thing more\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when?\"}, {\"role\": \"user\", \"content\": \"thank you\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}], \"session_id\": \"session_1769055030\", \"timestamp\": \"2026-01-22T04:10:34.867138\", \"updated_at\": \"2026-01-22T04:14:31.288056\", \"status\": \"completed\", \"last_updated\": 1769055270.970221, \"evaluation\": {\"num_answers\": 7, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate did not provide any answers during the interview. Therefore, no evaluation could be performed across any categories.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1769055030",
+"has_questions": false,
+"has_evaluation": true,
+"question_count": 0,
+"timestamp": "2026-01-22T04:10:34.867138",
+"consolidated": false,
+"has_responses": false,
+"has_conversation_history": true,
+"status": "completed",
+"updated_at": "2026-01-22T04:14:31.288056"
+}
+},
+{
+"id": "session_1769056877",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"We're going to explorepersonality test?\"}, {\"role\": \"user\", \"content\": \"hgjhjfh\"}, {\"role\": \"assistant\", \"content\": \"We're interested in understanding how you?\"}], \"session_id\": \"session_1769056877\", \"timestamp\": \"2026-01-22T04:41:22.856311\", \"updated_at\": \"2026-01-22T04:45:34.826638\", \"status\": \"completed\", \"last_updated\": 1769057134.4996374, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1769056877",
+"consolidated": false,
+"has_questions": false,
+"question_count": 0,
+"timestamp": "2026-01-22T04:41:22.856311",
+"status": "completed",
+"has_evaluation": true,
+"has_responses": false,
+"updated_at": "2026-01-22T04:45:34.826638",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1769057179",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a situationpersonality test?\"}, {\"role\": \"user\", \"content\": \"fhtfhtr\"}, {\"role\": \"assistant\", \"content\": \"Can you describe a situationpersonality test?\"}], \"session_id\": \"session_1769057179\", \"timestamp\": \"2026-01-22T04:46:23.852936\", \"updated_at\": \"2026-01-22T04:46:43.163178\", \"status\": \"completed\", \"last_updated\": 1769057202.8685431, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1769057179",
+"timestamp": "2026-01-22T04:46:23.852936",
+"question_count": 0,
+"has_responses": false,
+"has_evaluation": true,
+"has_questions": false,
+"updated_at": "2026-01-22T04:46:43.163178",
+"has_conversation_history": true,
+"consolidated": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1769059913",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}], \"session_id\": \"session_1769059913\", \"timestamp\": \"2026-01-22T05:31:57.372551\", \"updated_at\": \"2026-01-22T05:31:57.372564\"}",
+"metadata": {
+"consolidated": false,
+"has_questions": false,
+"has_responses": false,
+"has_evaluation": false,
+"timestamp": "2026-01-22T05:31:57.372551",
+"session_id": "session_1769059913",
+"updated_at": "2026-01-22T05:31:57.372564",
+"question_count": 0,
+"has_conversation_history": true,
+"status": "ongoing"
+}
+},
+{
+"id": "session_1769061273",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Could you describe a situation where you had?\"}], \"session_id\": \"session_1769061273\", \"timestamp\": \"2026-01-22T05:54:37.559961\", \"updated_at\": \"2026-01-22T05:54:37.559972\"}",
+"metadata": {
+"session_id": "session_1769061273",
+"has_questions": false,
+"question_count": 0,
+"has_evaluation": false,
+"updated_at": "2026-01-22T05:54:37.559972",
+"has_responses": false,
+"timestamp": "2026-01-22T05:54:37.559961",
+"has_conversation_history": true,
+"consolidated": false,
+"status": "ongoing"
+}
+},
+{
+"id": "session_1769063636",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}], \"session_id\": \"session_1769063636\", \"timestamp\": \"2026-01-22T06:34:03.344088\", \"updated_at\": \"2026-01-22T06:34:03.344148\"}",
+"metadata": {
+"timestamp": "2026-01-22T06:34:03.344088",
+"session_id": "session_1769063636",
+"consolidated": false,
+"has_questions": false,
+"status": "ongoing",
+"has_evaluation": false,
+"updated_at": "2026-01-22T06:34:03.344148",
+"has_responses": false,
+"question_count": 0,
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1769569370",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}, {\"role\": \"user\", \"content\": \"didn't get\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you faced?\"}], \"session_id\": \"session_1769569370\", \"timestamp\": \"2026-01-28T03:02:55.253307\", \"updated_at\": \"2026-01-28T03:03:45.511734\", \"status\": \"completed\", \"last_updated\": 1769569425.2109833, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"session_id": "session_1769569370",
+"question_count": 0,
+"has_evaluation": true,
+"status": "completed",
+"updated_at": "2026-01-28T03:03:45.511734",
+"consolidated": false,
+"has_questions": false,
+"has_conversation_history": true,
+"timestamp": "2026-01-28T03:02:55.253307"
+}
+},
+{
+"id": "session_1769580336",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a time when you?\"}, {\"role\": \"user\", \"content\": \"hello this is rohit vikram\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when you had?\"}], \"session_id\": \"session_1769580336\", \"timestamp\": \"2026-01-28T06:05:40.496230\", \"updated_at\": \"2026-01-28T06:07:01.615123\", \"status\": \"completed\", \"last_updated\": 1769580421.3160725, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate provided no scorable answers in the conversation. Therefore, no evaluation could be performed based on the provided input. All categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"updated_at": "2026-01-28T06:07:01.615123",
+"consolidated": false,
+"question_count": 0,
+"timestamp": "2026-01-28T06:05:40.496230",
+"has_evaluation": true,
+"status": "completed",
+"has_conversation_history": true,
+"session_id": "session_1769580336",
+"has_responses": false
+}
+},
+{
+"id": "session_1769587155",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}], \"session_id\": \"session_1769587155\", \"timestamp\": \"2026-01-28T07:59:20.834952\", \"updated_at\": \"2026-01-28T07:59:20.834961\"}",
+"metadata": {
+"updated_at": "2026-01-28T07:59:20.834961",
+"has_responses": false,
+"consolidated": false,
+"has_questions": false,
+"session_id": "session_1769587155",
+"has_conversation_history": true,
+"has_evaluation": false,
+"status": "ongoing",
+"question_count": 0,
+"timestamp": "2026-01-28T07:59:20.834952"
+}
+},
+{
+"id": "session_1769587175",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What are the main reasonspython?\"}], \"session_id\": \"session_1769587175\", \"timestamp\": \"2026-01-28T07:59:39.884391\", \"updated_at\": \"2026-01-28T07:59:39.884399\"}",
+"metadata": {
+"consolidated": false,
+"has_responses": false,
+"updated_at": "2026-01-28T07:59:39.884399",
+"has_evaluation": false,
+"has_questions": false,
+"session_id": "session_1769587175",
+"question_count": 0,
+"timestamp": "2026-01-28T07:59:39.884391",
+"has_conversation_history": true,
+"status": "ongoing"
+}
+},
+{
+"id": "session_1769594486",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}, {\"role\": \"user\", \"content\": \"ttttttttrtrtr\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}, {\"role\": \"user\", \"content\": \"tytytytyty\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}], \"session_id\": \"session_1769594486\", \"timestamp\": \"2026-01-28T10:01:30.837683\", \"updated_at\": \"2026-01-28T10:08:07.320893\", \"status\": \"completed\", \"last_updated\": 1769594887.0123844, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_responses": false,
+"session_id": "session_1769594486",
+"has_conversation_history": true,
+"timestamp": "2026-01-28T10:01:30.837683",
+"status": "completed",
+"has_evaluation": true,
+"question_count": 0,
+"consolidated": false,
+"updated_at": "2026-01-28T10:08:07.320893"
+}
+},
+{
+"id": "session_1769595286",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}], \"session_id\": \"session_1769595286\", \"timestamp\": \"2026-01-28T10:14:51.491541\", \"updated_at\": \"2026-01-28T10:14:51.491549\"}",
+"metadata": {
+"has_questions": false,
+"consolidated": false,
+"session_id": "session_1769595286",
+"has_conversation_history": true,
+"status": "ongoing",
+"updated_at": "2026-01-28T10:14:51.491549",
+"has_responses": false,
+"has_evaluation": false,
+"question_count": 0,
+"timestamp": "2026-01-28T10:14:51.491541"
+}
+},
+{
+"id": "session_1769596577",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}], \"session_id\": \"session_1769596577\", \"timestamp\": \"2026-01-28T10:36:21.679807\", \"updated_at\": \"2026-01-28T10:36:21.679819\"}",
+"metadata": {
+"timestamp": "2026-01-28T10:36:21.679807",
+"has_responses": false,
+"has_conversation_history": true,
+"status": "ongoing",
+"has_evaluation": false,
+"updated_at": "2026-01-28T10:36:21.679819",
+"has_questions": false,
+"session_id": "session_1769596577",
+"question_count": 0,
+"consolidated": false
+}
+},
+{
+"id": "session_1769600858",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}, {\"role\": \"user\", \"content\": \"fhfhyhyhyh\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a recent situation at work that best illustrates psychometric traits and decision-making patterns (e.g., stress management, adaptability, collaboration). What happened and how did you handle it?\"}], \"session_id\": \"session_1769600858\", \"timestamp\": \"2026-01-28T11:47:42.360458\", \"updated_at\": \"2026-01-28T11:48:08.303061\", \"status\": \"completed\", \"last_updated\": 1769600888.0126078, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"timestamp": "2026-01-28T11:47:42.360458",
+"session_id": "session_1769600858",
+"has_questions": false,
+"has_responses": false,
+"has_conversation_history": true,
+"updated_at": "2026-01-28T11:48:08.303061",
+"has_evaluation": true,
+"question_count": 0,
+"status": "completed"
+}
+},
+{
+"id": "session_1769609819",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What are the key features that make Python a popular programming language?\"}, {\"role\": \"user\", \"content\": \"gvdrgbdrgd\"}, {\"role\": \"assistant\", \"content\": \"What makes Python a versatile language forpython?\"}], \"session_id\": \"session_1769609819\", \"timestamp\": \"2026-01-28T14:17:03.729723\", \"updated_at\": \"2026-01-28T14:17:32.544046\", \"status\": \"completed\", \"last_updated\": 1769609852.2124007, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. All scores are set to 0.0 due to the absence of information to assess.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "session_1769609819",
+"has_questions": false,
+"status": "completed",
+"has_evaluation": true,
+"has_responses": false,
+"question_count": 0,
+"consolidated": false,
+"has_conversation_history": true,
+"timestamp": "2026-01-28T14:17:03.729723",
+"updated_at": "2026-01-28T14:17:32.544046"
+}
+},
+{
+"id": "session_1769611734",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What are the fundamental characteristics that?\"}, {\"role\": \"user\", \"content\": \"yhfyhh\"}, {\"role\": \"assistant\", \"content\": \"What are the fundamental characteristics that make Python a popularprogramming language?\"}], \"session_id\": \"session_1769611734\", \"timestamp\": \"2026-01-28T14:48:59.383150\", \"updated_at\": \"2026-01-28T14:49:28.704203\", \"status\": \"completed\", \"last_updated\": 1769611768.3883371, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"has_conversation_history": true,
+"timestamp": "2026-01-28T14:48:59.383150",
+"session_id": "session_1769611734",
+"question_count": 0,
+"has_evaluation": true,
+"has_questions": false,
+"updated_at": "2026-01-28T14:49:28.704203",
+"has_responses": false,
+"status": "completed"
+}
+},
+{
+"id": "session_1769657241",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What is Python primarily used for in modern?\"}], \"session_id\": \"session_1769657241\", \"timestamp\": \"2026-01-29T03:27:27.535925\", \"updated_at\": \"2026-01-29T03:27:27.535933\"}",
+"metadata": {
+"timestamp": "2026-01-29T03:27:27.535925",
+"question_count": 0,
+"status": "ongoing",
+"has_evaluation": false,
+"consolidated": false,
+"has_responses": false,
+"has_questions": false,
+"updated_at": "2026-01-29T03:27:27.535933",
+"session_id": "session_1769657241",
+"has_conversation_history": true
+}
+},
+{
+"id": "session_1769657245",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Could you describe a situation where you had?\"}, {\"role\": \"user\", \"content\": \"im in my home write now\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you were?\"}, {\"role\": \"user\", \"content\": \"im have my b.tech\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you?\"}, {\"role\": \"user\", \"content\": \"fhfhfh\"}, {\"role\": \"assistant\", \"content\": \"Can you tell me aboutpersonality test?\"}], \"session_id\": \"session_1769657245\", \"timestamp\": \"2026-01-29T03:27:28.968895\", \"updated_at\": \"2026-01-29T03:28:44.727056\", \"status\": \"completed\", \"last_updated\": 1769657324.401257, \"evaluation\": {\"num_answers\": 3, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 3 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"session_id": "session_1769657245",
+"has_conversation_history": true,
+"consolidated": false,
+"timestamp": "2026-01-29T03:27:28.968895",
+"question_count": 0,
+"has_evaluation": true,
+"has_questions": false,
+"updated_at": "2026-01-29T03:28:44.727056",
+"has_responses": false
+}
+},
+{
+"id": "session_1769657423",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Can you describe a situation where you had?\"}], \"session_id\": \"session_1769657423\", \"timestamp\": \"2026-01-29T03:30:27.815308\", \"updated_at\": \"2026-01-29T03:30:27.815320\"}",
+"metadata": {
+"has_evaluation": false,
+"timestamp": "2026-01-29T03:30:27.815308",
+"question_count": 0,
+"updated_at": "2026-01-29T03:30:27.815320",
+"session_id": "session_1769657423",
+"status": "ongoing",
+"has_questions": false,
+"has_responses": false,
+"has_conversation_history": true,
+"consolidated": false
+}
+},
+{
+"id": "session_1769697427",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What problem does React.js primarilyreact.js?\"}, {\"role\": \"user\", \"content\": \"dskdksda\"}, {\"role\": \"assistant\", \"content\": \"What problem does React.js primarily solve in web development?\"}, {\"role\": \"user\", \"content\": \"s,dns\"}, {\"role\": \"assistant\", \"content\": \"How does React.js simplify the process?\"}, {\"role\": \"user\", \"content\": \"fuck offf\"}, {\"role\": \"assistant\", \"content\": \"What is the core concept behind?\"}, {\"role\": \"user\", \"content\": \"skcnskncksc\"}, {\"role\": \"assistant\", \"content\": \"What fundamental problem does React.js aim?\"}, {\"role\": \"user\", \"content\": \"dlsmldsmla\"}, {\"role\": \"assistant\", \"content\": \"What fundamental problem does React.jsreact.js?\"}, {\"role\": \"user\", \"content\": \"kjkn\"}, {\"role\": \"assistant\", \"content\": \"What core problem does React.\"}, {\"role\": \"user\", \"content\": \"end\"}, {\"role\": \"assistant\", \"content\": \"What core problem does React.js fundamentally solve for web development?\"}, {\"role\": \"user\", \"content\": \"knkbkb\"}, {\"role\": \"assistant\", \"content\": \"What are the key advantages of using?\"}, {\"role\": \"user\", \"content\": \"close it\"}, {\"role\": \"assistant\", \"content\": \"What is the primary architectural pattern React?\"}, {\"role\": \"user\", \"content\": \"what is my name\"}, {\"role\": \"assistant\", \"content\": \"What is the primary architectural pattern React?\"}, {\"role\": \"user\", \"content\": \"do not know\"}, {\"role\": \"assistant\", \"content\": \"What is JSX and why is it?\"}, {\"role\": \"user\", \"content\": \"asasasa\"}, {\"role\": \"assistant\", \"content\": \"What is the primary purpose of a React?\"}, {\"role\": \"user\", \"content\": \"end end\"}, {\"role\": \"assistant\", \"content\": \"What is a component in React.js and why is it fundamental to the framework?\"}, {\"role\": \"user\", \"content\": \"end\"}, {\"role\": \"assistant\", \"content\": \"How does React's Virtual DOMreact.js?\"}], \"session_id\": \"session_1769697427\", \"timestamp\": \"2026-01-29T14:37:12.076920\", \"updated_at\": \"2026-01-29T14:42:45.979760\", \"status\": \"completed\", \"last_updated\": 1769697765.6852324, \"evaluation\": {\"num_answers\": 14, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 14 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_conversation_history": true,
+"question_count": 0,
+"status": "completed",
+"session_id": "session_1769697427",
+"has_questions": false,
+"timestamp": "2026-01-29T14:37:12.076920",
+"updated_at": "2026-01-29T14:42:45.979760",
+"has_evaluation": true,
+"has_responses": false,
+"consolidated": false
+}
+},
+{
+"id": "session_1769750861",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"What are the primary safety considerations when operating heavy vehicles?\"}, {\"role\": \"user\", \"content\": \"don't know\"}, {\"role\": \"assistant\", \"content\": \"What are the essential preheavy vehicle operation?\"}, {\"role\": \"user\", \"content\": \"Valid driving license. minimum age requirement, driving experience, medical fitness certificate, knowledge of traffic rules, vehicle handling skills\"}, {\"role\": \"assistant\", \"content\": \"What are the essential preheavy vehicle operation?\"}], \"session_id\": \"session_1769750861\", \"timestamp\": \"2026-01-30T05:27:46.024419\", \"updated_at\": \"2026-01-30T05:31:14.395947\", \"status\": \"completed\", \"last_updated\": 1769751074.1011066, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 40.25, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.5, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Share collaboration/team examples\"], \"summary\": \"The candidate did not provide any answers for evaluation. Therefore, no specific strengths or weaknesses could be identified.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"timestamp": "2026-01-30T05:27:46.024419",
+"question_count": 0,
+"has_evaluation": true,
+"session_id": "session_1769750861",
+"consolidated": false,
+"status": "completed",
+"updated_at": "2026-01-30T05:31:14.395947",
+"has_conversation_history": true,
+"has_questions": false
+}
+},
+{
+"id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_86ee705c37c8428a",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Vignesh, Tell me about a time when you had to present a complex design concept orstrategy to a non-technical client or stakeholder.\"}, {\"role\": \"user\", \"content\": \"i don't know\"}, {\"role\": \"assistant\", \"content\": \"Describe a specific instance where a client or stakeholder misunderstood your design concept, or strongly disagreed with your proposed direction. What stepsdid you take to clarify your vision and bridge that communication gap?\"}], \"session_id\": \"Nu5jWtJZyFMHBSJuNjFTQvFrhP03_86ee705c37c8428a\", \"timestamp\": \"2026-02-02T04:17:57.441186\", \"updated_at\": \"2026-02-02T04:19:29.927314\", \"status\": \"completed\", \"last_updated\": 1770005969.6038272, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"updated_at": "2026-02-02T04:19:29.927314",
+"has_evaluation": true,
+"session_id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_86ee705c37c8428a",
+"has_conversation_history": true,
+"timestamp": "2026-02-02T04:17:57.441186",
+"status": "completed",
+"has_questions": false,
+"question_count": 0,
+"has_responses": false
+}
+},
+{
+"id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_88ed5e20ca9746b4",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Vignesh, Given your background as a Senior Ad Designer, what Photoshop featuresdo you find most critical for creating effective ad layouts and social media campaigns?\"}, {\"role\": \"user\", \"content\": \"As a scenior ad sesigner the photoshop features i find most criticall for creating effective ad layout are the ones that support precision , flexibility and speed while maintainng strong visual hierarchy\"}, {\"role\": \"assistant\", \"content\": \"You've listed UI/UX Ad Layoutsas a skill. How do you typically integrate Photoshop into your workflow for designing UI/UX elements within an ad campaign, and what are its primary advantages or disadvantages in that specific context?\"}, {\"role\": \"user\", \"content\": \"i typically intergrate photoshop into my workflow for UI/UX ad layouts during the visual design and asset creation stages, especiaaly when the focus is on the high impact visuals rather than full product UX\"}, {\"role\": \"assistant\", \"content\": \"You mentioned precision, flexibility, and speed are critical for ad layouts. Can you elaborate on how Photoshop's Smart Objects and Libraries contribute to maintaining that precision and flexibility across multiple variations or sizes of an?\"}], \"session_id\": \"Nu5jWtJZyFMHBSJuNjFTQvFrhP03_88ed5e20ca9746b4\", \"timestamp\": \"2026-02-02T04:20:46.152903\", \"updated_at\": \"2026-02-02T04:29:28.221996\", \"status\": \"completed\", \"last_updated\": 1770006567.9298487, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 41.0, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [\"Clear, structured explanations\"], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"has_questions": false,
+"timestamp": "2026-02-02T04:20:46.152903",
+"consolidated": false,
+"session_id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_88ed5e20ca9746b4",
+"has_evaluation": true,
+"updated_at": "2026-02-02T04:29:28.221996",
+"has_responses": false,
+"status": "completed",
+"has_conversation_history": true
+}
+},
+{
+"id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_54e98a4f9778409d",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Vignesh, Tell me about a time you needed to explain a complex ad design concept or a technical designchoice to a client or team member who had little to no design background, and how you ensured they fully grasped what you were conveying?\"}, {\"role\": \"user\", \"content\": \"one situation that stands out was when i was working on a digital ad campaign that required a strong visual hierarchy and responsive layout\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time you realized your initial communication approach wasn't effective with a particular client or team member regarding an ad design project, and what adjustmentsyou made to successfully get your message across.\"}, {\"role\": \"user\", \"content\": \"There was a time during a digital ad campign when i realized my intial communication approach wasn;t effective with a client who had lmited design knowlege\"}, {\"role\": \"assistant\", \"content\": \"Describe a situation where you hadto present an ad campaign concept that you believed was excellent, but it was met with significant resistance or misunderstanding from key stakeholders; how did you communicate your rationale and adapt your approach to gain their buy-in or find an alternative solution?\"}], \"session_id\": \"Nu5jWtJZyFMHBSJuNjFTQvFrhP03_54e98a4f9778409d\", \"timestamp\": \"2026-02-02T04:36:55.809331\", \"updated_at\": \"2026-02-02T04:45:15.153083\", \"status\": \"completed\", \"last_updated\": 1770007514.8517141, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 41.0, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [\"Clear, structured explanations\"], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"consolidated": false,
+"updated_at": "2026-02-02T04:45:15.153083",
+"has_responses": false,
+"timestamp": "2026-02-02T04:36:55.809331",
+"has_evaluation": true,
+"question_count": 0,
+"has_conversation_history": true,
+"has_questions": false,
+"session_id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_54e98a4f9778409d"
+}
+},
+{
+"id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_7ea426279c0b4c32",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Vignesh, Tell me about a time when you completed a structured exercise designed to evaluateyour working style or cognitive approach; how did you prepare for it, and what insights did you gain that influenced your professional development?\"}, {\"role\": \"user\", \"content\": \"tttt\"}, {\"role\": \"assistant\", \"content\": \"Describe a situation wherethe understanding you gained about your own or a team member's working style, derived from a structured evaluation, directly impacted how you approached a design project or resolved a creative challenge.\"}, {\"role\": \"user\", \"content\": \"wwem\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when understandingyour own or a team member's cognitive preferences, identified through a structured evaluation, helped you anticipate and mitigate a potential conflict or bottleneck during a fast-paced social media campaign design.\"}], \"session_id\": \"Nu5jWtJZyFMHBSJuNjFTQvFrhP03_7ea426279c0b4c32\", \"timestamp\": \"2026-02-02T05:14:05.380724\", \"updated_at\": \"2026-02-02T05:16:14.308446\", \"status\": \"completed\", \"last_updated\": 1770009374.015078, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"has_responses": false,
+"has_conversation_history": true,
+"has_questions": false,
+"has_evaluation": true,
+"question_count": 0,
+"timestamp": "2026-02-02T05:14:05.380724",
+"consolidated": false,
+"updated_at": "2026-02-02T05:16:14.308446",
+"session_id": "Nu5jWtJZyFMHBSJuNjFTQvFrhP03_7ea426279c0b4c32"
+}
+},
+{
+"id": "ertvyGDtudXBsGtUWuiYBvoIBQe2_43fc7007880a4b6b",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello HARISH RAMAKRISHNAN, Tell me about a time you gained significant insight into your own working style or problem-solving approach through a structured evaluation, and how you applied that understanding in a professional setting?\"}, {\"role\": \"user\", \"content\": \"i get it during annual performance review\"}, {\"role\": \"assistant\", \"content\": \"How have you leveraged an understanding of different team members' preferred working approaches to resolve a significant disagreement or improve collaboration on a critical deliver able?\"}, {\"role\": \"user\", \"content\": \"yes many times, currently our product is going through that phase , we are doing a retro analysis after every release\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when you tailored your communication or project strategy to better align with the distinct cognitive or behavioral preferences of key stakeholders or team members, and what impact did that have on the project's success?\"}], \"session_id\": \"ertvyGDtudXBsGtUWuiYBvoIBQe2_43fc7007880a4b6b\", \"timestamp\": \"2026-02-17T13:01:43.414008\", \"updated_at\": \"2026-02-17T13:04:34.811408\", \"status\": \"completed\", \"last_updated\": 1771333474.49017, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 42.5, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.55, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [\"Explained performance optimizations\"], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"has_questions": false,
+"session_id": "ertvyGDtudXBsGtUWuiYBvoIBQe2_43fc7007880a4b6b",
+"has_conversation_history": true,
+"question_count": 0,
+"updated_at": "2026-02-17T13:04:34.811408",
+"has_responses": false,
+"status": "completed",
+"consolidated": false,
+"timestamp": "2026-02-17T13:01:43.414008"
+}
+},
+{
+"id": "v4xsc0hgqQa3XJZTXiUxJnaQvxp1_411ca6eabb014ca5",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Harish Ramakrishnan, Describe a situation where understanding your own preferred working style or approach significantly influenced how you collaborated with a diverse team on a critical project?\"}, {\"role\": \"user\", \"content\": \"i am managing my recruitment team currently,  iunderstand that i need to first understand before giving solutions and make the recruiters tell their understanding asn ask them to document the progress so that i can review from there and while reviewing i can think and give them solutions\"}, {\"role\": \"assistant\", \"content\": \"Tell me about a time when your natural communication style differed significantly from a key stakeholder's, and how you adjusted your approach to ensure successful project outcomes?\"}, {\"role\": \"user\", \"content\": \"In one project teh take holder wanted everything in email and wanted daily progress so i incorporated a table with progress on every email i or the team send , this table always gave him the latest\"}, {\"role\": \"assistant\", \"content\": \"Describe a situation where your preferred method of gathering information and structuring solutions needed to be significantly altered due to unforeseen circumstances or a team's differing approach?\"}], \"session_id\": \"v4xsc0hgqQa3XJZTXiUxJnaQvxp1_411ca6eabb014ca5\", \"timestamp\": \"2026-02-19T06:32:25.170552\", \"updated_at\": \"2026-02-19T06:36:44.434370\", \"status\": \"completed\", \"last_updated\": 1771483004.1373427, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 43.5, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.5, \"cultural_fit\": 0.35}, \"strengths\": [\"Clear, structured explanations\"], \"weaknesses\": [], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"updated_at": "2026-02-19T06:36:44.434370",
+"has_evaluation": true,
+"has_responses": false,
+"has_questions": false,
+"question_count": 0,
+"status": "completed",
+"consolidated": false,
+"session_id": "v4xsc0hgqQa3XJZTXiUxJnaQvxp1_411ca6eabb014ca5",
+"has_conversation_history": true,
+"timestamp": "2026-02-19T06:32:25.170552"
+}
+},
+{
+"id": "v4xsc0hgqQa3XJZTXiUxJnaQvxp1_79dd803881094d89",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Harish Ramakrishnan, Tell me about a time when your natural way of approaching a challenge or interacting with a team member either significantly helped or hindered a project, and what you learned from that experience.\"}], \"session_id\": \"v4xsc0hgqQa3XJZTXiUxJnaQvxp1_79dd803881094d89\", \"timestamp\": \"2026-02-19T06:44:24.113496\", \"updated_at\": \"2026-02-19T06:44:24.113505\"}",
+"metadata": {
+"timestamp": "2026-02-19T06:44:24.113496",
+"session_id": "v4xsc0hgqQa3XJZTXiUxJnaQvxp1_79dd803881094d89",
+"has_responses": false,
+"updated_at": "2026-02-19T06:44:24.113505",
+"has_questions": false,
+"consolidated": false,
+"has_evaluation": false,
+"question_count": 0,
+"status": "ongoing",
+"has_conversation_history": true
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_ac16fd6afa8a45d0",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, What is middleware in Express. js and how do you use it in your applications?\"}, {\"role\": \"user\", \"content\": \"hfdkjadhfja\"}, {\"role\": \"assistant\", \"content\": \"Can you provide a common real-world example of how you would use middleware in an Express. js application?\"}, {\"role\": \"user\", \"content\": \"sedjidisdsdsdsijds\"}, {\"role\": \"assistant\", \"content\": \"How do you define and organize routes in an Express. js application, especially as the application grows in complexity?\"}, {\"role\": \"user\", \"content\": \"fkdflkdf\"}, {\"role\": \"assistant\", \"content\": \"How do you handle errors in an Express. js application, particularly distinguishing between operational and programmatic errors?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_ac16fd6afa8a45d0\", \"timestamp\": \"2026-02-19T08:15:49.129685\", \"updated_at\": \"2026-02-19T08:17:47.925395\", \"status\": \"completed\", \"last_updated\": 1771489067.4106205, \"evaluation\": {\"num_answers\": 3, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 3 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"has_evaluation": true,
+"consolidated": false,
+"has_responses": false,
+"timestamp": "2026-02-19T08:15:49.129685",
+"updated_at": "2026-02-19T08:17:47.925395",
+"has_conversation_history": true,
+"question_count": 0,
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_ac16fd6afa8a45d0",
+"has_questions": false
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_1cf4e548ae994dd1",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain what Express. js is and its primary purpose in web development?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_1cf4e548ae994dd1\", \"timestamp\": \"2026-02-19T08:20:51.883118\", \"updated_at\": \"2026-02-19T08:20:51.883126\"}",
+"metadata": {
+"updated_at": "2026-02-19T08:20:51.883126",
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_1cf4e548ae994dd1",
+"has_responses": false,
+"has_evaluation": false,
+"has_conversation_history": true,
+"status": "ongoing",
+"has_questions": false,
+"question_count": 0,
+"timestamp": "2026-02-19T08:20:51.883118",
+"consolidated": false
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_aeca132acd63441c",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain what Express. js is and why it's commonly used for building web applications?\"}, {\"role\": \"user\", \"content\": \"fufjuyfju\"}, {\"role\": \"assistant\", \"content\": \"Express. js relies heavily on middleware. Can you explain what middleware is in the context of Express. js and provide an example of how you might use it?\"}, {\"role\": \"user\", \"content\": \"fjfjyudfuydiuy\"}, {\"role\": \"assistant\", \"content\": \"Routing is a core concept in Express. js. Could you describe how routing works in Express. js and give an example of a simple route definition?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_aeca132acd63441c\", \"timestamp\": \"2026-02-19T08:58:41.855979\", \"updated_at\": \"2026-02-19T08:59:55.189697\", \"status\": \"completed\", \"last_updated\": 1771491594.8781202, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"has_evaluation": true,
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_aeca132acd63441c",
+"has_responses": false,
+"has_questions": false,
+"question_count": 0,
+"updated_at": "2026-02-19T08:59:55.189697",
+"timestamp": "2026-02-19T08:58:41.855979",
+"status": "completed",
+"has_conversation_history": true
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_1ff70ebd05fb4ddc",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, What is Node. js, and what are its primary use cases?\"}, {\"role\": \"user\", \"content\": \"yfoyftof\"}, {\"role\": \"assistant\", \"content\": \"You mentioned Express. js in your skills. Can you explain what Express. js is and how it simplifies building web applications with Node. js?\"}, {\"role\": \"user\", \"content\": \"ytdydududutfdufouyfou\"}, {\"role\": \"assistant\", \"content\": \"Can you explain the concept of middleware in Express. js and give an example of a common use case?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_1ff70ebd05fb4ddc\", \"timestamp\": \"2026-02-19T09:12:25.010075\", \"updated_at\": \"2026-02-19T09:13:50.044271\", \"status\": \"completed\", \"last_updated\": 1771492429.733192, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"has_evaluation": true,
+"question_count": 0,
+"consolidated": false,
+"status": "completed",
+"has_conversation_history": true,
+"timestamp": "2026-02-19T09:12:25.010075",
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_1ff70ebd05fb4ddc",
+"updated_at": "2026-02-19T09:13:50.044271",
+"has_questions": false
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_8888d0f5e2ec4d4a",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, What is JSX in React, and why is it used?\"}, {\"role\": \"user\", \"content\": \"dytdrdytdyg\"}, {\"role\": \"assistant\", \"content\": \"How do you pass data between components in React, and what are \\\"props\\\"?\"}, {\"role\": \"user\", \"content\": \"fgfgfhghgdg\"}, {\"role\": \"assistant\", \"content\": \"What is the purpose of `state` in a React component, and how does it differ from `props`?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_8888d0f5e2ec4d4a\", \"timestamp\": \"2026-02-19T09:16:37.006724\", \"updated_at\": \"2026-02-19T09:17:44.664714\", \"status\": \"completed\", \"last_updated\": 1771492664.3592148, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_8888d0f5e2ec4d4a",
+"timestamp": "2026-02-19T09:16:37.006724",
+"has_responses": false,
+"updated_at": "2026-02-19T09:17:44.664714",
+"has_evaluation": true,
+"has_questions": false,
+"question_count": 0,
+"consolidated": false,
+"has_conversation_history": true,
+"status": "completed"
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_4899f2058a044072",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain what Node. js is and its primary purpose in web development?\"}, {\"role\": \"user\", \"content\": \"fuffyfuyfuyf\"}, {\"role\": \"assistant\", \"content\": \"Can you explain how Node. js handles concurrency, and what is the significance of its event-driven, non-blocking I/O model?\"}, {\"role\": \"user\", \"content\": \"fufytffuf\"}, {\"role\": \"assistant\", \"content\": \"Given your experience with Node. js, could you describe the Node. js Event Loop and explain its role in managing asynchronous operations?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_4899f2058a044072\", \"timestamp\": \"2026-02-19T09:21:48.627116\", \"updated_at\": \"2026-02-19T09:23:01.740409\", \"status\": \"completed\", \"last_updated\": 1771492981.4277055, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"consolidated": false,
+"timestamp": "2026-02-19T09:21:48.627116",
+"has_conversation_history": true,
+"has_questions": false,
+"status": "completed",
+"updated_at": "2026-02-19T09:23:01.740409",
+"has_responses": false,
+"question_count": 0,
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_4899f2058a044072"
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_f8fac372f89b4727",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain the concept of the Virtual DOM in React. js and its benefits?\"}, {\"role\": \"user\", \"content\": \"fhrthrhtreu\"}, {\"role\": \"assistant\", \"content\": \"What are React components, and what's the difference between functional and class components?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_f8fac372f89b4727\", \"timestamp\": \"2026-02-19T09:24:59.921602\", \"updated_at\": \"2026-02-19T09:26:01.576427\", \"status\": \"completed\", \"last_updated\": 1771493161.2539623, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"consolidated": false,
+"question_count": 0,
+"has_evaluation": true,
+"has_questions": false,
+"updated_at": "2026-02-19T09:26:01.576427",
+"timestamp": "2026-02-19T09:24:59.921602",
+"has_responses": false,
+"status": "completed",
+"has_conversation_history": true,
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_f8fac372f89b4727"
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_bd232afd82034dab",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain the key differences between `var`, `let`, and `const` in Java Script?\"}, {\"role\": \"user\", \"content\": \"vhvjhvhvjhvjvhjv\"}, {\"role\": \"assistant\", \"content\": \"Can you explain what hoisting is in Java Script and how it applies to `var`, `let`, and`const` declarations?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_bd232afd82034dab\", \"timestamp\": \"2026-02-19T09:33:09.319264\", \"updated_at\": \"2026-02-19T09:33:49.066576\", \"status\": \"completed\", \"last_updated\": 1771493628.764385, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"timestamp": "2026-02-19T09:33:09.319264",
+"updated_at": "2026-02-19T09:33:49.066576",
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_bd232afd82034dab",
+"has_questions": false,
+"has_evaluation": true,
+"has_responses": false,
+"question_count": 0,
+"has_conversation_history": true,
+"consolidated": false
+}
+},
+{
+"id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_71a15b52ef3e4ce1",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain the concept of the Virtual DOM in React. js?\"}, {\"role\": \"user\", \"content\": \"trtretretrwt\"}, {\"role\": \"assistant\", \"content\": \"What is the primary difference between `state` and `props` in React, and when would you use each?\"}], \"session_id\": \"S7zBYx5y5xd2SuVKc5E5VceR1ci1_71a15b52ef3e4ce1\", \"timestamp\": \"2026-02-19T09:41:25.703658\", \"updated_at\": \"2026-02-19T09:42:12.047129\", \"status\": \"completed\", \"last_updated\": 1771494131.7479868, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"has_evaluation": true,
+"status": "completed",
+"updated_at": "2026-02-19T09:42:12.047129",
+"consolidated": false,
+"session_id": "S7zBYx5y5xd2SuVKc5E5VceR1ci1_71a15b52ef3e4ce1",
+"has_responses": false,
+"has_conversation_history": true,
+"question_count": 0,
+"timestamp": "2026-02-19T09:41:25.703658"
+}
+},
+{
+"id": "OF4S5ihPBpVFnkH3fiumbBEBmFB3_a98402f717934abb",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Rohit Vikram, Can you explain the key differences between a list and a tuple in Python?\"}, {\"role\": \"user\", \"content\": \"fytytftfytfy\"}, {\"role\": \"assistant\", \"content\": \"What are dictionaries in Python, and when would you typically choose to use a dictionary instead of a list or a tuple?\"}], \"session_id\": \"OF4S5ihPBpVFnkH3fiumbBEBmFB3_a98402f717934abb\", \"timestamp\": \"2026-02-19T13:22:21.326654\", \"updated_at\": \"2026-02-19T13:23:12.813627\", \"status\": \"completed\", \"last_updated\": 1771507392.4082909, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"has_conversation_history": true,
+"status": "completed",
+"has_evaluation": true,
+"timestamp": "2026-02-19T13:22:21.326654",
+"updated_at": "2026-02-19T13:23:12.813627",
+"question_count": 0,
+"consolidated": false,
+"session_id": "OF4S5ihPBpVFnkH3fiumbBEBmFB3_a98402f717934abb",
+"has_questions": false
+}
+},
+{
+"id": "FY1LcB00AChm3RlcvYJdETlL3YI3_aa34319e29444b5d",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Shreyal Sharma, as a Product Owner with extensive experience, how do you leverage Agile principles to prioritize features and manage stakeholder expectations effectively?\"}, {\"role\": \"user\", \"content\": \"agile principle allows me to priortize and release in sprints and thereby the stake holders sees the result early\"}, {\"role\": \"assistant\", \"content\": \"Given the iterative and often exploratory nature of AI/ML development, how do you adapt standard Agile ceremonies or practices, such as Sprint Planning or Backlog Grooming, to effectively manage the unique uncertainties and research aspects inherent in these projects?\"}, {\"role\": \"user\", \"content\": \"we can still breakdown the exploratiory steps to user stories assign efforts and resources and create epics , stories and track them to sprints so that model gets built step by step the project also need lot of data collection cleansing and preperation and all this is poosbile via scrum\"}, {\"role\": \"assistant\", \"content\": \"When an AI/ML sprint doesn't yield the expected model performance or research outcome, how do you manage stakeholder expectations and pivot your product roadmap within an Agile framework?\"}, {\"role\": \"user\", \"content\": \"this is were the iterative approach helps and we can look at training the model and adding more parameters to achieve the results\"}, {\"role\": \"assistant\", \"content\": \"You mentioned breaking down exploratory steps into user stories. For AI/ML projects where the outcome of an experiment or model iteration is inherently uncertain, how do you typically craft these user stories to ensure they are?\"}, {\"role\": \"user\", \"content\": \"the outcome maynot always be a completed model it could be that model  needs furthe fine tuning\"}, {\"role\": \"assistant\", \"content\": \"You mentioned breaking down exploratory steps into user stories for AI/ML projects. Given the inherent uncertainty in these projects, how do you ensure those user stories are actionable and contribute to sprint goals, even if the exact outcome isn't guaranteed?\"}, {\"role\": \"user\", \"content\": \"the outcome maynot always be a completed model it could be that model  needs furthe fine tuning\"}, {\"role\": \"assistant\", \"content\": \"Considering the iterative nature and potential for partial outcomes in AI/ML projects, how do you manage and prioritize your product backlog to reflect these evolving insights and uncertainties?\"}], \"session_id\": \"FY1LcB00AChm3RlcvYJdETlL3YI3_aa34319e29444b5d\", \"timestamp\": \"2026-02-19T16:24:41.824588\", \"updated_at\": \"2026-02-19T16:33:21.278759\", \"status\": \"completed\", \"last_updated\": 1771518800.9848394, \"evaluation\": {\"num_answers\": 5, \"overall_score\": 25.0, \"category_scores\": {\"technical\": 0.25, \"problem_solving\": 0.25, \"communication\": 0.25, \"experience_relevance\": 0.25, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [], \"summary\": \"No candidate answers were provided for evaluation. Scores are assigned minimally based on the num_answers metadata, assuming some basic responses were given. Specific strengths and weaknesses cannot be identified without content.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"has_responses": false,
+"has_evaluation": true,
+"timestamp": "2026-02-19T16:24:41.824588",
+"has_conversation_history": true,
+"session_id": "FY1LcB00AChm3RlcvYJdETlL3YI3_aa34319e29444b5d",
+"updated_at": "2026-02-19T16:33:21.278759",
+"question_count": 0,
+"has_questions": false,
+"consolidated": false
+}
+},
+{
+"id": "VC8dfmN0J6Z7xzYlx0gfuVBR9S03_13330f7c502a42af",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Anjali Ramesh, Could you please explain what manual testing is and its primary role in the software development lifecycle?\"}, {\"role\": \"user\", \"content\": \"i don't know\"}, {\"role\": \"assistant\", \"content\": \"When do you find manual testing to be most effective, and in what scenarios would you prioritize it over automated testing?\"}], \"session_id\": \"VC8dfmN0J6Z7xzYlx0gfuVBR9S03_13330f7c502a42af\", \"timestamp\": \"2026-02-20T11:53:39.599395\", \"updated_at\": \"2026-02-20T11:55:00.258206\", \"status\": \"completed\", \"last_updated\": 1771588499.9373813, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"has_conversation_history": true,
+"timestamp": "2026-02-20T11:53:39.599395",
+"has_questions": false,
+"consolidated": false,
+"status": "completed",
+"session_id": "VC8dfmN0J6Z7xzYlx0gfuVBR9S03_13330f7c502a42af",
+"has_responses": false,
+"updated_at": "2026-02-20T11:55:00.258206",
+"has_evaluation": true
+}
+},
+{
+"id": "xipQ4DMPm2VimYeI2MZ2GlIOmul1_91ad2fe5497648a8",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Maria D'Souza, Why is API testing considered an important part of the software testing process?\"}, {\"role\": \"user\", \"content\": \"API testing focuses on validating application programming interfaces -- the layer that allowa different systems, services or components to communicate with each other\"}, {\"role\": \"assistant\", \"content\": \"You've listed Postman as a skill. How have you used Postman in your experience to perform API testing?\"}, {\"role\": \"user\", \"content\": \"In my experience i used postman extensively for testing REST APIs beacend validation and intergration testing\"}, {\"role\": \"assistant\", \"content\": \"When using Postman for API testing, how do you verify if an API request was successful or if an error occurred?\"}], \"session_id\": \"xipQ4DMPm2VimYeI2MZ2GlIOmul1_91ad2fe5497648a8\", \"timestamp\": \"2026-03-02T10:29:10.999765\", \"updated_at\": \"2026-03-02T10:36:49.163758\", \"status\": \"completed\", \"last_updated\": 1772447808.8314154, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 42.5, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.5, \"cultural_fit\": 0.25}, \"strengths\": [\"Clear, structured explanations\"], \"weaknesses\": [\"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"question_count": 0,
+"consolidated": false,
+"has_questions": false,
+"has_conversation_history": true,
+"has_evaluation": true,
+"status": "completed",
+"updated_at": "2026-03-02T10:36:49.163758",
+"session_id": "xipQ4DMPm2VimYeI2MZ2GlIOmul1_91ad2fe5497648a8",
+"timestamp": "2026-03-02T10:29:10.999765",
+"has_responses": false
+}
+},
+{
+"id": "GJHbXdN0IlVSaB901ombBAw3vVB2_b81310b5e274470e",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Sharma, Considering your background in music, how do you perceive and apply the principles of portfolio management to your various artistic projects and collaborations?\"}], \"session_id\": \"GJHbXdN0IlVSaB901ombBAw3vVB2_b81310b5e274470e\", \"timestamp\": \"2026-03-06T07:43:28.817453\", \"updated_at\": \"2026-03-06T07:43:28.817468\"}",
+"metadata": {
+"has_conversation_history": true,
+"timestamp": "2026-03-06T07:43:28.817453",
+"has_evaluation": false,
+"has_responses": false,
+"session_id": "GJHbXdN0IlVSaB901ombBAw3vVB2_b81310b5e274470e",
+"has_questions": false,
+"updated_at": "2026-03-06T07:43:28.817468",
+"consolidated": false,
+"status": "ongoing",
+"question_count": 0
+}
+},
+{
+"id": "GJHbXdN0IlVSaB901ombBAw3vVB2_5fa5306e34f74203",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Sharma, Could you describe your process for interpreting a song for playback, ensuring it aligns with the character's emotions and the film's overall vision?\"}], \"session_id\": \"GJHbXdN0IlVSaB901ombBAw3vVB2_5fa5306e34f74203\", \"timestamp\": \"2026-03-06T07:47:16.868204\", \"updated_at\": \"2026-03-06T07:47:16.868216\"}",
+"metadata": {
+"session_id": "GJHbXdN0IlVSaB901ombBAw3vVB2_5fa5306e34f74203",
+"timestamp": "2026-03-06T07:47:16.868204",
+"updated_at": "2026-03-06T07:47:16.868216",
+"has_conversation_history": true,
+"consolidated": false,
+"has_evaluation": false,
+"has_questions": false,
+"question_count": 0,
+"has_responses": false,
+"status": "ongoing"
+}
+},
+{
+"id": "STaXqGWDyIRu189TeTMV1mAIFJt2_e4f5d82cbbe84b7c",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Sharma, Based on your extensive experience in musical collaborations and ensembles, what do you believe are the core principles for effective teamwork?\"}], \"session_id\": \"STaXqGWDyIRu189TeTMV1mAIFJt2_e4f5d82cbbe84b7c\", \"timestamp\": \"2026-03-06T17:10:49.581405\", \"updated_at\": \"2026-03-06T17:10:49.581418\"}",
+"metadata": {
+"has_responses": false,
+"has_evaluation": false,
+"consolidated": false,
+"question_count": 0,
+"session_id": "STaXqGWDyIRu189TeTMV1mAIFJt2_e4f5d82cbbe84b7c",
+"timestamp": "2026-03-06T17:10:49.581405",
+"has_conversation_history": true,
+"has_questions": false,
+"updated_at": "2026-03-06T17:10:49.581418",
+"status": "ongoing"
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_076e55fe0087435e",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, What are the key differences between an abstract class and an interface in Java?\"}, {\"role\": \"user\", \"content\": \"In java, both abstract classess and interfaces are used to achive abstraction, but they differ in purpose , design and usage\"}, {\"role\": \"assistant\", \"content\": \"What significant features introduced in Java8 and later versions have you found most impactful in your projects, and how have they improved your code?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_076e55fe0087435e\", \"timestamp\": \"2026-03-11T10:42:23.106432\", \"updated_at\": \"2026-03-11T10:48:02.569611\", \"status\": \"completed\", \"last_updated\": 1773226082.2735374, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2026-03-11T10:42:23.106432",
+"has_evaluation": true,
+"consolidated": false,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_076e55fe0087435e",
+"question_count": 0,
+"updated_at": "2026-03-11T10:48:02.569611",
+"has_responses": false,
+"has_conversation_history": true,
+"status": "completed",
+"has_questions": false
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_c31faeb623af4ada",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, What are the key differences between an abstract class and an interface in Java?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_c31faeb623af4ada\", \"timestamp\": \"2026-03-11T10:48:17.253469\", \"updated_at\": \"2026-03-11T10:48:17.253478\"}",
+"metadata": {
+"updated_at": "2026-03-11T10:48:17.253478",
+"consolidated": false,
+"status": "ongoing",
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_c31faeb623af4ada",
+"question_count": 0,
+"has_evaluation": false,
+"has_conversation_history": true,
+"has_responses": false,
+"timestamp": "2026-03-11T10:48:17.253469",
+"has_questions": false
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_30808775c2e04520",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you describe your approach to identifying performance bottlenecks in a multi-tier application?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_30808775c2e04520\", \"timestamp\": \"2026-03-11T10:50:12.846714\", \"updated_at\": \"2026-03-11T10:50:12.846722\"}",
+"metadata": {
+"has_evaluation": false,
+"has_responses": false,
+"has_conversation_history": true,
+"timestamp": "2026-03-11T10:50:12.846714",
+"status": "ongoing",
+"consolidated": false,
+"has_questions": false,
+"question_count": 0,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_30808775c2e04520",
+"updated_at": "2026-03-11T10:50:12.846722"
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_097ebea9f3f84c80",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you explain the concept of the Virtual DOM in React and its significance?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_097ebea9f3f84c80\", \"timestamp\": \"2026-03-11T10:50:30.357616\", \"updated_at\": \"2026-03-11T10:50:30.357623\"}",
+"metadata": {
+"consolidated": false,
+"has_responses": false,
+"has_evaluation": false,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_097ebea9f3f84c80",
+"question_count": 0,
+"has_conversation_history": true,
+"timestamp": "2026-03-11T10:50:30.357616",
+"has_questions": false,
+"status": "ongoing",
+"updated_at": "2026-03-11T10:50:30.357623"
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_ceb9ec8a9f7345fc",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you explain the concept of the Virtual DOM in React and its primary benefits?\"}, {\"role\": \"user\", \"content\": \"djd\"}, {\"role\": \"assistant\", \"content\": \"That's a clear explanation. How does React's reconciliation algorithm leverage the Virtual DOM to optimize UI updates?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_ceb9ec8a9f7345fc\", \"timestamp\": \"2026-03-11T10:50:39.568925\", \"updated_at\": \"2026-03-11T10:52:07.198980\", \"status\": \"completed\", \"last_updated\": 1773226326.8945189, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"timestamp": "2026-03-11T10:50:39.568925",
+"has_conversation_history": true,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_ceb9ec8a9f7345fc",
+"updated_at": "2026-03-11T10:52:07.198980",
+"has_questions": false,
+"consolidated": false,
+"status": "completed",
+"question_count": 0,
+"has_responses": false,
+"has_evaluation": true
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_aa199b59a51543be",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, What are the key considerations you take into account when beginning a new system design?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_aa199b59a51543be\", \"timestamp\": \"2026-03-11T10:54:05.868064\", \"updated_at\": \"2026-03-11T10:54:05.868071\"}",
+"metadata": {
+"has_questions": false,
+"updated_at": "2026-03-11T10:54:05.868071",
+"question_count": 0,
+"status": "ongoing",
+"consolidated": false,
+"has_responses": false,
+"timestamp": "2026-03-11T10:54:05.868064",
+"has_evaluation": false,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_aa199b59a51543be",
+"has_conversation_history": true
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_78562460a08f4541",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, can you describe some common microservices architecture patterns you are familiar with and their primary use cases?\"}, {\"role\": \"user\", \"content\": \"yub\"}, {\"role\": \"assistant\", \"content\": \"How do you approach data management and ensure data consistency in a distributed microservices environment?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_78562460a08f4541\", \"timestamp\": \"2026-03-11T11:05:32.887510\", \"updated_at\": \"2026-03-11T11:06:56.296782\", \"status\": \"completed\", \"last_updated\": 1773227215.989932, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"updated_at": "2026-03-11T11:06:56.296782",
+"has_evaluation": true,
+"status": "completed",
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_78562460a08f4541",
+"has_responses": false,
+"timestamp": "2026-03-11T11:05:32.887510",
+"question_count": 0,
+"has_conversation_history": true,
+"consolidated": false
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_ccc5130c3acd48db",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you outline some of the core Microservices Architecture Patterns you're familiar with?\"}, {\"role\": \"user\", \"content\": \"hj\"}, {\"role\": \"assistant\", \"content\": \"Could you elaborate on the API Gateway pattern and its primary benefits in a microservices context?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_ccc5130c3acd48db\", \"timestamp\": \"2026-03-11T11:09:05.812272\", \"updated_at\": \"2026-03-11T11:10:07.803029\", \"status\": \"completed\", \"last_updated\": 1773227407.4590945, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_responses": false,
+"consolidated": false,
+"timestamp": "2026-03-11T11:09:05.812272",
+"status": "completed",
+"has_questions": false,
+"has_evaluation": true,
+"updated_at": "2026-03-11T11:10:07.803029",
+"has_conversation_history": true,
+"question_count": 0,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_ccc5130c3acd48db"
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_73bc379ec2884d64",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Could you describe what microservices architecture patterns are and highlight a few common ones you've encountered or implemented?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_73bc379ec2884d64\", \"timestamp\": \"2026-03-11T11:12:20.134749\", \"updated_at\": \"2026-03-11T11:12:20.134757\"}",
+"metadata": {
+"timestamp": "2026-03-11T11:12:20.134749",
+"has_responses": false,
+"has_questions": false,
+"status": "ongoing",
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_73bc379ec2884d64",
+"consolidated": false,
+"has_evaluation": false,
+"updated_at": "2026-03-11T11:12:20.134757",
+"has_conversation_history": true,
+"question_count": 0
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_00f33eabc3a1494b",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you explain the fundamental concept of containerization and its primary advantages over traditional virtual machines?\"}, {\"role\": \"user\", \"content\": \"dont know\"}, {\"role\": \"assistant\", \"content\": \"Building on that, how does Docker leverage underlying Linux kernel features to achieve resource isolation and process separation for containers?\"}, {\"role\": \"user\", \"content\": \"no idea\"}, {\"role\": \"assistant\", \"content\": \"Given your resume lists Docker as a skill, can you describe a specific instance or project where you used Docker and what problem it helped you solve?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_00f33eabc3a1494b\", \"timestamp\": \"2026-03-11T11:13:23.814160\", \"updated_at\": \"2026-03-11T11:15:17.949256\", \"status\": \"completed\", \"last_updated\": 1773227717.665729, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 2 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_conversation_history": true,
+"has_questions": false,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_00f33eabc3a1494b",
+"updated_at": "2026-03-11T11:15:17.949256",
+"timestamp": "2026-03-11T11:13:23.814160",
+"question_count": 0,
+"consolidated": false,
+"status": "completed",
+"has_evaluation": true,
+"has_responses": false
+}
+},
+{
+"id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_c50955c4799740e9",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Arjun Mehta, Can you describe the core concept behind Docker and how it differs from traditional virtual machines?\"}, {\"role\": \"user\", \"content\": \"ghj\"}, {\"role\": \"assistant\", \"content\": \"What are the primary benefits of using Docker for application development and deployment in a typical software project lifecycle?\"}], \"session_id\": \"bWh5lkhyUneSWNTX41T0UlaTAfi2_c50955c4799740e9\", \"timestamp\": \"2026-03-11T11:15:38.599100\", \"updated_at\": \"2026-03-11T11:17:02.031932\", \"status\": \"completed\", \"last_updated\": 1773227821.709674, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"No answer content was provided for evaluation. Therefore, all categories received a score of 0.0.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_questions": false,
+"consolidated": false,
+"session_id": "bWh5lkhyUneSWNTX41T0UlaTAfi2_c50955c4799740e9",
+"has_conversation_history": true,
+"timestamp": "2026-03-11T11:15:38.599100",
+"status": "completed",
+"question_count": 0,
+"has_evaluation": true,
+"has_responses": false,
+"updated_at": "2026-03-11T11:17:02.031932"
+}
+},
+{
+"id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_56439f182bbd4001",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Karthik Raghavan, Please define manual testing and briefly explain its role in ensuring software quality.\"}, {\"role\": \"user\", \"content\": \"Manual testing is a type of software testing where testers manually execute test cases without using automation tools to verify whether the application works as expected\"}, {\"role\": \"assistant\", \"content\": \"Can you walk me through the typical steps you follow when performing manual testing on a feature or application?\"}, {\"role\": \"user\", \"content\": \"tt\"}, {\"role\": \"assistant\", \"content\": \"You've listed \\\"Test Case Design Techniques\\\" as one of your skills. Can you explain some common test case design techniques you're familiar with and provide a simple example of when you might use one of them?\"}], \"session_id\": \"V1bhOJ7zjBbhzScFlOSUodBZ8vo2_56439f182bbd4001\", \"timestamp\": \"2026-03-11T13:21:39.201694\", \"updated_at\": \"2026-03-11T13:25:32.686526\", \"status\": \"completed\", \"last_updated\": 1773235532.3685515, \"evaluation\": {\"num_answers\": 2, \"overall_score\": 41.0, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.6, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [\"Clear, structured explanations\"], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"The candidate provided no answers for evaluation, making it impossible to assess their performance across any category.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_conversation_history": true,
+"has_evaluation": true,
+"question_count": 0,
+"updated_at": "2026-03-11T13:25:32.686526",
+"consolidated": false,
+"has_questions": false,
+"has_responses": false,
+"session_id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_56439f182bbd4001",
+"timestamp": "2026-03-11T13:21:39.201694",
+"status": "completed"
+}
+},
+{
+"id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_762b59758433476e",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Karthik Raghavan, Can you please explain what manual testing is and describe its role in the software development life cycle?\"}, {\"role\": \"user\", \"content\": \"ddd\"}, {\"role\": \"assistant\", \"content\": \"You've listed various types of manual testing in your skills. Can you explain the difference between Smoke Testing and Sanity Testing, and when you would perform each?\"}], \"session_id\": \"V1bhOJ7zjBbhzScFlOSUodBZ8vo2_762b59758433476e\", \"timestamp\": \"2026-03-11T13:25:48.830609\", \"updated_at\": \"2026-03-11T13:28:25.850345\", \"status\": \"completed\", \"last_updated\": 1773235705.5608807, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"has_evaluation": true,
+"timestamp": "2026-03-11T13:25:48.830609",
+"status": "completed",
+"question_count": 0,
+"has_responses": false,
+"session_id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_762b59758433476e",
+"consolidated": false,
+"has_conversation_history": true,
+"has_questions": false,
+"updated_at": "2026-03-11T13:28:25.850345"
+}
+},
+{
+"id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3ba0e2964df246f6",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Karthik Raghavan, Could you please explain what regression testing is and why it's considered crucial in the software development lifecycle?\"}, {\"role\": \"user\", \"content\": \"don't know\"}, {\"role\": \"assistant\", \"content\": \"Given your experience, can you describe *when* regression testing is typically performed during the software development lifecycle, and what specific events or changes usually trigger the need for it?\"}], \"session_id\": \"V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3ba0e2964df246f6\", \"timestamp\": \"2026-03-12T09:18:23.862829\", \"updated_at\": \"2026-03-12T09:20:43.432894\", \"status\": \"completed\", \"last_updated\": 1773307243.138616, \"evaluation\": {\"num_answers\": 1, \"overall_score\": 38.75, \"category_scores\": {\"technical\": 0.4, \"problem_solving\": 0.4, \"communication\": 0.45, \"experience_relevance\": 0.35, \"cultural_fit\": 0.25}, \"strengths\": [], \"weaknesses\": [\"Provide more role-aligned examples\", \"Share collaboration/team examples\"], \"summary\": \"Evaluated 1 answers; assigned heuristic scores due to low-confidence model output.\", \"latency_seconds\": 0.0}}",
+"metadata": {
+"status": "completed",
+"has_questions": false,
+"session_id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3ba0e2964df246f6",
+"has_conversation_history": true,
+"timestamp": "2026-03-12T09:18:23.862829",
+"updated_at": "2026-03-12T09:20:43.432894",
+"consolidated": false,
+"has_responses": false,
+"has_evaluation": true,
+"question_count": 0
+}
+},
+{
+"id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3605ef75eb814ada",
+"document": "{\"conversation_history\": [{\"role\": \"assistant\", \"content\": \"Hello Karthik Raghavan, Based on your understanding, what exactly is regression testing and when is it typically performed?\"}], \"session_id\": \"V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3605ef75eb814ada\", \"timestamp\": \"2026-03-12T09:21:01.450132\", \"updated_at\": \"2026-03-12T09:21:01.450141\"}",
+"metadata": {
+"session_id": "V1bhOJ7zjBbhzScFlOSUodBZ8vo2_3605ef75eb814ada",
+"has_questions": false,
+"has_responses": false,
+"status": "ongoing",
+"has_conversation_history": true,
+"updated_at": "2026-03-12T09:21:01.450141",
+"has_evaluation": false,
+"question_count": 0,
+"consolidated": false,
+"timestamp": "2026-03-12T09:21:01.450132"
+}
+}
+]

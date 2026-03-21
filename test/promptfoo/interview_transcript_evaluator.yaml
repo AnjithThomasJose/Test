@@ -1,0 +1,19 @@
+# Interview transcript evaluator agent
+description: "Interview transcript evaluation"
+prompts:
+  - file://prompts/interview_transcript_evaluator.txt
+providers:
+  - file://providers/gemini_provider.py
+tests:
+  - vars:
+      jd_text: "Software Engineer - Python, React required"
+      qa_pairs: |
+        Q: Tell me about your Python experience.
+        A: I have 3 years of Python experience building APIs and data pipelines.
+    assert:
+      - type: javascript
+        value: |
+          try {
+            const p = JSON.parse(output);
+            return p && (p.per_answer_evaluations || p.overall_evaluation || p.evaluations);
+          } catch (e) { return false; }
