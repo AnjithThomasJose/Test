@@ -35,7 +35,11 @@
     margin: 0 auto;
   }
 
-  .home-link { display: inline-block; margin-bottom: 16px; color: var(--muted); text-decoration: none; font-size: 14px; }
+  .top-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .auth-bar { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; }
+  .auth-bar button { background: none; border: 1px solid var(--border); color: var(--text); border-radius: 999px; padding: 6px 12px; font: inherit; cursor: pointer; }
+  .auth-bar button.primary { border-color: var(--accent); color: var(--accent); }
+  .home-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 14px; }
   .home-link:hover { color: var(--text); }
 
   /* HEADER */
@@ -1682,7 +1686,10 @@ input[type="number"] {
 <body>
 <div id="sync-overlay" style="position:fixed;inset:0;background:#0a0a0a;color:#c8f135;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;z-index:9999;">Syncing...</div>
 <div class="page" style="display:none">
-  <a href="/" class="home-link">&lsaquo; Home</a>
+  <div class="top-row">
+    <a href="/" class="home-link">&lsaquo; Home</a>
+    <div class="auth-bar" id="auth-bar"></div>
+  </div>
 
   <!-- HEADER -->
   <div class="header">
@@ -2071,6 +2078,8 @@ input[type="number"] {
     const PENDING_SYNC_KEY = STORAGE_PREFIX + '_pending_sync';
     // Shared Firestore folder for all your devices (phone + laptop). Anonymous auth still runs.
     const DATA_OWNER_UID = 'main';
+    // Only this Google account may sync (enforced again in firestore.rules).
+    const OWNER_EMAIL = 'anjiththomasjose2@gmail.com';
 
     let db = null;
     let currentUid = null;
@@ -2216,6 +2225,44 @@ input[type="number"] {
       if (pageEl) pageEl.style.display = '';
     }
 
+    function signInWithGoogle() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase.auth().signInWithPopup(provider).then(function () {
+        location.reload();
+      }).catch(function (e) {
+        if (e.code === 'auth/popup-blocked' || e.code === 'auth/operation-not-supported-in-this-environment') {
+          firebase.auth().signInWithRedirect(provider);
+        } else if (e.code !== 'auth/popup-closed-by-user' && e.code !== 'auth/cancelled-popup-request') {
+          alert('Sign-in failed: ' + e.message);
+        }
+      });
+    }
+
+    function renderAuthBar(user) {
+      const bar = document.getElementById('auth-bar');
+      if (!bar) return;
+      bar.textContent = '';
+      const label = document.createElement('span');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      if (user && user.email === OWNER_EMAIL) {
+        label.textContent = user.email;
+        btn.textContent = 'Sign out';
+        btn.onclick = function () { firebase.auth().signOut().then(function () { location.reload(); }); };
+      } else if (user && user.email) {
+        label.textContent = user.email + ' is not allowed';
+        btn.textContent = 'Sign out';
+        btn.onclick = function () { firebase.auth().signOut().then(function () { location.reload(); }); };
+      } else {
+        label.textContent = 'Not synced';
+        btn.textContent = 'Sign in with Google';
+        btn.className = 'primary';
+        btn.onclick = signInWithGoogle;
+      }
+      bar.appendChild(label);
+      bar.appendChild(btn);
+    }
+
     function firebaseConfigReady() {
       return !!(firebaseConfig && firebaseConfig.apiKey && firebaseConfig.projectId && typeof firebase !== 'undefined');
     }
@@ -2245,14 +2292,13 @@ input[type="number"] {
         }
 
         firebase.auth().onAuthStateChanged(function (user) {
-          if (user) {
+          renderAuthBar(user);
+          if (user && user.email === OWNER_EMAIL) {
             currentUid = DATA_OWNER_UID;
             done(true);
+          } else {
+            done(false); // signed out or wrong account: localStorage only
           }
-        });
-
-        firebase.auth().signInAnonymously().catch(function () {
-          done(false);
         });
 
         setTimeout(function () { done(false); }, 12000);
