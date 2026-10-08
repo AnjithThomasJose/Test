@@ -135,6 +135,10 @@
   .cat-edit .x { color: var(--red); font-size: 20px; }
   .add-cat { width: 100%; padding: 18px; color: var(--green); font-weight: 600; font-size: 17px; }
 
+  .signin-chip { position: absolute; top: 14px; right: 16px; z-index: 2; padding: 6px 12px; border-radius: 999px; background: rgba(77,208,196,.15); color: var(--green); font-size: 14px; font-weight: 600; }
+  .set-row button { color: var(--green); font-weight: 600; font-size: 17px; }
+  .set-row .acct { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
   /* Tab bar */
   .tabbar { position: fixed; left: 50%; transform: translateX(-50%); bottom: 0; width: 100%; max-width: 480px; height: calc(var(--tabbar) + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); display: flex; background: #111; border-top: 1px solid var(--line); z-index: 4; }
   .tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--muted); font-size: 15px; font-weight: 600; }
@@ -151,6 +155,7 @@
   <!-- TAP -->
   <section class="screen active" id="tap">
     <a href="/" class="home-link">&lsaquo; Home</a>
+    <button class="signin-chip" data-signin hidden>Sign in to sync</button>
     <div class="how" id="how">How much?</div>
     <div class="amount" id="amount">₹ 0</div>
     <hr class="rule">
@@ -189,6 +194,8 @@
   <!-- SETTINGS -->
   <section class="screen" id="settings">
     <div class="topbar"><button class="back-btn" id="settings-back" aria-label="Back">‹</button><h1>Settings</h1></div>
+    <div class="sec">ACCOUNT</div>
+    <div class="set-row"><div class="acct"><div id="acct-label">Not signed in</div><div class="hint" id="acct-hint">Sign in to sync across devices</div></div><button id="acct-btn">Sign in</button></div>
     <div class="sec">BUDGET</div>
     <label class="set-row"><span>Monthly Budget</span><input id="budget-input" type="number" inputmode="decimal" min="0" placeholder="Not set"></label>
     <label class="set-row"><div>Cycle starts on<div class="hint">Budget and monthly totals reset on this day</div></div><select id="cycle-select"></select></label>
@@ -256,7 +263,32 @@
     messagingSenderId: "127706340035",
     appId: "1:127706340035:web:13978a4a50ca1dc6bb6076"
   };
+  // Only this Google account may sync (enforced again in firestore.rules).
+  const OWNER_EMAIL = 'anjiththomasjose2@gmail.com';
   let docRef = null;
+
+  function currentUser() { return typeof firebase !== 'undefined' && firebase.apps.length ? firebase.auth().currentUser : null; }
+  function isOwner() { const u = currentUser(); return !!u && u.email === OWNER_EMAIL; }
+
+  function signIn() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).catch(function (e) {
+      if (e.code === 'auth/popup-blocked' || e.code === 'auth/operation-not-supported-in-this-environment') {
+        firebase.auth().signInWithRedirect(provider);
+      } else if (e.code !== 'auth/popup-closed-by-user' && e.code !== 'auth/cancelled-popup-request') {
+        alert('Sign-in failed: ' + e.message);
+      }
+    });
+  }
+  function signOut() { firebase.auth().signOut(); }
+
+  function renderAccount() {
+    const u = currentUser(), owner = isOwner();
+    document.querySelectorAll('[data-signin]').forEach(function (b) { b.hidden = owner || typeof firebase === 'undefined'; });
+    $('acct-label').textContent = u && u.email ? u.email : 'Not signed in';
+    $('acct-hint').textContent = owner ? 'Syncing across devices' : u && u.email ? 'This account is not allowed' : 'Sign in to sync across devices';
+    $('acct-btn').textContent = u && u.email ? 'Sign out' : 'Sign in';
+  }
 
   function initRemote() {
     if (typeof firebase === 'undefined') return;
@@ -264,11 +296,10 @@
       if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
       docRef = firebase.firestore().collection('users').doc('main').collection('data').doc('finance');
     } catch (e) { return; }
-    let started = false;
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user && !started) { started = true; pullRemote(); }
+    firebase.auth().onAuthStateChanged(function () {
+      renderAccount();
+      if (isOwner()) pullRemote();
     });
-    firebase.auth().signInAnonymously().catch(function () {});
   }
 
   async function pullRemote() {
@@ -286,7 +317,7 @@
   }
 
   async function pushRemote() {
-    if (!docRef || !firebase.auth().currentUser) return;
+    if (!docRef || !isOwner()) return;
     try {
       await docRef.set(JSON.parse(JSON.stringify(state)));
       setPending(false);
@@ -358,6 +389,8 @@
   document.querySelectorAll('[data-open-settings]').forEach(function (b) {
     b.addEventListener('click', function () { renderSettings(); $('settings').classList.add('active'); });
   });
+  document.querySelectorAll('[data-signin]').forEach(function (b) { b.addEventListener('click', signIn); });
+  $('acct-btn').addEventListener('click', function () { currentUser() && currentUser().email ? signOut() : signIn(); });
   $('settings-back').addEventListener('click', function () { $('settings').classList.remove('active'); renderAll(); });
 
   // ---------- Tap / entry ----------

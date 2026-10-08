@@ -2,11 +2,12 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Workout + finance pages share users/main/data/{docId} and sign in anonymously.
-    // Note: anonymous auth means anyone with the public web config can sign in;
-    // switch to a real sign-in provider and check request.auth.uid to truly lock this down.
+    // Workout + finance pages share users/main/data/{docId}.
+    // Only the owner's Google account may read or write; everything else is denied.
     match /users/main/data/{docId} {
-      allow read, write: if request.auth != null;
+      allow read, write: if request.auth != null
+        && request.auth.token.email == 'anjiththomasjose2@gmail.com'
+        && request.auth.token.email_verified == true;
     }
   }
 }
