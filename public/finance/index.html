@@ -8,6 +8,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="/finance/merge.js"></script>
 <style>
   :root {
     --bg: #000;
@@ -218,7 +219,6 @@
   // ---------- Data ----------
   // Amounts stored in paise (integers) to avoid float drift.
   const LS_KEY = 'finance_state_v1';
-  const LS_PENDING = 'finance_pending_sync';
   const PALETTE = ['#e57373', '#4dd0c4', '#ffd966', '#a78bfa', '#f59e0b', '#f472b6', '#60a5fa', '#9ca3af', '#34d399', '#fb923c'];
   const DEFAULT_CATS = [
     ['food', '🍔', 'Food'], ['transport', '🚕', 'Transport'], ['shopping', '🛍️', 'Shopping'],
@@ -238,23 +238,16 @@
   function saveLocal() {
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* quota / private mode */ }
   }
-  function setPending(v) {
-    try { v ? localStorage.setItem(LS_PENDING, '1') : localStorage.removeItem(LS_PENDING); } catch (e) {}
-  }
-  function isPending() {
-    try { return localStorage.getItem(LS_PENDING) === '1'; } catch (e) { return false; }
-  }
 
   function commit() {
     state.updatedAt = Date.now();
     saveLocal();
-    setPending(true);
-    pushRemote();
+    syncRemote();
     renderAll();
   }
 
   // ---------- Firestore sync (same project + shared 'main' folder as workout page) ----------
-  // ponytail: whole-doc last-write-wins; two devices editing while offline lose one side. Merge entries by id if that bites.
+  // Every sync merges local + cloud by id inside a transaction (see merge.js), so no device overwrites another.
   const firebaseConfig = {
     apiKey: "AIzaSyAgPPdtACoZt1yRGrB69s3RiLJsPNxvGDw",
     authDomain: "workout-88702.firebaseapp.com",
@@ -298,32 +291,25 @@
     } catch (e) { return; }
     firebase.auth().onAuthStateChanged(function () {
       renderAccount();
-      if (isOwner()) pullRemote();
+      if (isOwner()) syncRemote();
     });
   }
 
-  async function pullRemote() {
-    try {
-      const snap = await docRef.get();
-      const remote = snap.exists ? snap.data() : null;
-      if (remote && remote.updatedAt > state.updatedAt && !isPending()) {
-        state = remote;
-        saveLocal();
-        renderAll();
-      } else if (!remote || state.updatedAt > remote.updatedAt || isPending()) {
-        pushRemote();
-      }
-    } catch (e) { /* offline: keep local */ }
-  }
-
-  async function pushRemote() {
+  async function syncRemote() {
     if (!docRef || !isOwner()) return;
     try {
-      await docRef.set(JSON.parse(JSON.stringify(state)));
-      setPending(false);
-    } catch (e) { /* stays pending, retried on next load / online */ }
+      const merged = await firebase.firestore().runTransaction(async function (tx) {
+        const snap = await tx.get(docRef);
+        const m = mergeState(state, snap.exists ? snap.data() : null);
+        tx.set(docRef, JSON.parse(JSON.stringify(m)));
+        return m;
+      });
+      state = mergeState(state, merged); // keeps edits made while the transaction ran
+      saveLocal();
+      renderAll();
+    } catch (e) { /* offline: local copy kept, merged on next load / online */ }
   }
-  window.addEventListener('online', pushRemote);
+  window.addEventListener('online', syncRemote);
 
   // ---------- Helpers ----------
   const $ = function (id) { return document.getElementById(id); };
@@ -368,7 +354,7 @@
     if (kind === 'year') return [new Date(now.getFullYear() - back, 0, 1), new Date(now.getFullYear() - back + 1, 0, 1)];
     return [new Date(0), new Date(8.64e15)];
   }
-  function inRange(r) { return state.entries.filter(function (e) { return e.ts >= r[0].getTime() && e.ts < r[1].getTime(); }); }
+  function inRange(r) { return state.entries.filter(function (e) { return !e.deleted && e.ts >= r[0].getTime() && e.ts < r[1].getTime(); }); }
   const PERIOD_WORD = { week: 'week', month: 'month', year: 'year' };
 
   // ---------- Navigation ----------
@@ -444,16 +430,17 @@
     const note = $('note').value.trim();
     if (editingId) {
       const e = state.entries.find(function (x) { return x.id === editingId; });
-      if (e) { e.amount = paise; e.cat = selCat; e.note = note; e.credit = isCredit; }
+      if (e) { e.amount = paise; e.cat = selCat; e.note = note; e.credit = isCredit; e.u = Date.now(); }
       resetEntry(); commit(); toast('Updated'); showTab('history');
     } else {
-      state.entries.push({ id: uid(), amount: paise, cat: selCat, note: note, credit: isCredit, ts: Date.now() });
+      state.entries.push({ id: uid(), amount: paise, cat: selCat, note: note, credit: isCredit, ts: Date.now(), u: Date.now() });
       resetEntry(); commit(); toast('Saved');
     }
   });
   $('delete-btn').addEventListener('click', function () {
     if (!editingId || !confirm('Delete this entry?')) return;
-    state.entries = state.entries.filter(function (x) { return x.id !== editingId; });
+    // Tombstone, not removal: other devices must learn about the delete when merging.
+    state.entries = state.entries.map(function (x) { return x.id === editingId ? { id: x.id, deleted: true, u: Date.now() } : x; });
     resetEntry(); commit(); toast('Deleted'); showTab('history');
   });
   function editEntry(id) {
@@ -593,9 +580,9 @@
   }
   $('budget-input').addEventListener('change', function () {
     const v = parseFloat(this.value);
-    state.settings.budget = v > 0 ? Math.round(v * 100) : 0; commit();
+    state.settings.budget = v > 0 ? Math.round(v * 100) : 0; state.settings.u = Date.now(); commit();
   });
-  $('cycle-select').addEventListener('change', function () { state.settings.cycleDay = parseInt(this.value, 10); commit(); });
+  $('cycle-select').addEventListener('change', function () { state.settings.cycleDay = parseInt(this.value, 10); state.settings.u = Date.now(); commit(); });
 
   $('cat-list').addEventListener('change', function (ev) {
     const row = ev.target.closest('.cat-edit'); if (!row) return;
@@ -603,6 +590,7 @@
     const v = ev.target.value.trim();
     if (!v) { renderSettings(); return; }
     if (ev.target.classList.contains('emo')) c.emoji = v; else c.name = v;
+    c.u = Date.now();
     commit();
   });
   $('cat-list').addEventListener('click', function (ev) {
@@ -612,17 +600,20 @@
       if (activeCats().length <= 1) { toast('Keep at least one'); return; }
       if (!confirm('Remove "' + c.name + '"? Past entries keep it.')) return;
       c.deleted = true; // soft delete: history/analytics still resolve it
+      c.u = Date.now();
     } else {
       // Swap with neighbouring *active* category in the full array.
       const act = activeCats(), i = act.indexOf(c), other = act[b.dataset.act === 'up' ? i - 1 : i + 1];
       if (!other) return;
       const all = state.categories, a = all.indexOf(c), o = all.indexOf(other);
       all[a] = other; all[o] = c;
+      state.catsU = Date.now();
     }
     commit(); renderSettings();
   });
   $('add-cat').addEventListener('click', function () {
-    const c = { id: uid(), emoji: '✨', name: 'New', color: PALETTE[state.categories.length % PALETTE.length], deleted: false };
+    const c = { id: uid(), emoji: '✨', name: 'New', color: PALETTE[state.categories.length % PALETTE.length], deleted: false, u: Date.now() };
+    state.catsU = Date.now();
     state.categories.push(c); commit(); renderSettings();
     const inputs = $('cat-list').querySelectorAll('.nm'); const last = inputs[inputs.length - 1];
     if (last) { last.focus(); last.select(); }
