@@ -1,0 +1,12 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Workout + finance pages share users/main/data/{docId} and sign in anonymously.
+    // Note: anonymous auth means anyone with the public web config can sign in;
+    // switch to a real sign-in provider and check request.auth.uid to truly lock this down.
+    match /users/main/data/{docId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
